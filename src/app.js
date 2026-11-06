@@ -32,13 +32,17 @@
   function apply(){
     var qs = norm(q.value.trim()), c = comp.value, t = turk.checked, f = fta.checked;
     document.querySelectorAll(".day-sec").forEach(function(sec){
-      var any = false;
-      sec.querySelectorAll(".row").forEach(function(r){
-        var ok = (c === "all" || r.dataset.comp === c) && (!t || r.dataset.turk === "1") &&
-                 (!f || r.dataset.fta === "1") && (!qs || norm(r.dataset.q).indexOf(qs) > -1);
-        r.classList.toggle("hidden", !ok); if (ok) any = true;
+      var anyDay = false;
+      sec.querySelectorAll(".grp").forEach(function(g){
+        var anyGrp = false;
+        g.querySelectorAll(".row").forEach(function(r){
+          var ok = (c === "all" || r.dataset.comp === c) && (!t || r.dataset.turk === "1") &&
+                   (!f || r.dataset.fta === "1") && (!qs || norm(r.dataset.q).indexOf(qs) > -1);
+          r.classList.toggle("hidden", !ok); if (ok) anyGrp = true;
+        });
+        g.classList.toggle("hidden", !anyGrp); if (anyGrp) anyDay = true;
       });
-      sec.classList.toggle("hidden", !any);
+      sec.classList.toggle("hidden", !anyDay);
     });
   }
   [q, comp, turk, fta].forEach(function(el){ el.addEventListener(el === q ? "input" : "change", apply); });

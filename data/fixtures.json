@@ -60,6 +60,14 @@
   "apple": {
    "name": "Apple TV – MLS",
    "url": "https://tv.apple.com"
+  },
+  "unl": {
+   "name": "UEFA – Nations League UK broadcasters & fixtures",
+   "url": "https://www.uefa.com/uefanationsleague/news/02a9-219ae5c877f5-740390ccb3e5-1000--where-to-watch-the-nations-league-tv-broadcast-partners-li/"
+  },
+  "fifa": {
+   "name": "DAZN / FIFA+ – U-17 Women's World Cup",
+   "url": "https://www.dazn.com/en-GB/news/football/fifa-u-17-womens-world-cup-2026-final-japan-nigeria-how-to-watch-free/1o09j1a8b138c12czpjumshplb"
   }
  },
  "fixtures": [
@@ -252,6 +260,17 @@
   },
   {
    "date": "2026-11-07",
+   "uk": "15:00",
+   "home": "DPR Korea",
+   "away": "Brazil",
+   "comp": "FIFA U-17 Women's World Cup",
+   "channels": [
+    "DAZN (free, via FIFA+)"
+   ],
+   "source": "fifa"
+  },
+  {
+   "date": "2026-11-07",
    "uk": "15:15",
    "home": "Espanyol",
    "away": "Deportivo La Coruña",
@@ -345,6 +364,17 @@
     "Premier Sports"
    ],
    "source": "premier"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "18:30",
+   "home": "Japan",
+   "away": "Nigeria",
+   "comp": "FIFA U-17 Women's World Cup",
+   "channels": [
+    "DAZN (free, via FIFA+)"
+   ],
+   "source": "fifa"
   },
   {
    "date": "2026-11-07",
@@ -1015,14 +1045,26 @@
   {
    "date": "2026-11-12",
    "uk": "17:00",
+   "home": "Armenia",
+   "away": "Cyprus",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unl"
+  },
+  {
+   "date": "2026-11-12",
+   "uk": "17:00",
    "home": "Türkiye",
    "away": "Belgium",
    "comp": "UEFA Nations League",
    "channels": [
-    "UK TV TBC",
-    "ATV (TR)"
+    "Prime Video",
+    "ATV (TR)",
+    "S Sport (TR)"
    ],
-   "source": "tff"
+   "source": "unl"
   },
   {
    "date": "2026-11-12",
@@ -1038,6 +1080,28 @@
   {
    "date": "2026-11-12",
    "uk": "19:45",
+   "home": "Albania",
+   "away": "Finland",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unl"
+  },
+  {
+   "date": "2026-11-12",
+   "uk": "19:45",
+   "home": "Czechia",
+   "away": "Spain",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unl"
+  },
+  {
+   "date": "2026-11-12",
+   "uk": "19:45",
    "home": "England",
    "away": "Croatia",
    "comp": "UEFA Nations League",
@@ -1045,7 +1109,40 @@
     "ITV1",
     "ITVX"
    ],
-   "source": "itv"
+   "source": "unl"
+  },
+  {
+   "date": "2026-11-12",
+   "uk": "19:45",
+   "home": "Italy",
+   "away": "France",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unl"
+  },
+  {
+   "date": "2026-11-12",
+   "uk": "19:45",
+   "home": "Montenegro",
+   "away": "Latvia",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unl"
+  },
+  {
+   "date": "2026-11-12",
+   "uk": "19:45",
+   "home": "San Marino",
+   "away": "Belarus",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unl"
   }
  ]
 }

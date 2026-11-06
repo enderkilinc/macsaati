@@ -38,6 +38,13 @@ main{padding-bottom:40px}
 .dayhead{display:flex;align-items:baseline;justify-content:space-between;margin:22px 0 10px;scroll-margin-top:70px}
 .dayhead h2{margin:0;font:700 22px "Archivo Narrow",sans-serif}.dayhead span{color:var(--muted);font-size:13px}
 .day-sec{scroll-margin-top:70px}
+.grp{margin:0 0 14px}
+.grphead{display:flex;align-items:center;gap:8px;padding:2px 2px 7px}
+.grphead h3{margin:0;font:700 14px "Archivo Narrow",sans-serif;letter-spacing:.8px;text-transform:uppercase;color:var(--pitch)}
+.grphead .gn{margin-left:auto;font-size:12px;color:var(--muted)}
+.grphead .gb{font:700 10px Archivo,sans-serif;letter-spacing:.6px;padding:2px 6px;border-radius:4px;background:#e4ecff;color:#1f3c8f}
+.grp.slg .grphead h3{color:var(--red)}
+.grp.slg .grphead::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--red)}
 .list{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
 .row{display:grid;grid-template-columns:72px 1fr minmax(180px,38%);gap:14px;align-items:center;padding:12px 16px;border-top:1px solid var(--line)}
 .row:first-child{border-top:0}

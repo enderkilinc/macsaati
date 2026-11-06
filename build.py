@@ -37,13 +37,17 @@ for b in BIG:
     if b not in CLUBS: CLUBS.append(b)
 
 GROUPS = [
-  ("Turkish", ["Süper Lig"]),
-  ("British", ["Premier League","Championship","League One","League Two","FA Cup","EFL Trophy","Scottish Premiership","Scottish Championship"]),
-  ("European", ["La Liga","La Liga 2","Serie A","Bundesliga","Ligue 1"]),
-  ("Women's", ["WSL","Women's Champions League"]),
-  ("International", ["UEFA Nations League"]),
+  ("Turkish football", ["Süper Lig"]),
+  ("British", ["Premier League","Championship","League One","League Two","FA Cup","EFL Trophy","WSL","Scottish Premiership","Scottish Championship"]),
+  ("UEFA competitions", ["UEFA Champions League","UEFA Europa League","UEFA Conference League","UEFA Nations League","Women's Champions League"]),
+  ("FIFA competitions", ["FIFA World Cup","FIFA World Cup qualifiers","FIFA Club World Cup","FIFA U-17 Women's World Cup"]),
+  ("European leagues", ["La Liga","La Liga 2","Serie A","Bundesliga","Ligue 1"]),
   ("Rest of the World", ["MLS"]),
 ]
+COMP_ORDER = [c for _, lst in GROUPS for c in lst]
+COMP_GROUP = {c: g for g, lst in GROUPS for c in lst}
+def comp_rank(c): return COMP_ORDER.index(c) if c in COMP_ORDER else len(COMP_ORDER)
+COMP_BADGE = {"UEFA competitions": "UEFA", "FIFA competitions": "FIFA"}
 FTA = re.compile(r"^(BBC|ITV|STV|S4C|Channel 4)")
 
 def ch_class(c):
@@ -78,16 +82,14 @@ def row(f, lang="en"):
                    else f'<span class="ch {cl}">{esc(c)}</span>')
     src = SOURCES.get(f["source"])
     tags = []
-    if f["comp"] == "Süper Lig": tags.append('<span class="tag slg">Süper Lig</span>')
     if any(FTA.search(c) for c in f["channels"]): tags.append('<span class="tag fta">Free</span>' if lang=="en" else '<span class="tag fta">Ücretsiz</span>')
     srcl = (f'<a class="src" href="{esc(src["url"])}" target="_blank" rel="noopener nofollow">{"Source" if lang=="en" else "Kaynak"}: {esc(src["name"].split(" – ")[0])}</a>') if src else ""
-    comp = "" if f["comp"] == "Süper Lig" else esc(f["comp"])
     search = " ".join([f["home"], f["away"], f["comp"], *f["channels"]]).translate(TRMAP).lower()
     return (f'<div class="row{" turk" if f["turk"] else ""}" data-iso="{f["iso"]}" data-comp="{esc(f["comp"])}" '
             f'data-turk="{int(f["turk"])}" data-fta="{int(any(FTA.search(c) for c in f["channels"]))}" data-q="{esc(search)}">'
             f'<div class="time"><span class="uk">{f["uk"]}</span><span class="trt">{f["tr"]}{"<small>+1</small>" if f["tr_next"] else ""}</span></div>'
             f'<div class="fx"><div class="teams">{esc(f["home"])}<span class="v">v</span>{esc(f["away"])}</div>'
-            f'<div class="comp">{comp} {" ".join(tags)} <span class="st"></span> {srcl}</div></div>'
+            f'<div class="comp">{" ".join(tags)} <span class="st"></span> {srcl}</div></div>'
             f'<div class="chs">{"".join(chs)}</div></div>')
 
 def listing(fixtures, lang="en", empty=None):
@@ -98,8 +100,19 @@ def listing(fixtures, lang="en", empty=None):
     for d, rows in days.items():
         n = len(rows)
         cnt = (f"{n} match{'es' if n>1 else ''}") if lang=="en" else f"{n} maç"
+        comps = {}
+        for f in rows: comps.setdefault(f["comp"], []).append(f)
+        blocks = []
+        for c in sorted(comps, key=lambda c: (comp_rank(c), c)):
+            fx = sorted(comps[c], key=lambda f: (f["uk"], f["home"]))
+            badge = COMP_BADGE.get(COMP_GROUP.get(c, ""), "")
+            cls = " slg" if c == "Süper Lig" else (" intl" if badge else "")
+            m = len(fx)
+            blocks.append(f'<div class="grp{cls}" data-comp="{esc(c)}"><div class="grphead"><h3>{esc(c)}</h3>'
+                          f'{f"<span class=gb>{badge}</span>" if badge else ""}<span class="gn">{m}</span></div>'
+                          f'<div class="list">{"".join(row(f, lang) for f in fx)}</div></div>')
         out.append(f'<section class="day-sec" id="d{d}"><div class="dayhead"><h2>{fmt_day(d, lang)}</h2><span>{cnt}</span></div>'
-                   f'<div class="list">{"".join(row(f, lang) for f in rows)}</div></section>')
+                   f'{"".join(blocks)}</section>')
     return "".join(out)
 
 def jsonld(fixtures, page_url, title):
@@ -211,7 +224,7 @@ def build():
     wk = N["week_label"]
     # Home
     write("/", page("/", f"Live Football on TV Today & This Week (UK) | Premier League, EFL & Süper Lig | {SITE}",
-        f"What football is on TV in the UK this week ({wk}): kick-off times and channels for the Premier League, EFL, FA Cup, La Liga, Serie A, Bundesliga, MLS and Women's Champions League on Sky Sports, TNT Sports, BBC, ITV, Premier Sports, DAZN, Prime Video, Apple TV and Disney+ — plus every Turkish Süper Lig match in UK time.",
+        f"What football is on TV in the UK this week ({wk}): kick-off times and channels for the Premier League, EFL, FA Cup, UEFA Nations League, Women's Champions League, FIFA tournaments, La Liga, Serie A, Bundesliga and MLS on Sky Sports, TNT Sports, BBC, ITV, Premier Sports, DAZN, Prime Video, Apple TV and Disney+ — plus every Turkish Süper Lig match in UK time.",
         "Live football on TV this week",
         f"Every confirmed televised match in the UK for {esc(wk)}, taken from the broadcasters' and leagues' own schedules — plus the full Turkish Süper Lig programme in UK time. Tap a channel to open its schedule.",
         listing(FIX), FIX, hreflang=[("en-GB","/"),("tr","/tr/")]))
