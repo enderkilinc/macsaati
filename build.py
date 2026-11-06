@@ -157,8 +157,8 @@ JS = open(os.path.join(ROOT, "src", "app.js"), encoding="utf-8").read()
 def nav(lang):
     if lang == "tr":
         return ('<nav class="links"><a href="/tr/">Süper Lig (TR)</a><a href="/">Tüm maçlar</a>'
-                '<a href="/upcoming/">İleri tarihler</a><a href="/super-lig-on-tv-uk/">Super Lig on UK TV</a><a href="/turkey-on-tv/">Türkiye</a></nav>')
-    return ('<nav class="links"><a href="/">This week</a><a href="/upcoming/">Upcoming (to {last})</a><a href="/super-lig-on-tv-uk/">Süper Lig on TV</a>'
+                '<a href="/super-lig-on-tv-uk/">Super Lig on UK TV</a><a href="/turkey-on-tv/">Türkiye</a></nav>')
+    return ('<nav class="links"><a href="/">All matches (to {last})</a><a href="/super-lig-on-tv-uk/">Süper Lig on TV</a>'
             '<a href="/turkey-on-tv/">Türkiye</a><a href="/tr/">Türkçe</a></nav>').replace("{last}", LAST_LABEL)
 
 def page(path, title, desc, h1, intro, body, fixtures, lang="en", hreflang=None, controls=True, banner=True):
@@ -168,8 +168,13 @@ def page(path, title, desc, h1, intro, body, fixtures, lang="en", hreflang=None,
         alt = "".join(f'<link rel="alternate" hreflang="{l}" href="{DOMAIN}{p}">' for l, p in hreflang)
     days = sorted({f["date"] for f in fixtures})
     if len(days) > 10:
-        ms = sorted({d[:7] for d in days})
-        strip = "".join(f'<a class="day mon" href="#m{m}"><b>{month_name(m+"-01", lang).split()[0][:3]}</b><span>{m[2:4]}</span></a>' for m in ms)
+        wk_days = [d for d in days if datetime.fromisoformat(d).date() <= WEEK_END]
+        later_ms = sorted({d[:7] for d in days if datetime.fromisoformat(d).date() > WEEK_END})
+        wd = ["Pzt","Sal","Çar","Per","Cum","Cmt","Paz"]
+        strip = "".join(
+            f'<a class="day" href="#d{d}"><b>{datetime.fromisoformat(d).strftime("%a") if lang=="en" else wd[datetime.fromisoformat(d).weekday()]}</b>'
+            f'<span>{datetime.fromisoformat(d).day}{"<i class=tr-dot></i>" if any(f["turk"] and f["date"]==d for f in fixtures) else ""}</span></a>' for d in wk_days)
+        strip += "".join(f'<a class="day mon" href="#m{m}"><b>{month_name(m+"-01", lang).split()[0][:3]}</b><span>{m[:4]}</span></a>' for m in later_ms)
     else:
       strip = "".join(
         f'<a class="day" href="#d{d}"><b>{datetime.fromisoformat(d).strftime("%a") if lang=="en" else ["Pzt","Sal","Çar","Per","Cum","Cmt","Paz"][datetime.fromisoformat(d).weekday()]}</b>'
@@ -248,20 +253,18 @@ def build():
     os.makedirs(OUT)
     pages = []
     wk = N["week_label"]
-    # Home
-    write("/", page("/", f"Live Football on TV Today & This Week (UK) | Premier League, EFL & Süper Lig | {SITE}",
-        f"What football is on TV in the UK this week ({wk}): kick-off times and channels for the Premier League, EFL, FA Cup, UEFA Nations League, FIFA tournaments, La Liga, Serie A, Bundesliga and MLS on Sky Sports, TNT Sports, BBC, ITV, Premier Sports, DAZN, Prime Video, Apple TV and Disney+ — plus every Turkish Süper Lig match in UK time.",
-        "Live football on TV this week",
-        f"Every confirmed televised match in the UK for {esc(wk)}, taken from the broadcasters' and leagues' own schedules — plus the full Turkish Süper Lig programme in UK time. Tap a channel to open its schedule, or see <a href=\"/upcoming/\" style=\"color:#c8f169\">all announced TV picks to {LAST_LABEL}</a>.",
-        listing(WEEK), WEEK, hreflang=[("en-GB","/"),("tr","/tr/")]))
+    # Home: every confirmed match, one page
+    write("/", page("/", f"Live Football on TV (UK) – today, this week & all fixtures to {LAST_LABEL} | Premier League, Champions League & Süper Lig | {SITE}",
+        f"What football is on TV in the UK: kick-off times and channels for every confirmed match up to {LAST_LABEL} — Premier League, EFL, FA Cup, Champions League, Europa League, Conference League, Nations League, La Liga, Serie A, Bundesliga and MLS on Sky Sports, TNT Sports, BBC, ITV, Premier Sports, DAZN, Prime Video and Apple TV — plus every Turkish Süper Lig match in UK time.",
+        "Live football on TV",
+        f"Every confirmed televised match in the UK up to {LAST_LABEL}, taken from the broadcasters' and leagues' own schedules — plus the full Turkish Süper Lig programme in UK time. Jump to a day or month below; tap a channel to open its schedule.",
+        listing(FIX, months=True), FIX, hreflang=[("en-GB","/"),("tr","/tr/")]))
     pages.append(("/", "daily", "1.0"))
-    # Upcoming (beyond this week)
-    write("/upcoming/", page("/upcoming/", f"Upcoming live football on UK TV – fixtures to {LAST_LABEL} | {SITE}",
-        f"Live football TV picks already announced for the coming weeks and months, up to {LAST_LABEL}: Premier League, EFL, Bundesliga, UEFA Nations League and more, with UK kick-off times and channels.",
-        f"Upcoming live football on TV (to {LAST_LABEL})",
-        "Every televised match broadcasters and leagues have already announced beyond this week. More are added as new TV picks are confirmed — Süper Lig kick-off times are fixed about two weeks ahead.",
-        listing(LATER, months=True, empty="No further TV picks announced yet."), LATER, banner=False))
-    pages.append(("/upcoming/", "daily", "0.9"))
+    # Old /upcoming/ address now points to the home page
+    os.makedirs(os.path.join(OUT, "upcoming"), exist_ok=True)
+    open(os.path.join(OUT, "upcoming", "index.html"), "w", encoding="utf-8").write(
+        f'<!DOCTYPE html><html><head><meta charset="utf-8"><title>{SITE}</title><link rel="canonical" href="{DOMAIN}/">'
+        f'<meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=/"></head><body><a href="/">{SITE}</a></body></html>')
     # Super Lig (EN)
     sl_intro = ("No UK broadcaster has announced Süper Lig rights for 2026/27, so there is currently no way to watch it on UK TV. "
                 "In Türkiye every match is live on beIN SPORTS and the TOD app. Below are all of this week's fixtures with UK and Turkish kick-off times.") \
