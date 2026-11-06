@@ -240,7 +240,7 @@ def page(path, title, desc, h1, intro, body, fixtures, lang="en", hreflang=None,
 <header class="top"><div class="wrap">
   <div class="brandrow">
     <a class="brand" href="{"/tr/" if lang=="tr" else "/"}"><span class="logo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2.5" y="5" width="19" height="12.5" rx="2" stroke="#E30A17" stroke-width="2"/><path d="M8 21h8" stroke="#E30A17" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="11.2" r="3" stroke="#E30A17" stroke-width="1.8"/></svg></span>
-      <span><span class="name">MAÇ SAATİ</span><small>{"Live football on TV · UK &amp; Türkiye" if lang=="en" else "Canlı maç yayınları · İngiltere &amp; Türkiye"}</small></span></a>
+      <span><span class="name">MAÇ SAATİ</span><small>{"Live football on TV · UK streams" if lang=="en" else "Canlı maç yayınları · İngiltere"}</small></span></a>
     <div class="tz" role="group" aria-label="Time zone"><button data-tz="uk" class="on">{t["uk"]}</button><button data-tz="tr">{t["tr"]}</button></div>
   </div>
   {nav(lang)}
