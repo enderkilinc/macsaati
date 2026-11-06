@@ -75,3 +75,20 @@ footer{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--muted);f
 .srclist a{color:var(--pitch);font-weight:600}.small{margin-top:14px!important}
 .hidden{display:none!important}
 @media (max-width:680px){.row{grid-template-columns:58px 1fr;gap:4px 12px}.chs{grid-column:2;justify-content:flex-start;margin-top:4px}.brand .name{font-size:22px}.hero h1{font-size:25px}.tz button{padding:6px 9px;font-size:12px}}
+
+details.grp>summary{list-style:none;cursor:pointer;user-select:none;border-radius:8px}
+details.grp>summary::-webkit-details-marker{display:none}
+details.grp>summary:hover h3{text-decoration:underline}
+.arrow{width:18px;height:18px;border-radius:5px;background:#e7ebe4;display:inline-grid;place-items:center;flex:0 0 auto;transition:transform .15s}
+.arrow::before{content:"";width:6px;height:6px;border-right:2px solid var(--pitch);border-bottom:2px solid var(--pitch);transform:rotate(45deg) translate(-1px,-1px)}
+details.grp:not([open])>summary .arrow{transform:rotate(-90deg)}
+details.grp:not([open]){margin-bottom:6px}
+details.grp:not([open])>summary{background:#fff;border:1px solid var(--line);padding:8px 10px}
+.grp.slg .grphead::before{display:none}
+.grp.slg .arrow{background:var(--red-soft)}
+.month{font:700 26px "Archivo Narrow",sans-serif;margin:30px 0 0;padding-top:6px;border-top:3px solid var(--pitch);scroll-margin-top:70px}
+.cx{display:flex;gap:6px;margin-left:auto}
+.cx button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 12px;font:600 12.5px Archivo,sans-serif;cursor:pointer;color:var(--ink)}
+.cx button:hover{border-color:var(--pitch)}
+.controls.slim .ctl{padding:8px 18px}
+.day.mon span{font-size:13px;color:#a9c9bc}

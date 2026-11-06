@@ -24,6 +24,30 @@
     else if (now >= k + 115*60000){ st.className = "tag ft"; st.textContent = lang==="tr" ? "Oynandı" : "Played"; r.classList.add("past"); }
   });
 
+  // collapsible competition groups (remembered per viewer)
+  var collapsed = store.get("collapsed", {});
+  var groups = document.querySelectorAll("details.grp");
+  groups.forEach(function(g){
+    if (collapsed[g.dataset.comp]) g.removeAttribute("open");
+    g.addEventListener("toggle", function(){
+      if (g._sync) return;
+      collapsed[g.dataset.comp] = !g.open;
+      if (!collapsed[g.dataset.comp]) delete collapsed[g.dataset.comp];
+      store.set("collapsed", collapsed);
+      // keep every group of the same competition in step
+      groups.forEach(function(o){ if (o !== g && o.dataset.comp === g.dataset.comp && o.open !== g.open){ o._sync = true; o.open = g.open; setTimeout(function(){ o._sync = false; }, 0); } });
+    });
+  });
+  function setAll(open){
+    groups.forEach(function(g){ g._sync = true; g.open = open; setTimeout(function(){ g._sync = false; }, 0); });
+    collapsed = {};
+    if (!open) groups.forEach(function(g){ collapsed[g.dataset.comp] = true; });
+    store.set("collapsed", collapsed);
+  }
+  var ca = document.getElementById("collapseAll"), ea = document.getElementById("expandAll");
+  if (ca) ca.addEventListener("click", function(){ setAll(false); });
+  if (ea) ea.addEventListener("click", function(){ setAll(true); });
+
   // filters (only on pages with controls)
   var q = document.getElementById("q"), comp = document.getElementById("comp"),
       turk = document.getElementById("turkOnly"), fta = document.getElementById("ftaOnly");
@@ -41,8 +65,14 @@
           r.classList.toggle("hidden", !ok); if (ok) anyGrp = true;
         });
         g.classList.toggle("hidden", !anyGrp); if (anyGrp) anyDay = true;
+        if (anyGrp && (qs || c !== "all" || t || f)) { g._sync = true; g.open = true; setTimeout(function(){ g._sync = false; }, 0); }
       });
       sec.classList.toggle("hidden", !anyDay);
+    });
+    document.querySelectorAll("h2.month").forEach(function(m){
+      var el = m.nextElementSibling, any = false;
+      while (el && !el.matches("h2.month")) { if (el.matches(".day-sec:not(.hidden)")) any = true; el = el.nextElementSibling; }
+      m.classList.toggle("hidden", !any);
     });
   }
   [q, comp, turk, fta].forEach(function(el){ el.addEventListener(el === q ? "input" : "change", apply); });

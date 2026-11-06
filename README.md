@@ -5,7 +5,9 @@ Live football on UK TV plus the Turkish Süper Lig, in UK and Turkish time.
 - `data/fixtures.json` — this week's fixtures. Each match is listed only when a broadcaster's or organiser's own page confirms it (`source` key → `sources`).
 - `data/notes.json` — site settings and the weekly Süper Lig banner text (EN/TR).
 - `src/style.css`, `src/app.js` — shared styles and the small script for filters and the UK/TSİ time toggle.
-- `build.py` — generates the static site into `docs/` (home, Süper Lig page, Turkish page, Türkiye page, one page per club, sitemap, robots, CNAME).
+- `build.py` — generates the static site into `docs/`: home (next 7 days from `generated`), `/upcoming/` (every announced TV pick after that, by month), Süper Lig page, Turkish page, Türkiye page, one page per club, sitemap, robots, CNAME.
+- Each day is grouped by competition (collapsible; viewers' collapsed groups are remembered in their browser).
+- `data/fixtures.json` is a rolling list: past dates are dropped each week and newly announced TV picks are added as far ahead as broadcasters/leagues have announced them.
 
 ```
 python3 build.py

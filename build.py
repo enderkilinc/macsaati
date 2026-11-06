@@ -30,6 +30,12 @@ for f in FIX:
     f["tr_next"] = tr.date() != dt.date()
     f["turk"] = f["comp"] == "Süper Lig" or "Türkiye" in (f["home"], f["away"])
 
+GEN = datetime.fromisoformat(D["generated"]).date()
+WEEK_END = GEN + timedelta(days=6)
+WEEK = [f for f in FIX if f["dt"].date() <= WEEK_END]
+LATER = [f for f in FIX if f["dt"].date() > WEEK_END]
+_last = datetime.fromisoformat(FIX[-1]["date"]) if FIX else datetime.now()
+LAST_LABEL = f"{_last.day} {_last.strftime('%b %Y')}"
 SUPERLIG = [f for f in FIX if f["comp"] == "Süper Lig"]
 CLUBS = sorted({t for f in SUPERLIG for t in (f["home"], f["away"])}, key=lambda s: s.translate(TRMAP))
 BIG = ["Galatasaray", "Fenerbahçe", "Beşiktaş", "Trabzonspor"]
@@ -92,12 +98,21 @@ def row(f, lang="en"):
             f'<div class="comp">{" ".join(tags)} <span class="st"></span> {srcl}</div></div>'
             f'<div class="chs">{"".join(chs)}</div></div>')
 
-def listing(fixtures, lang="en", empty=None):
+MONTHS_EN = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+MONTHS_TR = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"]
+def month_name(d, lang="en"):
+    dt = datetime.fromisoformat(d)
+    return f'{(MONTHS_TR if lang=="tr" else MONTHS_EN)[dt.month-1]} {dt.year}'
+
+def listing(fixtures, lang="en", empty=None, months=False):
     if not fixtures:
         return f'<div class="list"><div class="empty">{esc(empty or "No televised matches this week.")}</div></div>'
-    out, days = [], {}
+    out, days, cur_m = [], {}, None
     for f in fixtures: days.setdefault(f["date"], []).append(f)
     for d, rows in days.items():
+        if months and d[:7] != cur_m:
+            cur_m = d[:7]
+            out.append(f'<h2 class="month" id="m{cur_m}">{month_name(d, lang)}</h2>')
         n = len(rows)
         cnt = (f"{n} match{'es' if n>1 else ''}") if lang=="en" else f"{n} maç"
         comps = {}
@@ -108,9 +123,9 @@ def listing(fixtures, lang="en", empty=None):
             badge = COMP_BADGE.get(COMP_GROUP.get(c, ""), "")
             cls = " slg" if c == "Süper Lig" else (" intl" if badge else "")
             m = len(fx)
-            blocks.append(f'<div class="grp{cls}" data-comp="{esc(c)}"><div class="grphead"><h3>{esc(c)}</h3>'
-                          f'{f"<span class=gb>{badge}</span>" if badge else ""}<span class="gn">{m}</span></div>'
-                          f'<div class="list">{"".join(row(f, lang) for f in fx)}</div></div>')
+            blocks.append(f'<details class="grp{cls}" data-comp="{esc(c)}" open><summary class="grphead"><span class="arrow" aria-hidden="true"></span><h3>{esc(c)}</h3>'
+                          f'{f"<span class=gb>{badge}</span>" if badge else ""}<span class="gn">{m}</span></summary>'
+                          f'<div class="list">{"".join(row(f, lang) for f in fx)}</div></details>')
         out.append(f'<section class="day-sec" id="d{d}"><div class="dayhead"><h2>{fmt_day(d, lang)}</h2><span>{cnt}</span></div>'
                    f'{"".join(blocks)}</section>')
     return "".join(out)
@@ -137,9 +152,9 @@ JS = open(os.path.join(ROOT, "src", "app.js"), encoding="utf-8").read()
 def nav(lang):
     if lang == "tr":
         return ('<nav class="links"><a href="/tr/">Süper Lig (TR)</a><a href="/">Tüm maçlar</a>'
-                '<a href="/super-lig-on-tv-uk/">Super Lig on UK TV</a><a href="/turkey-on-tv/">Türkiye</a></nav>')
-    return ('<nav class="links"><a href="/">All matches</a><a href="/super-lig-on-tv-uk/">Süper Lig on TV</a>'
-            '<a href="/turkey-on-tv/">Türkiye</a><a href="/tr/">Türkçe</a></nav>')
+                '<a href="/upcoming/">İleri tarihler</a><a href="/super-lig-on-tv-uk/">Super Lig on UK TV</a><a href="/turkey-on-tv/">Türkiye</a></nav>')
+    return ('<nav class="links"><a href="/">This week</a><a href="/upcoming/">Upcoming (to {last})</a><a href="/super-lig-on-tv-uk/">Süper Lig on TV</a>'
+            '<a href="/turkey-on-tv/">Türkiye</a><a href="/tr/">Türkçe</a></nav>').replace("{last}", LAST_LABEL)
 
 def page(path, title, desc, h1, intro, body, fixtures, lang="en", hreflang=None, controls=True, banner=True):
     url = DOMAIN + path
@@ -147,7 +162,11 @@ def page(path, title, desc, h1, intro, body, fixtures, lang="en", hreflang=None,
     if hreflang:
         alt = "".join(f'<link rel="alternate" hreflang="{l}" href="{DOMAIN}{p}">' for l, p in hreflang)
     days = sorted({f["date"] for f in fixtures})
-    strip = "".join(
+    if len(days) > 10:
+        ms = sorted({d[:7] for d in days})
+        strip = "".join(f'<a class="day mon" href="#m{m}"><b>{month_name(m+"-01", lang).split()[0][:3]}</b><span>{m[2:4]}</span></a>' for m in ms)
+    else:
+      strip = "".join(
         f'<a class="day" href="#d{d}"><b>{datetime.fromisoformat(d).strftime("%a") if lang=="en" else ["Pzt","Sal","Çar","Per","Cum","Cmt","Paz"][datetime.fromisoformat(d).weekday()]}</b>'
         f'<span>{datetime.fromisoformat(d).day}{"<i class=tr-dot></i>" if any(f["turk"] and f["date"]==d for f in fixtures) else ""}</span></a>'
         for d in days)
@@ -163,7 +182,8 @@ def page(path, title, desc, h1, intro, body, fixtures, lang="en", hreflang=None,
     ctl = (f'<div class="controls"><div class="wrap ctl"><label class="search"><input id="q" type="search" placeholder="{t["search"]}" autocomplete="off" aria-label="Search"></label>'
            f'<select id="comp" aria-label="Competition">{opts}</select>'
            f'<label class="toggle tr"><input type="checkbox" id="turkOnly"> {t["turk"]}</label>'
-           f'<label class="toggle"><input type="checkbox" id="ftaOnly"> {t["fta"]}</label></div></div>') if controls else ""
+           f'<label class="toggle"><input type="checkbox" id="ftaOnly"> {t["fta"]}</label>'
+           f'<span class="cx"><button type="button" id="collapseAll">{"Collapse all" if lang=="en" else "Tümünü kapat"}</button><button type="button" id="expandAll">{"Expand all" if lang=="en" else "Tümünü aç"}</button></span></div></div>') if controls else '<div class="controls slim"><div class="wrap ctl"><span class="cx"><button type="button" id="collapseAll">' + ("Collapse all" if lang=="en" else "Tümünü kapat") + '</button><button type="button" id="expandAll">' + ("Expand all" if lang=="en" else "Tümünü aç") + '</button></span></div></div>'
     band = ""
     if banner and N.get("banner_title"):
         band = (f'<section class="sl"><div><h2><span class="tag slg">Süper Lig</span> {esc(N.get("banner_title_tr", N["banner_title"]) if lang=="tr" else N["banner_title"])}</h2>'
@@ -226,9 +246,16 @@ def build():
     write("/", page("/", f"Live Football on TV Today & This Week (UK) | Premier League, EFL & Süper Lig | {SITE}",
         f"What football is on TV in the UK this week ({wk}): kick-off times and channels for the Premier League, EFL, FA Cup, UEFA Nations League, Women's Champions League, FIFA tournaments, La Liga, Serie A, Bundesliga and MLS on Sky Sports, TNT Sports, BBC, ITV, Premier Sports, DAZN, Prime Video, Apple TV and Disney+ — plus every Turkish Süper Lig match in UK time.",
         "Live football on TV this week",
-        f"Every confirmed televised match in the UK for {esc(wk)}, taken from the broadcasters' and leagues' own schedules — plus the full Turkish Süper Lig programme in UK time. Tap a channel to open its schedule.",
-        listing(FIX), FIX, hreflang=[("en-GB","/"),("tr","/tr/")]))
+        f"Every confirmed televised match in the UK for {esc(wk)}, taken from the broadcasters' and leagues' own schedules — plus the full Turkish Süper Lig programme in UK time. Tap a channel to open its schedule, or see <a href=\"/upcoming/\" style=\"color:#c8f169\">all announced TV picks to {LAST_LABEL}</a>.",
+        listing(WEEK), WEEK, hreflang=[("en-GB","/"),("tr","/tr/")]))
     pages.append(("/", "daily", "1.0"))
+    # Upcoming (beyond this week)
+    write("/upcoming/", page("/upcoming/", f"Upcoming live football on UK TV – fixtures to {LAST_LABEL} | {SITE}",
+        f"Live football TV picks already announced for the coming weeks and months, up to {LAST_LABEL}: Premier League, EFL, Bundesliga, UEFA Nations League, Women's Champions League and more, with UK kick-off times and channels.",
+        f"Upcoming live football on TV (to {LAST_LABEL})",
+        "Every televised match broadcasters and leagues have already announced beyond this week. More are added as new TV picks are confirmed — Süper Lig kick-off times are fixed about two weeks ahead.",
+        listing(LATER, months=True, empty="No further TV picks announced yet."), LATER, banner=False))
+    pages.append(("/upcoming/", "daily", "0.9"))
     # Super Lig (EN)
     sl_intro = ("No UK broadcaster has announced Süper Lig rights for 2026/27, so there is currently no way to watch it on UK TV. "
                 "In Türkiye every match is live on beIN SPORTS and the TOD app. Below are all of this week's fixtures with UK and Turkish kick-off times.") \
