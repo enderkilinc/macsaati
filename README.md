@@ -17,3 +17,6 @@ GitHub Pages serves the `docs/` folder on `main`. Listings are refreshed every F
 
 ## Live score links
 While a match is live (kick-off to +115 min) the status tag becomes a "Live score ↗" link to an official page (TNT Sports for the Süper Lig, bundesliga.com, mlssoccer.com, otherwise Sky Sports scores for that date). After full time it becomes "Result ↗". See `live_url()` in build.py.
+
+## IndexNow
+`src/static/<key>.txt` is the IndexNow key file (published at the site root). `.github/workflows/indexnow.yml` pings IndexNow with every sitemap URL after each push that changes `docs/`, so Bing re-crawls new fixtures quickly. It can also be run by hand from the Actions tab.

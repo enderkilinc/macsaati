@@ -1,0 +1,24 @@
+name: IndexNow ping
+# After each change to the published site, tell Bing (and other IndexNow engines)
+# which pages were updated, so new fixtures are re-crawled quickly.
+on:
+  push:
+    branches: [main]
+    paths: ["docs/**"]
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Wait for GitHub Pages to publish
+        run: sleep 90
+      - name: Send sitemap URLs to IndexNow
+        run: |
+          KEY=$(basename $(ls src/static/*.txt) .txt)
+          URLS=$(grep -o '<loc>[^<]*</loc>' docs/sitemap.xml | sed 's/<[^>]*>//g' | jq -R . | jq -s .)
+          jq -n --arg key "$KEY" --argjson urls "$URLS" \
+            '{host:"macsaati.co.uk",key:$key,keyLocation:("https://macsaati.co.uk/"+$key+".txt"),urlList:$urls}' > body.json
+          cat body.json
+          curl -sS -o /dev/null -w "IndexNow HTTP %{http_code}\n" -X POST https://api.indexnow.org/indexnow \
+            -H "Content-Type: application/json; charset=utf-8" --data @body.json

@@ -266,6 +266,8 @@ def build():
     if os.path.exists(OUT): shutil.rmtree(OUT)
     os.makedirs(OUT)
     shutil.copytree(os.path.join(ROOT, "src", "flagsvg"), os.path.join(OUT, "flags"))
+    for fn in os.listdir(os.path.join(ROOT, "src", "static")):   # IndexNow key file etc.
+        shutil.copy(os.path.join(ROOT, "src", "static", fn), OUT)
     pages = []
     wk = N["week_label"]
     # Home: every confirmed match, one page
