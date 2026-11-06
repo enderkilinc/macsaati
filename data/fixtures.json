@@ -1,0 +1,799 @@
+{
+ "generated": "2026-11-06",
+ "sources": {
+  "sky": {
+   "name": "Sky Sports – Football on Sky",
+   "url": "https://www.skysports.com/watch/football-on-sky"
+  },
+  "eflt": {
+   "name": "Sky Sports – EFL Trophy fixtures",
+   "url": "https://www.skysports.com/efl-trophy-scores-fixtures"
+  },
+  "tnt": {
+   "name": "TNT Sports – football schedule",
+   "url": "https://www.tntsports.co.uk/football/"
+  },
+  "fa": {
+   "name": "The FA – FA Cup first round TV picks",
+   "url": "https://www.thefa.com/news/2026/oct/22/emirates-fa-cup-first-round-tv-picks-20262210"
+  },
+  "premier": {
+   "name": "Premier Sports – upcoming live events",
+   "url": "https://www.premiersports.com/gb/welcome-ios"
+  },
+  "dazn": {
+   "name": "DAZN – Serie A",
+   "url": "https://www.dazn.com/en-GB"
+  },
+  "disney": {
+   "name": "Disney+ – Women's Champions League",
+   "url": "https://www.disneyplus.com/en-gb"
+  },
+  "itv": {
+   "name": "ITVX – live sport",
+   "url": "https://www.itv.com/watch"
+  },
+  "bbc": {
+   "name": "BBC Sport – football",
+   "url": "https://www.bbc.co.uk/sport/football"
+  },
+  "tff": {
+   "name": "beIN SPORTS Türkiye – Süper Lig fikstür",
+   "url": "https://www.beinsports.com.tr/lig/super-lig/fikstur"
+  }
+ },
+ "fixtures": [
+  {
+   "date": "2026-11-06",
+   "uk": "17:00",
+   "home": "Gaziantep FK",
+   "away": "Kasımpaşa",
+   "comp": "Süper Lig",
+   "channels": [
+    "No UK TV",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff"
+  },
+  {
+   "date": "2026-11-06",
+   "uk": "19:30",
+   "home": "Castellón",
+   "away": "Eibar",
+   "comp": "La Liga 2",
+   "channels": [
+    "Premier Sports"
+   ],
+   "source": "premier"
+  },
+  {
+   "date": "2026-11-06",
+   "uk": "19:45",
+   "home": "Oxford City",
+   "away": "Leicester City",
+   "comp": "FA Cup",
+   "channels": [
+    "TNT Sports 1",
+    "HBO Max"
+   ],
+   "source": "fa"
+  },
+  {
+   "date": "2026-11-06",
+   "uk": "20:00",
+   "home": "Sevilla",
+   "away": "Alavés",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports"
+   ],
+   "source": "premier"
+  },
+  {
+   "date": "2026-11-06",
+   "uk": "20:00",
+   "home": "Derby County",
+   "away": "Bolton Wanderers",
+   "comp": "Championship",
+   "channels": [
+    "Sky Sports Football"
+   ],
+   "source": "sky"
+  },
+  {
+   "date": "2026-11-06",
+   "uk": "20:00",
+   "home": "Everton",
+   "away": "Coventry City",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports Main Event",
+    "Sky Sports Premier League"
+   ],
+   "source": "sky"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "10:30",
+   "home": "Eyüpspor",
+   "away": "Kocaelispor",
+   "comp": "Süper Lig",
+   "channels": [
+    "No UK TV",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "12:30",
+   "home": "Bristol City",
+   "away": "Norwich City",
+   "comp": "Championship",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "sky"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "12:30",
+   "home": "Portsmouth",
+   "away": "Stoke City",
+   "comp": "Championship",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "sky"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "12:30",
+   "home": "Wrexham",
+   "away": "Wolves",
+   "comp": "Championship",
+   "channels": [
+    "Sky Sports Main Event",
+    "Sky Sports Football"
+   ],
+   "source": "sky"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "12:30",
+   "home": "Leeds United",
+   "away": "Tottenham Hotspur",
+   "comp": "Premier League",
+   "channels": [
+    "TNT Sports 1",
+    "HBO Max"
+   ],
+   "source": "tnt"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "12:45",
+   "home": "Chelsea Women",
+   "away": "Everton Women",
+   "comp": "WSL",
+   "channels": [
+    "Sky Sports Premier League"
+   ],
+   "source": "sky"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "12:45",
+   "home": "Manchester City Women",
+   "away": "West Ham United Women",
+   "comp": "WSL",
+   "channels": [
+    "Sky Sports Mix"
+   ],
+   "source": "sky"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "13:00",
+   "home": "Samsunspor",
+   "away": "Konyaspor",
+   "comp": "Süper Lig",
+   "channels": [
+    "No UK TV",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "13:00",
+   "home": "Málaga",
+   "away": "Racing Santander",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports"
+   ],
+   "source": "premier"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "15:15",
+   "home": "Espanyol",
+   "away": "Deportivo La Coruña",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports"
+   ],
+   "source": "premier"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "16:00",
+   "home": "Göztepe",
+   "away": "Başakşehir",
+   "comp": "Süper Lig",
+   "channels": [
+    "No UK TV",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "16:00",
+   "home": "Galatasaray",
+   "away": "Amedspor",
+   "comp": "Süper Lig",
+   "channels": [
+    "No UK TV",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "17:30",
+   "home": "Altrincham",
+   "away": "Notts County",
+   "comp": "FA Cup",
+   "channels": [
+    "BBC Two",
+    "BBC iPlayer",
+    "TNT Sports 1",
+    "HBO Max"
+   ],
+   "source": "fa"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "17:30",
+   "home": "Osasuna",
+   "away": "Athletic Bilbao",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports"
+   ],
+   "source": "premier"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "17:30",
+   "home": "Nottingham Forest",
+   "away": "Manchester City",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports Main Event",
+    "Sky Sports Premier League"
+   ],
+   "source": "sky"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "17:45",
+   "home": "Aberdeen",
+   "away": "Hibernian",
+   "comp": "Scottish Premiership",
+   "channels": [
+    "Premier Sports"
+   ],
+   "source": "premier"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "20:00",
+   "home": "Peterborough United",
+   "away": "Reading",
+   "comp": "FA Cup",
+   "channels": [
+    "TNT Sports 1",
+    "HBO Max"
+   ],
+   "source": "fa"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "20:00",
+   "home": "St Mirren",
+   "away": "Rangers",
+   "comp": "Scottish Premiership",
+   "channels": [
+    "Sky Sports Football"
+   ],
+   "source": "sky"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "10:30",
+   "home": "Çaykur Rizespor",
+   "away": "Erzurumspor FK",
+   "comp": "Süper Lig",
+   "channels": [
+    "No UK TV",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "12:00",
+   "home": "Stafford Rangers",
+   "away": "Grimsby Town",
+   "comp": "FA Cup",
+   "channels": [
+    "TNT Sports 1",
+    "HBO Max"
+   ],
+   "source": "fa"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "12:00",
+   "home": "Aston Villa Women",
+   "away": "Manchester United Women",
+   "comp": "WSL",
+   "channels": [
+    "Sky Sports Mix"
+   ],
+   "source": "sky"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "12:00",
+   "home": "Liverpool Women",
+   "away": "Arsenal Women",
+   "comp": "WSL",
+   "channels": [
+    "Sky Sports Football"
+   ],
+   "source": "sky"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "13:00",
+   "home": "Çorum FK",
+   "away": "Fenerbahçe",
+   "comp": "Süper Lig",
+   "channels": [
+    "No UK TV",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "14:00",
+   "home": "Brighton & Hove Albion",
+   "away": "Brentford",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "sky"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "14:00",
+   "home": "Crystal Palace",
+   "away": "Liverpool",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports Main Event"
+   ],
+   "source": "sky"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "14:00",
+   "home": "Ipswich Town",
+   "away": "AFC Bournemouth",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports Cricket"
+   ],
+   "source": "sky"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "14:00",
+   "home": "Sunderland",
+   "away": "Chelsea",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports Premier League"
+   ],
+   "source": "sky"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "14:00",
+   "home": "Crystal Palace Women",
+   "away": "Charlton Athletic Women",
+   "comp": "WSL",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "sky"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "14:00",
+   "home": "Tottenham Hotspur Women",
+   "away": "Brighton & Hove Albion Women",
+   "comp": "WSL",
+   "channels": [
+    "Sky Sports Mix"
+   ],
+   "source": "sky"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "14:15",
+   "home": "Cray Wanderers",
+   "away": "Stockport County",
+   "comp": "FA Cup",
+   "channels": [
+    "BBC Two",
+    "BBC iPlayer",
+    "TNT Sports 3",
+    "HBO Max"
+   ],
+   "source": "fa"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "15:00",
+   "home": "Wimborne Town",
+   "away": "Crawley Town",
+   "comp": "FA Cup",
+   "channels": [
+    "TNT Sports 1",
+    "HBO Max"
+   ],
+   "source": "fa"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "15:30",
+   "home": "Alanyaspor",
+   "away": "Trabzonspor",
+   "comp": "Süper Lig",
+   "channels": [
+    "No UK TV",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "16:30",
+   "home": "Manchester United",
+   "away": "Aston Villa",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports Main Event",
+    "Sky Sports Premier League"
+   ],
+   "source": "sky"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "17:00",
+   "home": "Inter Milan",
+   "away": "Como",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "dazn"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "17:15",
+   "home": "Oldham Athletic",
+   "away": "Sheffield Wednesday",
+   "comp": "FA Cup",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "tnt"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "18:00",
+   "home": "Beşiktaş",
+   "away": "Gençlerbirliği",
+   "comp": "Süper Lig",
+   "channels": [
+    "No UK TV",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "19:45",
+   "home": "Fiorentina",
+   "away": "Juventus",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "dazn"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "20:00",
+   "home": "Atlético Madrid",
+   "away": "Barcelona",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports"
+   ],
+   "source": "premier"
+  },
+  {
+   "date": "2026-11-09",
+   "uk": "19:30",
+   "home": "Plymouth Parkway",
+   "away": "Berkhamsted",
+   "comp": "FA Cup",
+   "channels": [
+    "TNT Sports 1",
+    "HBO Max"
+   ],
+   "source": "fa"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "19:00",
+   "home": "Barnet",
+   "away": "Leyton Orient",
+   "comp": "EFL Trophy",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "eflt"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "19:00",
+   "home": "Bristol Rovers",
+   "away": "Reading",
+   "comp": "EFL Trophy",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "eflt"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "19:00",
+   "home": "Burton Albion",
+   "away": "Notts County",
+   "comp": "EFL Trophy",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "eflt"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "19:00",
+   "home": "Crewe Alexandra",
+   "away": "Wigan Athletic",
+   "comp": "EFL Trophy",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "eflt"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "19:00",
+   "home": "Grimsby Town",
+   "away": "Nottingham Forest U21",
+   "comp": "EFL Trophy",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "eflt"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "19:00",
+   "home": "Huddersfield Town",
+   "away": "Liverpool U21",
+   "comp": "EFL Trophy",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "eflt"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "19:00",
+   "home": "Leicester City",
+   "away": "Walsall",
+   "comp": "EFL Trophy",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "eflt"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "19:00",
+   "home": "Mansfield Town",
+   "away": "Chesterfield",
+   "comp": "EFL Trophy",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "eflt"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "19:00",
+   "home": "Northampton Town",
+   "away": "Gillingham",
+   "comp": "EFL Trophy",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "eflt"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "19:00",
+   "home": "Oxford United",
+   "away": "Cheltenham Town",
+   "comp": "EFL Trophy",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "eflt"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "19:00",
+   "home": "Plymouth Argyle",
+   "away": "Swindon Town",
+   "comp": "EFL Trophy",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "eflt"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "19:00",
+   "home": "Stevenage",
+   "away": "Fulham U21",
+   "comp": "EFL Trophy",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "eflt"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "19:00",
+   "home": "Stockport County",
+   "away": "Tranmere Rovers",
+   "comp": "EFL Trophy",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "eflt"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "19:30",
+   "home": "Bradford City",
+   "away": "York City",
+   "comp": "EFL Trophy",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "eflt"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "19:30",
+   "home": "Bromley",
+   "away": "MK Dons",
+   "comp": "EFL Trophy",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "eflt"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "19:30",
+   "home": "Crawley Town",
+   "away": "Brentford U21",
+   "comp": "EFL Trophy",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "eflt"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "19:45",
+   "home": "Colchester United",
+   "away": "Ipswich Town U21",
+   "comp": "EFL Trophy",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "eflt"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "20:00",
+   "home": "PSG Women",
+   "away": "Bayern Munich Women",
+   "comp": "Women's Champions League",
+   "channels": [
+    "Disney+"
+   ],
+   "source": "disney"
+  },
+  {
+   "date": "2026-11-12",
+   "uk": "17:00",
+   "home": "Türkiye",
+   "away": "Belgium",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "UK TV TBC",
+    "ATV (TR)"
+   ],
+   "source": "tff"
+  },
+  {
+   "date": "2026-11-12",
+   "uk": "19:45",
+   "home": "England",
+   "away": "Croatia",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "ITV1",
+    "ITVX"
+   ],
+   "source": "itv"
+  }
+ ]
+}
