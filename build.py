@@ -320,7 +320,7 @@ def build():
     sm.append("</urlset>")
     open(os.path.join(OUT, "sitemap.xml"), "w").write("\n".join(sm))
     open(os.path.join(OUT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n")
-    open(os.path.join(OUT, "CNAME"), "w").write(DOMAIN.split("//")[1] + "\n")
+    open(os.path.join(OUT, "CNAME"), "w").write(DOMAIN.split("//")[1])
     open(os.path.join(OUT, ".nojekyll"), "w").write("")
     print(f"Built {len(pages)} pages, {len(FIX)} fixtures -> {OUT}")
 
