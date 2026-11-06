@@ -15,7 +15,9 @@ N = json.load(open(os.path.join(ROOT, "data", "notes.json"), encoding="utf-8"))
 DOMAIN = N["domain"].rstrip("/")
 SITE = N["site_name"]
 SOURCES = D["sources"]
-FIX = sorted(D["fixtures"], key=lambda f: (f["date"], f["uk"], f["home"]))
+EXCLUDED = set(N.get("excluded_competitions", []))
+FIX = sorted((f for f in D["fixtures"] if f["comp"] not in EXCLUDED and " Women" not in f["home"]),
+             key=lambda f: (f["date"], f["uk"], f["home"]))
 
 esc = lambda s: html.escape(str(s), quote=True)
 TRMAP = str.maketrans("çğıöşüÇĞİÖŞÜâÂ", "cgiosuCGIOSUaA")
@@ -189,7 +191,8 @@ def page(path, title, desc, h1, intro, body, fixtures, lang="en", hreflang=None,
         band = (f'<section class="sl"><div><h2><span class="tag slg">Süper Lig</span> {esc(N.get("banner_title_tr", N["banner_title"]) if lang=="tr" else N["banner_title"])}</h2>'
                 f'<p>{esc(N["banner_text_tr"] if lang=="tr" else N["banner_text"])}</p></div>'
                 f'<a class="btn" href="{"/tr/" if lang=="tr" else "/super-lig-on-tv-uk/"}">{"Süper Lig programı" if lang=="tr" else "Süper Lig on TV"}</a></section>')
-    srcs = "".join(f'<li><a href="{esc(s["url"])}" target="_blank" rel="noopener nofollow">{esc(s["name"])}</a></li>' for s in SOURCES.values())
+    used = {f["source"] for f in FIX} | {k for k in ("amazon", "apple", "bbc", "itv", "tnt", "sky") if k in SOURCES}
+    srcs = "".join(f'<li><a href="{esc(s["url"])}" target="_blank" rel="noopener nofollow">{esc(s["name"])}</a></li>' for k, s in SOURCES.items() if k in used)
     foot_en = (f'<p><b>Times</b> are UK time by default; switch to TSİ for Turkish time. Kick-offs and channels can change — always check with the broadcaster.</p>'
                f'<p><b>How this guide is built:</b> every match is listed only once it appears on a broadcaster\'s, league\'s or organiser\'s own page; each row shows its source and every channel links to that broadcaster. Updated every Friday. Last update: {esc(D["generated"])}.</p>'
                f'<p><b>Süper Lig in the UK:</b> {"no UK TV deal has been announced for 2026/27, so Süper Lig matches show the Turkish broadcasters." if not N.get("uk_superlig_rights") else "UK channels shown where confirmed."}</p>')
@@ -244,14 +247,14 @@ def build():
     wk = N["week_label"]
     # Home
     write("/", page("/", f"Live Football on TV Today & This Week (UK) | Premier League, EFL & Süper Lig | {SITE}",
-        f"What football is on TV in the UK this week ({wk}): kick-off times and channels for the Premier League, EFL, FA Cup, UEFA Nations League, Women's Champions League, FIFA tournaments, La Liga, Serie A, Bundesliga and MLS on Sky Sports, TNT Sports, BBC, ITV, Premier Sports, DAZN, Prime Video, Apple TV and Disney+ — plus every Turkish Süper Lig match in UK time.",
+        f"What football is on TV in the UK this week ({wk}): kick-off times and channels for the Premier League, EFL, FA Cup, UEFA Nations League, FIFA tournaments, La Liga, Serie A, Bundesliga and MLS on Sky Sports, TNT Sports, BBC, ITV, Premier Sports, DAZN, Prime Video, Apple TV and Disney+ — plus every Turkish Süper Lig match in UK time.",
         "Live football on TV this week",
         f"Every confirmed televised match in the UK for {esc(wk)}, taken from the broadcasters' and leagues' own schedules — plus the full Turkish Süper Lig programme in UK time. Tap a channel to open its schedule, or see <a href=\"/upcoming/\" style=\"color:#c8f169\">all announced TV picks to {LAST_LABEL}</a>.",
         listing(WEEK), WEEK, hreflang=[("en-GB","/"),("tr","/tr/")]))
     pages.append(("/", "daily", "1.0"))
     # Upcoming (beyond this week)
     write("/upcoming/", page("/upcoming/", f"Upcoming live football on UK TV – fixtures to {LAST_LABEL} | {SITE}",
-        f"Live football TV picks already announced for the coming weeks and months, up to {LAST_LABEL}: Premier League, EFL, Bundesliga, UEFA Nations League, Women's Champions League and more, with UK kick-off times and channels.",
+        f"Live football TV picks already announced for the coming weeks and months, up to {LAST_LABEL}: Premier League, EFL, Bundesliga, UEFA Nations League and more, with UK kick-off times and channels.",
         f"Upcoming live football on TV (to {LAST_LABEL})",
         "Every televised match broadcasters and leagues have already announced beyond this week. More are added as new TV picks are confirmed — Süper Lig kick-off times are fixed about two weeks ahead.",
         listing(LATER, months=True, empty="No further TV picks announced yet."), LATER, banner=False))

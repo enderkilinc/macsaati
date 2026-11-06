@@ -7,5 +7,10 @@
   "banner_text": "Galatasaray v Amedspor (top two meet), Çorum FK v Fenerbahçe, Alanyaspor v Trabzonspor and Beşiktaş v Gençlerbirliği. No UK broadcaster is confirmed for 2026/27 — in Türkiye every match is live on beIN SPORTS and TOD. Then it's the international break: Türkiye v Belgium on Thursday, live on Prime Video in the UK.",
   "banner_text_tr": "Galatasaray–Amedspor (ilk iki takımın maçı), Çorum FK–Fenerbahçe, Alanyaspor–Trabzonspor ve Beşiktaş–Gençlerbirliği. 2026/27 için İngiltere'de yayıncı açıklanmadı — Türkiye'de tüm maçlar beIN SPORTS ve TOD'da. Ardından milli ara: Türkiye–Belçika perşembe günü, İngiltere'de Prime Video'da canlı.",
   "uk_superlig_rights": false,
-  "banner_title_tr": "Süper Lig 11. hafta · 6–8 Kasım"
+  "banner_title_tr": "Süper Lig 11. hafta · 6–8 Kasım",
+  "excluded_competitions": [
+    "WSL",
+    "Women's Champions League",
+    "FIFA U-17 Women's World Cup"
+  ]
 }
