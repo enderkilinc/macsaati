@@ -99,7 +99,7 @@ def row(f, lang="en"):
     srcl = (f'<a class="src" href="{esc(src["url"])}" target="_blank" rel="noopener nofollow">{"Source" if lang=="en" else "Kaynak"}: {esc(src["name"].split(" – ")[0])}</a>') if src else ""
     search = " ".join([f["home"], f["away"], f["comp"], *f["channels"]]).translate(TRMAP).lower()
     return (f'<div class="row{" turk" if f["turk"] else ""}" data-iso="{f["iso"]}" data-comp="{esc(f["comp"])}" '
-            f'data-turk="{int(f["turk"])}" data-fta="{int(any(FTA.search(c) for c in f["channels"]))}" data-q="{esc(search)}">'
+            f'data-turk="{int(f["turk"])}" data-live="{esc(live_url(f))}" data-fta="{int(any(FTA.search(c) for c in f["channels"]))}" data-q="{esc(search)}">'
             f'<div class="time"><span class="uk">{f["uk"]}</span><span class="trt">{f["tr"]}{"<small>+1</small>" if f["tr_next"] else ""}</span></div>'
             f'<div class="fx"><div class="teams">{tname(f["home"], f["comp"])}<span class="v">v</span>{tname(f["away"], f["comp"])}</div>'
             f'<div class="comp">{" ".join(tags)} <span class="st"></span> {srcl}</div></div>'
@@ -110,6 +110,13 @@ MONTHS_TR = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağusto
 def month_name(d, lang="en"):
     dt = datetime.fromisoformat(d)
     return f'{(MONTHS_TR if lang=="tr" else MONTHS_EN)[dt.month-1]} {dt.year}'
+
+def live_url(f):
+    c = f["comp"]
+    if c == "Süper Lig": return "https://www.tntsports.co.uk/football/turkish-super-lig/calendar-results.shtml"
+    if c == "Bundesliga": return "https://www.bundesliga.com/en/bundesliga/matchday"
+    if c == "MLS": return "https://www.mlssoccer.com/competitions/mls-regular-season/2026/schedule/week-with-matches"
+    return f"https://www.skysports.com/football-scores-fixtures/{f['date']}"
 
 INTL = {"UEFA Nations League", "FIFA World Cup", "FIFA World Cup qualifiers", "European Qualifiers"}
 def tname(t, comp=""):

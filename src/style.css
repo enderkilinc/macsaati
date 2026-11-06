@@ -101,3 +101,5 @@ details.grp:not([open])>summary{background:#fff;border:1px solid var(--line);pad
 .month{border-top-color:var(--red)}
 .sl h2 .tag.slg{background:var(--red)}
 .flag.noflag{width:18px;height:12px;background:#e9e3e4}
+a.tag{text-decoration:none}a.tag.live:hover,a.tag.ft:hover{filter:brightness(.92);text-decoration:underline}
+.row.past a.tag.ft{opacity:1}

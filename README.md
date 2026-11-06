@@ -14,3 +14,6 @@ python3 build.py
 ```
 
 GitHub Pages serves the `docs/` folder on `main`. Listings are refreshed every Friday.
+
+## Live score links
+While a match is live (kick-off to +115 min) the status tag becomes a "Live score ↗" link to an official page (TNT Sports for the Süper Lig, bundesliga.com, mlssoccer.com, otherwise Sky Sports scores for that date). After full time it becomes "Result ↗". See `live_url()` in build.py.

@@ -20,8 +20,15 @@
   document.querySelectorAll(".row[data-iso]").forEach(function(r){
     var k = Date.parse(r.dataset.iso), st = r.querySelector(".st");
     if (!st) return;
-    if (now >= k && now < k + 115*60000){ st.className = "tag live"; st.textContent = lang==="tr" ? "Canlı" : "Live"; }
-    else if (now >= k + 115*60000){ st.className = "tag ft"; st.textContent = lang==="tr" ? "Oynandı" : "Played"; r.classList.add("past"); }
+    var url = r.dataset.live;
+    function linkify(cls, text){
+      var a = document.createElement(url ? "a" : "span");
+      a.className = st.className = cls; a.textContent = text;
+      if (url){ a.href = url; a.target = "_blank"; a.rel = "noopener nofollow"; a.title = lang==="tr" ? "Resmi kaynakta skoru gör" : "See the score on an official source"; }
+      st.replaceWith(a);
+    }
+    if (now >= k && now < k + 115*60000){ linkify("tag live", lang==="tr" ? "Canlı skor ↗" : "Live score ↗"); }
+    else if (now >= k + 115*60000){ linkify("tag ft", lang==="tr" ? "Sonuç ↗" : "Result ↗"); r.classList.add("past"); }
   });
 
   // collapsible competition groups (remembered per viewer)

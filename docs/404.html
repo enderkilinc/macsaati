@@ -114,6 +114,8 @@ details.grp:not([open])>summary{background:#fff;border:1px solid var(--line);pad
 .month{border-top-color:var(--red)}
 .sl h2 .tag.slg{background:var(--red)}
 .flag.noflag{width:18px;height:12px;background:#e9e3e4}
+a.tag{text-decoration:none}a.tag.live:hover,a.tag.ft:hover{filter:brightness(.92);text-decoration:underline}
+.row.past a.tag.ft{opacity:1}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "name": "Page not found | Maç Saati", "url": "https://macsaati.co.uk/404.html"}]}</script>
 </head>
@@ -157,8 +159,15 @@ details.grp:not([open])>summary{background:#fff;border:1px solid var(--line);pad
   document.querySelectorAll(".row[data-iso]").forEach(function(r){
     var k = Date.parse(r.dataset.iso), st = r.querySelector(".st");
     if (!st) return;
-    if (now >= k && now < k + 115*60000){ st.className = "tag live"; st.textContent = lang==="tr" ? "Canlı" : "Live"; }
-    else if (now >= k + 115*60000){ st.className = "tag ft"; st.textContent = lang==="tr" ? "Oynandı" : "Played"; r.classList.add("past"); }
+    var url = r.dataset.live;
+    function linkify(cls, text){
+      var a = document.createElement(url ? "a" : "span");
+      a.className = st.className = cls; a.textContent = text;
+      if (url){ a.href = url; a.target = "_blank"; a.rel = "noopener nofollow"; a.title = lang==="tr" ? "Resmi kaynakta skoru gör" : "See the score on an official source"; }
+      st.replaceWith(a);
+    }
+    if (now >= k && now < k + 115*60000){ linkify("tag live", lang==="tr" ? "Canlı skor ↗" : "Live score ↗"); }
+    else if (now >= k + 115*60000){ linkify("tag ft", lang==="tr" ? "Sonuç ↗" : "Result ↗"); r.classList.add("past"); }
   });
 
   // collapsible competition groups (remembered per viewer)
