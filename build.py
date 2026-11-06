@@ -2,7 +2,9 @@
 """Build the Maç Saati static site from data/fixtures.json + data/notes.json into ./docs
 Run:  python3 build.py
 """
-import json, os, re, shutil, html
+import json, os, re, shutil, html, sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "src"))
+from flags import flag, COMP_FLAG, TEAM_FLAG
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
@@ -99,7 +101,7 @@ def row(f, lang="en"):
     return (f'<div class="row{" turk" if f["turk"] else ""}" data-iso="{f["iso"]}" data-comp="{esc(f["comp"])}" '
             f'data-turk="{int(f["turk"])}" data-fta="{int(any(FTA.search(c) for c in f["channels"]))}" data-q="{esc(search)}">'
             f'<div class="time"><span class="uk">{f["uk"]}</span><span class="trt">{f["tr"]}{"<small>+1</small>" if f["tr_next"] else ""}</span></div>'
-            f'<div class="fx"><div class="teams">{esc(f["home"])}<span class="v">v</span>{esc(f["away"])}</div>'
+            f'<div class="fx"><div class="teams">{tname(f["home"], f["comp"])}<span class="v">v</span>{tname(f["away"], f["comp"])}</div>'
             f'<div class="comp">{" ".join(tags)} <span class="st"></span> {srcl}</div></div>'
             f'<div class="chs">{"".join(chs)}</div></div>')
 
@@ -108,6 +110,13 @@ MONTHS_TR = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağusto
 def month_name(d, lang="en"):
     dt = datetime.fromisoformat(d)
     return f'{(MONTHS_TR if lang=="tr" else MONTHS_EN)[dt.month-1]} {dt.year}'
+
+INTL = {"UEFA Nations League", "FIFA World Cup", "FIFA World Cup qualifiers", "European Qualifiers"}
+def tname(t, comp=""):
+    code = TEAM_FLAG.get(t) or ("TR" if t in TURK_CLUBS else None)
+    if code: return flag(code, t if t in TEAM_FLAG else "Türkiye") + " " + esc(t)
+    if comp in INTL: return '<span class="flag noflag" aria-hidden="true"></span> ' + esc(t)
+    return esc(t)
 
 def listing(fixtures, lang="en", empty=None, months=False):
     if not fixtures:
@@ -128,7 +137,7 @@ def listing(fixtures, lang="en", empty=None, months=False):
             badge = COMP_BADGE.get(COMP_GROUP.get(c, ""), "")
             cls = " slg" if c == "Süper Lig" else (" intl" if badge else "")
             m = len(fx)
-            blocks.append(f'<details class="grp{cls}" data-comp="{esc(c)}" open><summary class="grphead"><span class="arrow" aria-hidden="true"></span><h3>{esc(c)}</h3>'
+            blocks.append(f'<details class="grp{cls}" data-comp="{esc(c)}" open><summary class="grphead"><span class="arrow" aria-hidden="true"></span>{flag(COMP_FLAG[c], c) if c in COMP_FLAG else ""}<h3>{esc(c)}</h3>'
                           f'{f"<span class=gb>{badge}</span>" if badge else ""}<span class="gn">{m}</span></summary>'
                           f'<div class="list">{"".join(row(f, lang) for f in fx)}</div></details>')
         out.append(f'<section class="day-sec" id="d{d}"><div class="dayhead"><h2>{fmt_day(d, lang)}</h2><span>{cnt}</span></div>'
@@ -215,8 +224,8 @@ def page(path, title, desc, h1, intro, body, fixtures, lang="en", hreflang=None,
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{url}">{alt}
 <meta property="og:type" content="website"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{url}"><meta property="og:site_name" content="{SITE}">
-<meta name="theme-color" content="#0d3b2e">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8f169'/%3E%3Crect x='6' y='8' width='20' height='13' rx='2' fill='none' stroke='%230d3b2e' stroke-width='2.4'/%3E%3Cpath d='M11 26h10' stroke='%230d3b2e' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#B5000F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23E30A17'/%3E%3Crect x='6' y='8' width='20' height='13' rx='2' fill='none' stroke='%23ffffff' stroke-width='2.4'/%3E%3Cpath d='M11 26h10' stroke='%23ffffff' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Narrow:wght@600;700&display=swap" rel="stylesheet">
 <style>{CSS}</style>
@@ -225,7 +234,7 @@ def page(path, title, desc, h1, intro, body, fixtures, lang="en", hreflang=None,
 <body data-lang="{lang}">
 <header class="top"><div class="wrap">
   <div class="brandrow">
-    <a class="brand" href="{"/tr/" if lang=="tr" else "/"}"><span class="logo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2.5" y="5" width="19" height="12.5" rx="2" stroke="#0d3b2e" stroke-width="2"/><path d="M8 21h8" stroke="#0d3b2e" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="11.2" r="3" stroke="#0d3b2e" stroke-width="1.8"/></svg></span>
+    <a class="brand" href="{"/tr/" if lang=="tr" else "/"}"><span class="logo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2.5" y="5" width="19" height="12.5" rx="2" stroke="#E30A17" stroke-width="2"/><path d="M8 21h8" stroke="#E30A17" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="11.2" r="3" stroke="#E30A17" stroke-width="1.8"/></svg></span>
       <span><span class="name">MAÇ SAATİ</span><small>{"Live football on TV · UK &amp; Türkiye" if lang=="en" else "Canlı maç yayınları · İngiltere &amp; Türkiye"}</small></span></a>
     <div class="tz" role="group" aria-label="Time zone"><button data-tz="uk" class="on">{t["uk"]}</button><button data-tz="tr">{t["tr"]}</button></div>
   </div>
@@ -311,7 +320,7 @@ def build():
     # 404
     open(os.path.join(OUT, "404.html"), "w", encoding="utf-8").write(
         page("/404.html", f"Page not found | {SITE}", "Page not found", "Page not found",
-             'That page doesn\'t exist. <a href="/" style="color:#c8f169">Go to this week\'s listings</a>.', "", [], controls=False, banner=False)
+             'That page doesn\'t exist. <a href="/" style="color:#fff;text-decoration:underline">Go to this week\'s listings</a>.', "", [], controls=False, banner=False)
         .replace('<link rel="canonical"', '<meta name="robots" content="noindex"><link rel="canonical"'))
     # sitemap / robots / CNAME
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
