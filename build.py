@@ -42,6 +42,7 @@ GROUPS = [
   ("European", ["La Liga","La Liga 2","Serie A","Bundesliga","Ligue 1"]),
   ("Women's", ["WSL","Women's Champions League"]),
   ("International", ["UEFA Nations League"]),
+  ("Rest of the World", ["MLS"]),
 ]
 FTA = re.compile(r"^(BBC|ITV|STV|S4C|Channel 4)")
 
@@ -55,7 +56,7 @@ def ch_class(c):
 def ch_link(c):
     s = SOURCES
     for pat, key in [(r"^Sky","sky"),(r"^TNT|HBO","tnt"),(r"^BBC","bbc"),(r"^ITV|^STV","itv"),(r"^Premier","premier"),
-                     (r"DAZN","dazn"),(r"Disney","disney"),(r"beIN|TOD","tff")]:
+                     (r"DAZN","dazn"),(r"Disney","disney"),(r"Prime Video|Amazon","amazon"),(r"Apple","apple"),(r"beIN|TOD","tff")]:
         if re.search(pat, c) and key in s: return s[key]["url"]
     if c.startswith("ATV"): return "https://www.atv.com.tr/canli-yayin"
     return ""
@@ -157,7 +158,7 @@ def page(path, title, desc, h1, intro, body, fixtures, lang="en", hreflang=None,
                 f'<a class="btn" href="{"/tr/" if lang=="tr" else "/super-lig-on-tv-uk/"}">{"Süper Lig programı" if lang=="tr" else "Süper Lig on TV"}</a></section>')
     srcs = "".join(f'<li><a href="{esc(s["url"])}" target="_blank" rel="noopener nofollow">{esc(s["name"])}</a></li>' for s in SOURCES.values())
     foot_en = (f'<p><b>Times</b> are UK time by default; switch to TSİ for Turkish time. Kick-offs and channels can change — always check with the broadcaster.</p>'
-               f'<p><b>How this guide is built:</b> every match is listed only once it appears on a broadcaster\'s or organiser\'s own page; each row shows its source and every channel links to that broadcaster. Updated every Friday. Last update: {esc(D["generated"])}.</p>'
+               f'<p><b>How this guide is built:</b> every match is listed only once it appears on a broadcaster\'s, league\'s or organiser\'s own page; each row shows its source and every channel links to that broadcaster. Updated every Friday. Last update: {esc(D["generated"])}.</p>'
                f'<p><b>Süper Lig in the UK:</b> {"no UK TV deal has been announced for 2026/27, so Süper Lig matches show the Turkish broadcasters." if not N.get("uk_superlig_rights") else "UK channels shown where confirmed."}</p>')
     foot_tr = (f'<p><b>Saatler</b> varsayılan olarak İngiltere saatidir; Türkiye saati için TSİ\'yi seçin. Maç saatleri ve kanallar değişebilir — yayıncıdan kontrol edin.</p>'
                f'<p><b>Nasıl hazırlanıyor:</b> her maç yalnızca yayıncının veya organizatörün kendi sayfasında yer aldıktan sonra listelenir. Her cuma güncellenir. Son güncelleme: {esc(D["generated"])}.</p>')
@@ -210,9 +211,9 @@ def build():
     wk = N["week_label"]
     # Home
     write("/", page("/", f"Live Football on TV Today & This Week (UK) | Premier League, EFL & Süper Lig | {SITE}",
-        f"What football is on TV in the UK this week ({wk}): kick-off times and channels for Sky Sports, TNT Sports, BBC, ITV, Premier Sports, DAZN and Disney+, plus every Turkish Süper Lig match in UK time.",
+        f"What football is on TV in the UK this week ({wk}): kick-off times and channels for the Premier League, EFL, FA Cup, La Liga, Serie A, Bundesliga, MLS and Women's Champions League on Sky Sports, TNT Sports, BBC, ITV, Premier Sports, DAZN, Prime Video, Apple TV and Disney+ — plus every Turkish Süper Lig match in UK time.",
         "Live football on TV this week",
-        f"Every confirmed televised match in the UK for {esc(wk)}, taken from the broadcasters' own schedules — plus the full Turkish Süper Lig programme in UK time. Tap a channel to open its schedule.",
+        f"Every confirmed televised match in the UK for {esc(wk)}, taken from the broadcasters' and leagues' own schedules — plus the full Turkish Süper Lig programme in UK time. Tap a channel to open its schedule.",
         listing(FIX), FIX, hreflang=[("en-GB","/"),("tr","/tr/")]))
     pages.append(("/", "daily", "1.0"))
     # Super Lig (EN)

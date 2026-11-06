@@ -40,6 +40,26 @@
   "tff": {
    "name": "beIN SPORTS Türkiye – Süper Lig fikstür",
    "url": "https://www.beinsports.com.tr/lig/super-lig/fikstur"
+  },
+  "bundesliga": {
+   "name": "Bundesliga – UK & Ireland broadcast partners",
+   "url": "https://www.bundesliga.com/en/bundesliga/news/bundesliga-media-expands-pioneering-uk-and-ireland-youtube-watch-along-coverage-with-jamie-vardy-partnership-goldbridge-2026-27-38838"
+  },
+  "uefa": {
+   "name": "UEFA – Women's Champions League fixtures",
+   "url": "https://www.uefa.com/womenschampionsleague/news/02ab-2201607f4c99-fa0969df1c68-1000--women-s-champions-league-matchday-4-preview-paris-saint-/"
+  },
+  "mls": {
+   "name": "MLS – Decision Day on Apple TV",
+   "url": "https://www.mlssoccer.com/news/tubi-to-simulcast-two-major-league-soccer-decision-day-games-on-november-7"
+  },
+  "amazon": {
+   "name": "Prime Video – sport",
+   "url": "https://www.amazon.co.uk/primevideo"
+  },
+  "apple": {
+   "name": "Apple TV – MLS",
+   "url": "https://tv.apple.com"
   }
  },
  "fixtures": [
@@ -69,6 +89,18 @@
   },
   {
    "date": "2026-11-06",
+   "uk": "19:30",
+   "home": "Hamburger SV",
+   "away": "Borussia Mönchengladbach",
+   "comp": "Bundesliga",
+   "channels": [
+    "BBC iPlayer",
+    "BBC Sport website"
+   ],
+   "source": "bundesliga"
+  },
+  {
+   "date": "2026-11-06",
    "uk": "19:45",
    "home": "Oxford City",
    "away": "Leicester City",
@@ -78,17 +110,6 @@
     "HBO Max"
    ],
    "source": "fa"
-  },
-  {
-   "date": "2026-11-06",
-   "uk": "20:00",
-   "home": "Sevilla",
-   "away": "Alavés",
-   "comp": "La Liga",
-   "channels": [
-    "Premier Sports"
-   ],
-   "source": "premier"
   },
   {
    "date": "2026-11-06",
@@ -112,6 +133,17 @@
     "Sky Sports Premier League"
    ],
    "source": "sky"
+  },
+  {
+   "date": "2026-11-06",
+   "uk": "20:00",
+   "home": "Sevilla",
+   "away": "Alavés",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports"
+   ],
+   "source": "premier"
   },
   {
    "date": "2026-11-07",
@@ -140,6 +172,18 @@
   {
    "date": "2026-11-07",
    "uk": "12:30",
+   "home": "Leeds United",
+   "away": "Tottenham Hotspur",
+   "comp": "Premier League",
+   "channels": [
+    "TNT Sports 1",
+    "HBO Max"
+   ],
+   "source": "tnt"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "12:30",
    "home": "Portsmouth",
    "away": "Stoke City",
    "comp": "Championship",
@@ -159,18 +203,6 @@
     "Sky Sports Football"
    ],
    "source": "sky"
-  },
-  {
-   "date": "2026-11-07",
-   "uk": "12:30",
-   "home": "Leeds United",
-   "away": "Tottenham Hotspur",
-   "comp": "Premier League",
-   "channels": [
-    "TNT Sports 1",
-    "HBO Max"
-   ],
-   "source": "tnt"
   },
   {
    "date": "2026-11-07",
@@ -197,6 +229,17 @@
   {
    "date": "2026-11-07",
    "uk": "13:00",
+   "home": "Málaga",
+   "away": "Racing Santander",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports"
+   ],
+   "source": "premier"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "13:00",
    "home": "Samsunspor",
    "away": "Konyaspor",
    "comp": "Süper Lig",
@@ -206,17 +249,6 @@
     "TOD (TR)"
    ],
    "source": "tff"
-  },
-  {
-   "date": "2026-11-07",
-   "uk": "13:00",
-   "home": "Málaga",
-   "away": "Racing Santander",
-   "comp": "La Liga",
-   "channels": [
-    "Premier Sports"
-   ],
-   "source": "premier"
   },
   {
    "date": "2026-11-07",
@@ -232,8 +264,8 @@
   {
    "date": "2026-11-07",
    "uk": "16:00",
-   "home": "Göztepe",
-   "away": "Başakşehir",
+   "home": "Galatasaray",
+   "away": "Amedspor",
    "comp": "Süper Lig",
    "channels": [
     "No UK TV",
@@ -245,8 +277,8 @@
   {
    "date": "2026-11-07",
    "uk": "16:00",
-   "home": "Galatasaray",
-   "away": "Amedspor",
+   "home": "Göztepe",
+   "away": "Başakşehir",
    "comp": "Süper Lig",
    "channels": [
     "No UK TV",
@@ -272,17 +304,6 @@
   {
    "date": "2026-11-07",
    "uk": "17:30",
-   "home": "Osasuna",
-   "away": "Athletic Bilbao",
-   "comp": "La Liga",
-   "channels": [
-    "Premier Sports"
-   ],
-   "source": "premier"
-  },
-  {
-   "date": "2026-11-07",
-   "uk": "17:30",
    "home": "Nottingham Forest",
    "away": "Manchester City",
    "comp": "Premier League",
@@ -294,6 +315,28 @@
   },
   {
    "date": "2026-11-07",
+   "uk": "17:30",
+   "home": "Osasuna",
+   "away": "Athletic Bilbao",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports"
+   ],
+   "source": "premier"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "17:30",
+   "home": "VfB Stuttgart",
+   "away": "Werder Bremen",
+   "comp": "Bundesliga",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "bundesliga"
+  },
+  {
+   "date": "2026-11-07",
    "uk": "17:45",
    "home": "Aberdeen",
    "away": "Hibernian",
@@ -302,6 +345,17 @@
     "Premier Sports"
    ],
    "source": "premier"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "19:45",
+   "home": "Roma",
+   "away": "Sassuolo",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "dazn"
   },
   {
    "date": "2026-11-07",
@@ -327,6 +381,28 @@
    "source": "sky"
   },
   {
+   "date": "2026-11-07",
+   "uk": "21:00",
+   "home": "Inter Miami",
+   "away": "Charlotte FC",
+   "comp": "MLS",
+   "channels": [
+    "Apple TV"
+   ],
+   "source": "mls"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "00:00",
+   "home": "Los Angeles FC",
+   "away": "Seattle Sounders",
+   "comp": "MLS",
+   "channels": [
+    "Apple TV"
+   ],
+   "source": "mls"
+  },
+  {
    "date": "2026-11-08",
    "uk": "10:30",
    "home": "Çaykur Rizespor",
@@ -341,15 +417,14 @@
   },
   {
    "date": "2026-11-08",
-   "uk": "12:00",
-   "home": "Stafford Rangers",
-   "away": "Grimsby Town",
-   "comp": "FA Cup",
+   "uk": "11:30",
+   "home": "Napoli",
+   "away": "Lazio",
+   "comp": "Serie A",
    "channels": [
-    "TNT Sports 1",
-    "HBO Max"
+    "DAZN"
    ],
-   "source": "fa"
+   "source": "dazn"
   },
   {
    "date": "2026-11-08",
@@ -372,6 +447,18 @@
     "Sky Sports Football"
    ],
    "source": "sky"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "12:00",
+   "home": "Stafford Rangers",
+   "away": "Grimsby Town",
+   "comp": "FA Cup",
+   "channels": [
+    "TNT Sports 1",
+    "HBO Max"
+   ],
+   "source": "fa"
   },
   {
    "date": "2026-11-08",
@@ -411,6 +498,28 @@
   {
    "date": "2026-11-08",
    "uk": "14:00",
+   "home": "Crystal Palace Women",
+   "away": "Charlton Athletic Women",
+   "comp": "WSL",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "sky"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "14:00",
+   "home": "Genoa",
+   "away": "AC Milan",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "dazn"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "14:00",
    "home": "Ipswich Town",
    "away": "AFC Bournemouth",
    "comp": "Premier League",
@@ -422,22 +531,22 @@
   {
    "date": "2026-11-08",
    "uk": "14:00",
+   "home": "Monza",
+   "away": "Atalanta",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "dazn"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "14:00",
    "home": "Sunderland",
    "away": "Chelsea",
    "comp": "Premier League",
    "channels": [
     "Sky Sports Premier League"
-   ],
-   "source": "sky"
-  },
-  {
-   "date": "2026-11-08",
-   "uk": "14:00",
-   "home": "Crystal Palace Women",
-   "away": "Charlton Athletic Women",
-   "comp": "WSL",
-   "channels": [
-    "Sky Sports+"
    ],
    "source": "sky"
   },
@@ -465,6 +574,17 @@
     "HBO Max"
    ],
    "source": "fa"
+  },
+  {
+   "date": "2026-11-08",
+   "uk": "14:30",
+   "home": "FC Köln",
+   "away": "Bayer Leverkusen",
+   "comp": "Bundesliga",
+   "channels": [
+    "Prime Video (pay-per-view)"
+   ],
+   "source": "bundesliga"
   },
   {
    "date": "2026-11-08",
@@ -505,6 +625,17 @@
   },
   {
    "date": "2026-11-08",
+   "uk": "16:30",
+   "home": "SC Freiburg",
+   "away": "Union Berlin",
+   "comp": "Bundesliga",
+   "channels": [
+    "Prime Video (pay-per-view)"
+   ],
+   "source": "bundesliga"
+  },
+  {
+   "date": "2026-11-08",
    "uk": "17:00",
    "home": "Inter Milan",
    "away": "Como",
@@ -541,6 +672,17 @@
   },
   {
    "date": "2026-11-08",
+   "uk": "18:30",
+   "home": "Hoffenheim",
+   "away": "Schalke 04",
+   "comp": "Bundesliga",
+   "channels": [
+    "Prime Video (pay-per-view)"
+   ],
+   "source": "bundesliga"
+  },
+  {
+   "date": "2026-11-08",
    "uk": "19:45",
    "home": "Fiorentina",
    "away": "Juventus",
@@ -572,6 +714,28 @@
     "HBO Max"
    ],
    "source": "fa"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "17:45",
+   "home": "Häcken Women",
+   "away": "Chelsea Women",
+   "comp": "Women's Champions League",
+   "channels": [
+    "Disney+"
+   ],
+   "source": "uefa"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "17:45",
+   "home": "Real Madrid Women",
+   "away": "Paris FC Women",
+   "comp": "Women's Champions League",
+   "channels": [
+    "Disney+"
+   ],
+   "source": "uefa"
   },
   {
    "date": "2026-11-10",
@@ -763,13 +927,90 @@
   {
    "date": "2026-11-10",
    "uk": "20:00",
+   "home": "Inter Women",
+   "away": "Manchester City Women",
+   "comp": "Women's Champions League",
+   "channels": [
+    "Disney+"
+   ],
+   "source": "uefa"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "20:00",
    "home": "PSG Women",
    "away": "Bayern Munich Women",
    "comp": "Women's Champions League",
    "channels": [
     "Disney+"
    ],
-   "source": "disney"
+   "source": "uefa"
+  },
+  {
+   "date": "2026-11-10",
+   "uk": "20:00",
+   "home": "Roma Women",
+   "away": "Servette Women",
+   "comp": "Women's Champions League",
+   "channels": [
+    "Disney+"
+   ],
+   "source": "uefa"
+  },
+  {
+   "date": "2026-11-11",
+   "uk": "17:45",
+   "home": "OH Leuven Women",
+   "away": "HB Køge Women",
+   "comp": "Women's Champions League",
+   "channels": [
+    "Disney+"
+   ],
+   "source": "uefa"
+  },
+  {
+   "date": "2026-11-11",
+   "uk": "19:00",
+   "home": "Barnsley",
+   "away": "Oldham Athletic",
+   "comp": "EFL Trophy",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "eflt"
+  },
+  {
+   "date": "2026-11-11",
+   "uk": "19:00",
+   "home": "Sheffield Wednesday",
+   "away": "Accrington Stanley",
+   "comp": "EFL Trophy",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "eflt"
+  },
+  {
+   "date": "2026-11-11",
+   "uk": "20:00",
+   "home": "Benfica Women",
+   "away": "Austria Wien Women",
+   "comp": "Women's Champions League",
+   "channels": [
+    "Disney+"
+   ],
+   "source": "uefa"
+  },
+  {
+   "date": "2026-11-11",
+   "uk": "20:00",
+   "home": "Juventus Women",
+   "away": "OL Lyonnes",
+   "comp": "Women's Champions League",
+   "channels": [
+    "Disney+"
+   ],
+   "source": "uefa"
   },
   {
    "date": "2026-11-12",
@@ -782,6 +1023,17 @@
     "ATV (TR)"
    ],
    "source": "tff"
+  },
+  {
+   "date": "2026-11-12",
+   "uk": "17:45",
+   "home": "Barcelona Women",
+   "away": "Arsenal Women",
+   "comp": "Women's Champions League",
+   "channels": [
+    "Disney+"
+   ],
+   "source": "uefa"
   },
   {
    "date": "2026-11-12",
