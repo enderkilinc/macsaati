@@ -120,10 +120,8 @@ def live_url(f):
 
 INTL = {"UEFA Nations League", "FIFA World Cup", "FIFA World Cup qualifiers", "European Qualifiers"}
 def tname(t, comp=""):
-    code = TEAM_FLAG.get(t) or ("TR" if t in TURK_CLUBS else None)
-    if code: return flag(code, t if t in TEAM_FLAG else "Türkiye") + " " + esc(t)
-    if comp in INTL: return '<span class="flag noflag" aria-hidden="true"></span> ' + esc(t)
-    return esc(t)
+    code = TEAM_FLAG.get(t)   # national teams only; clubs show just the name
+    return (flag(code, t) + " " + esc(t)) if code else esc(t)
 
 def listing(fixtures, lang="en", empty=None, months=False):
     if not fixtures:
@@ -267,6 +265,7 @@ def write(path, content):
 def build():
     if os.path.exists(OUT): shutil.rmtree(OUT)
     os.makedirs(OUT)
+    shutil.copytree(os.path.join(ROOT, "src", "flagsvg"), os.path.join(OUT, "flags"))
     pages = []
     wk = N["week_label"]
     # Home: every confirmed match, one page

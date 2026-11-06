@@ -93,7 +93,7 @@ details.grp:not([open])>summary{background:#fff;border:1px solid var(--line);pad
 .controls.slim .ctl{padding:8px 18px}
 .day.mon span{font-size:13px;color:#ffd0d4}
 
-.flag{display:inline-block;vertical-align:-1px;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.12);flex:0 0 auto}
+.flag{display:inline-block;vertical-align:-1px;object-fit:cover;width:16px;height:12px;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.12);flex:0 0 auto}
 .teams .flag{margin-right:2px}
 .grphead .flag{margin-right:2px}
 .grphead .gb{background:#eef1fb;color:#1f3c8f}

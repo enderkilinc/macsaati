@@ -45,8 +45,13 @@ COMP_FLAG = {"Süper Lig":"TR","Premier League":"ENG","Championship":"ENG","Leag
              "Scottish Premiership":"SCO","Scottish Championship":"SCO","La Liga":"ES","La Liga 2":"ES","Serie A":"IT","Bundesliga":"DE","Ligue 1":"FR","MLS":"US"}
 TEAM_FLAG = {"Türkiye":"TR","England":"ENG","Scotland":"SCO","Spain":"ES","Italy":"IT","Germany":"DE","France":"FR","Netherlands":"NL","Belgium":"BE",
              "Austria":"AT","Republic of Ireland":"IE","Poland":"PL","Romania":"RO","Hungary":"HU","Ukraine":"UA","Estonia":"EE","Latvia":"LV","Armenia":"AM",
-             "Bulgaria":"BG","Luxembourg":"LU","Czechia":"CZ","Switzerland":"CH","Sweden":"SE","Denmark":"DK","Finland":"FI","Norway":"NO","Iceland":"IS"}
+             "Bulgaria":"BG","Luxembourg":"LU","Czechia":"CZ","Switzerland":"CH","Sweden":"SE","Denmark":"DK","Finland":"FI","Norway":"NO","Iceland":"IS",
+             "Albania":"AL","Andorra":"AD","Azerbaijan":"AZ","Belarus":"BY","Bosnia and Herzegovina":"BA","Croatia":"HR","Cyprus":"CY",
+             "Faroe Islands":"FO","Georgia":"GE","Gibraltar":"GI","Greece":"GR","Israel":"IL","Kazakhstan":"KZ","Kosovo":"XK",
+             "Liechtenstein":"LI","Moldova":"MD","Montenegro":"ME","North Macedonia":"MK","Northern Ireland":"NIR","Portugal":"PT",
+             "San Marino":"SM","Serbia":"RS","Slovakia":"SK","Slovenia":"SI","Wales":"WLS"}
+FILE = {"ENG":"gb-eng","SCO":"gb-sct","NIR":"gb-nir","WLS":"gb-wls"}
+def flag_file(code): return FILE.get(code, code.lower())
 def flag(code, title=""):
-    if code not in F: return ""
-    return (f'<svg class="flag" viewBox="0 0 30 20" width="18" height="12" role="img" aria-label="{title or code}">'
-            f'<title>{title or code}</title>{F[code]}</svg>')
+    t = title or code
+    return f'<img class="flag" src="/flags/{flag_file(code)}.svg" width="16" height="12" alt="" title="{t}" loading="lazy">'
