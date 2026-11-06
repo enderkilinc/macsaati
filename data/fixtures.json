@@ -92,6 +92,22 @@
   "unlfx": {
    "name": "UEFA – Nations League league phase fixtures",
    "url": "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures/"
+  },
+  "ucl": {
+   "name": "UEFA – Champions League league phase fixtures (UK: Prime Video top Tuesday pick, all others TNT Sports)",
+   "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/"
+  },
+  "uel": {
+   "name": "UEFA – Europa League league phase fixtures (all on TNT Sports in the UK)",
+   "url": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures/"
+  },
+  "uecl": {
+   "name": "UEFA – Conference League league phase fixtures (all on TNT Sports in the UK)",
+   "url": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures/"
+  },
+  "primeucl": {
+   "name": "Amazon – Champions League on Prime Video (top Tuesday pick)",
+   "url": "https://www.aboutamazon.co.uk/news/entertainment/champions-league-prime-video-uk-renewal"
   }
  },
  "fixtures": [
@@ -1691,6 +1707,105 @@
   },
   {
    "date": "2026-11-24",
+   "uk": "17:45",
+   "home": "Bodø/Glimt",
+   "away": "LASK",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-11-24",
+   "uk": "17:45",
+   "home": "Galatasaray",
+   "away": "Aston Villa",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-11-24",
+   "uk": "20:00",
+   "home": "Arsenal",
+   "away": "Borussia Dortmund",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-11-24",
+   "uk": "20:00",
+   "home": "Como",
+   "away": "AEK Athens",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-11-24",
+   "uk": "20:00",
+   "home": "Feyenoord",
+   "away": "Porto",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-11-24",
+   "uk": "20:00",
+   "home": "Leipzig",
+   "away": "Lens",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-11-24",
+   "uk": "20:00",
+   "home": "Manchester City",
+   "away": "Napoli",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-11-24",
+   "uk": "20:00",
+   "home": "Real Madrid",
+   "away": "PSV Eindhoven",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-11-24",
+   "uk": "20:00",
+   "home": "Slovan Bratislava",
+   "away": "Real Betis",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-11-24",
    "uk": "20:00",
    "home": "Wolves",
    "away": "Derby County",
@@ -1699,6 +1814,114 @@
     "Sky Sports"
    ],
    "source": "skyefl"
+  },
+  {
+   "date": "2026-11-25",
+   "uk": "17:45",
+   "home": "Sabah",
+   "away": "Barcelona",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-11-25",
+   "uk": "17:45",
+   "home": "Slavia Praha",
+   "away": "Villarreal",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-11-25",
+   "uk": "20:00",
+   "home": "Atlético de Madrid",
+   "away": "Viking",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-11-25",
+   "uk": "20:00",
+   "home": "Club Brugge",
+   "away": "Liverpool",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-11-25",
+   "uk": "20:00",
+   "home": "Inter",
+   "away": "Stuttgart",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-11-25",
+   "uk": "20:00",
+   "home": "Lille",
+   "away": "Bayern München",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-11-25",
+   "uk": "20:00",
+   "home": "Paris Saint-Germain",
+   "away": "Roma",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-11-25",
+   "uk": "20:00",
+   "home": "Shakhtar Donetsk",
+   "away": "Fenerbahçe",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-11-25",
+   "uk": "20:00",
+   "home": "Sporting CP",
+   "away": "Manchester United",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
   },
   {
    "date": "2026-11-25",
@@ -1713,6 +1936,330 @@
   },
   {
    "date": "2026-11-26",
+   "uk": "15:30",
+   "home": "Kairat Almaty",
+   "away": "Mjällby",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "Ajax",
+   "away": "Thun",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "Beşiktaş",
+   "away": "Hapoel Beer-Sheva",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "Brann",
+   "away": "Aarhus",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "Brighton",
+   "away": "Universitatea Craiova",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "Celta",
+   "away": "Bournemouth",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "Egnatia",
+   "away": "Lincoln Red Imps",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "Ferencváros",
+   "away": "Celje",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "GNK Dinamo",
+   "away": "Leverkusen",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "Hearts",
+   "away": "Monaco",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "Hoffenheim",
+   "away": "Sturm Graz",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "Iberia Tbilisi",
+   "away": "Getafe",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "Jablonec",
+   "away": "Lugano",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "Juventus",
+   "away": "Omonia",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "Kauno Žalgiris",
+   "away": "Riga",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "Marseille",
+   "away": "Levski Sofia",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "Olympiacos",
+   "away": "Milan",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "Pafos",
+   "away": "Midtjylland",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "Salzburg",
+   "away": "Ararat-Armenia",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "Sunderland",
+   "away": "Jagiellonia",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "Torreense",
+   "away": "Celtic",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "Union SG",
+   "away": "Lech Poznań",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "17:45",
+   "home": "Viktoria Plzeň",
+   "away": "Benfica",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "20:00",
+   "home": "Borac",
+   "away": "Atalanta",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "20:00",
+   "home": "Braga",
+   "away": "KuPS Kuopio",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "20:00",
+   "home": "CSKA Sofia",
+   "away": "Trabzonspor",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "20:00",
+   "home": "Crystal Palace",
+   "away": "Real Sociedad",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
    "uk": "20:00",
    "home": "Doncaster Rovers",
    "away": "Huddersfield Town",
@@ -1721,6 +2268,114 @@
     "Sky Sports"
    ],
    "source": "skyefl"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "20:00",
+   "home": "Freiburg",
+   "away": "Twente",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "20:00",
+   "home": "Gent",
+   "away": "Crvena Zvezda",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "20:00",
+   "home": "Hajduk Split",
+   "away": "Sint-Truidense",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "20:00",
+   "home": "Inter Escaldes",
+   "away": "Copenhagen",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "20:00",
+   "home": "Lyon",
+   "away": "Lillestrøm",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "20:00",
+   "home": "N.E.C. Nijmegen",
+   "away": "Rennes",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "20:00",
+   "home": "Nordsjælland",
+   "away": "Panathinaikos",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "20:00",
+   "home": "OFI Crete",
+   "away": "Anderlecht",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "20:00",
+   "home": "Sparta Praha",
+   "away": "AZ Alkmaar",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
   },
   {
    "date": "2026-11-27",
@@ -1990,6 +2645,105 @@
   },
   {
    "date": "2026-12-08",
+   "uk": "17:45",
+   "home": "Viking",
+   "away": "Feyenoord",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-12-08",
+   "uk": "17:45",
+   "home": "Villarreal",
+   "away": "Sabah",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-12-08",
+   "uk": "20:00",
+   "home": "AEK Athens",
+   "away": "Galatasaray",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-12-08",
+   "uk": "20:00",
+   "home": "Aston Villa",
+   "away": "Paris Saint-Germain",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-12-08",
+   "uk": "20:00",
+   "home": "Barcelona",
+   "away": "Manchester City",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-12-08",
+   "uk": "20:00",
+   "home": "Bayern München",
+   "away": "Slavia Praha",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-12-08",
+   "uk": "20:00",
+   "home": "Manchester United",
+   "away": "Leipzig",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-12-08",
+   "uk": "20:00",
+   "home": "Napoli",
+   "away": "Club Brugge",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-12-08",
+   "uk": "20:00",
+   "home": "Roma",
+   "away": "Sporting CP",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-12-08",
    "uk": "20:00",
    "home": "West Ham United",
    "away": "Middlesbrough",
@@ -1998,6 +2752,102 @@
     "Sky Sports"
    ],
    "source": "skyefl"
+  },
+  {
+   "date": "2026-12-09",
+   "uk": "17:45",
+   "home": "Real Betis",
+   "away": "Como",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-12-09",
+   "uk": "17:45",
+   "home": "Slovan Bratislava",
+   "away": "Shakhtar Donetsk",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-12-09",
+   "uk": "20:00",
+   "home": "Arsenal",
+   "away": "Real Madrid",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-12-09",
+   "uk": "20:00",
+   "home": "Borussia Dortmund",
+   "away": "Inter",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-12-09",
+   "uk": "20:00",
+   "home": "LASK",
+   "away": "Fenerbahçe",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-12-09",
+   "uk": "20:00",
+   "home": "Lens",
+   "away": "Bodø/Glimt",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-12-09",
+   "uk": "20:00",
+   "home": "Liverpool",
+   "away": "Porto",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-12-09",
+   "uk": "20:00",
+   "home": "PSV Eindhoven",
+   "away": "Atlético de Madrid",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
   },
   {
    "date": "2026-12-09",
@@ -2011,6 +2861,342 @@
    "source": "skyefl"
   },
   {
+   "date": "2026-12-09",
+   "uk": "20:00",
+   "home": "Stuttgart",
+   "away": "Lille",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "15:30",
+   "home": "Kairat Almaty",
+   "away": "Universitatea Craiova",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "17:45",
+   "home": "AZ Alkmaar",
+   "away": "Sturm Graz",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "17:45",
+   "home": "Anderlecht",
+   "away": "Hoffenheim",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "17:45",
+   "home": "Ararat-Armenia",
+   "away": "N.E.C. Nijmegen",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "17:45",
+   "home": "Brann",
+   "away": "Braga",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "17:45",
+   "home": "Celje",
+   "away": "Olympiacos",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "17:45",
+   "home": "Copenhagen",
+   "away": "Lugano",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "17:45",
+   "home": "Freiburg",
+   "away": "Panathinaikos",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "17:45",
+   "home": "Getafe",
+   "away": "Inter Escaldes",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "17:45",
+   "home": "Hapoel Beer-Sheva",
+   "away": "Juventus",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "17:45",
+   "home": "Iberia Tbilisi",
+   "away": "Crvena Zvezda",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "17:45",
+   "home": "Jagiellonia",
+   "away": "Crystal Palace",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "17:45",
+   "home": "KuPS Kuopio",
+   "away": "CSKA Sofia",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "17:45",
+   "home": "Lincoln Red Imps",
+   "away": "Midtjylland",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "17:45",
+   "home": "Marseille",
+   "away": "Celta",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "17:45",
+   "home": "Omonia",
+   "away": "Celtic",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "17:45",
+   "home": "Rennes",
+   "away": "GNK Dinamo",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "17:45",
+   "home": "Riga",
+   "away": "Atalanta",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "17:45",
+   "home": "Trabzonspor",
+   "away": "Jablonec",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "20:00",
+   "home": "Aarhus",
+   "away": "Twente",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "20:00",
+   "home": "Benfica",
+   "away": "OFI Crete",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "20:00",
+   "home": "Bournemouth",
+   "away": "Viktoria Plzeň",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "20:00",
+   "home": "Brighton",
+   "away": "Monaco",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "20:00",
+   "home": "Egnatia",
+   "away": "Kauno Žalgiris",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "20:00",
+   "home": "Hajduk Split",
+   "away": "Nordsjælland",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "20:00",
+   "home": "Hearts",
+   "away": "Borac",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "20:00",
+   "home": "Lech Poznań",
+   "away": "Ferencváros",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
    "date": "2026-12-10",
    "uk": "20:00",
    "home": "Leicester City",
@@ -2020,6 +3206,114 @@
     "Sky Sports"
    ],
    "source": "skyefl"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "20:00",
+   "home": "Leverkusen",
+   "away": "Beşiktaş",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "20:00",
+   "home": "Levski Sofia",
+   "away": "Lillestrøm",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "20:00",
+   "home": "Lyon",
+   "away": "Union SG",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "20:00",
+   "home": "Milan",
+   "away": "Sunderland",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "20:00",
+   "home": "Mjällby",
+   "away": "Pafos",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "20:00",
+   "home": "Real Sociedad",
+   "away": "Torreense",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "20:00",
+   "home": "Salzburg",
+   "away": "Sparta Praha",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "20:00",
+   "home": "Sint-Truidense",
+   "away": "Ajax",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-10",
+   "uk": "20:00",
+   "home": "Thun",
+   "away": "Gent",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
   },
   {
    "date": "2026-12-11",
@@ -2112,6 +3406,66 @@
   {
    "date": "2026-12-17",
    "uk": "20:00",
+   "home": "Ajax",
+   "away": "Getafe",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-17",
+   "uk": "20:00",
+   "home": "Atalanta",
+   "away": "Mjällby",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-17",
+   "uk": "20:00",
+   "home": "Borac",
+   "away": "Riga",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-17",
+   "uk": "20:00",
+   "home": "Braga",
+   "away": "Egnatia",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-17",
+   "uk": "20:00",
+   "home": "CSKA Sofia",
+   "away": "Thun",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-17",
+   "uk": "20:00",
    "home": "Crewe Alexandra",
    "away": "Salford City",
    "comp": "League Two",
@@ -2119,6 +3473,162 @@
     "Sky Sports"
    ],
    "source": "skyefl"
+  },
+  {
+   "date": "2026-12-17",
+   "uk": "20:00",
+   "home": "Crvena Zvezda",
+   "away": "Trabzonspor",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-17",
+   "uk": "20:00",
+   "home": "Gent",
+   "away": "Brann",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-17",
+   "uk": "20:00",
+   "home": "Inter Escaldes",
+   "away": "Aarhus",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-17",
+   "uk": "20:00",
+   "home": "Jablonec",
+   "away": "Iberia Tbilisi",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-17",
+   "uk": "20:00",
+   "home": "Kauno Žalgiris",
+   "away": "Freiburg",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-17",
+   "uk": "20:00",
+   "home": "Lugano",
+   "away": "Sint-Truidense",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-17",
+   "uk": "20:00",
+   "home": "Midtjylland",
+   "away": "Hajduk Split",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-17",
+   "uk": "20:00",
+   "home": "Monaco",
+   "away": "Lincoln Red Imps",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-17",
+   "uk": "20:00",
+   "home": "Nordsjælland",
+   "away": "KuPS Kuopio",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-17",
+   "uk": "20:00",
+   "home": "Pafos",
+   "away": "Hearts",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-17",
+   "uk": "20:00",
+   "home": "Panathinaikos",
+   "away": "Brighton",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-17",
+   "uk": "20:00",
+   "home": "Twente",
+   "away": "Kairat Almaty",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
+  },
+  {
+   "date": "2026-12-17",
+   "uk": "20:00",
+   "home": "Universitatea Craiova",
+   "away": "Copenhagen",
+   "comp": "UEFA Conference League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uecl"
   },
   {
    "date": "2026-12-18",
@@ -2284,6 +3794,861 @@
     "Sky Sports"
    ],
    "source": "skyefl"
+  },
+  {
+   "date": "2027-01-19",
+   "uk": "17:45",
+   "home": "Bodø/Glimt",
+   "away": "Atlético de Madrid",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-19",
+   "uk": "17:45",
+   "home": "Galatasaray",
+   "away": "Feyenoord",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-19",
+   "uk": "20:00",
+   "home": "AEK Athens",
+   "away": "Roma",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-19",
+   "uk": "20:00",
+   "home": "Aston Villa",
+   "away": "Borussia Dortmund",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-19",
+   "uk": "20:00",
+   "home": "Inter",
+   "away": "Liverpool",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-19",
+   "uk": "20:00",
+   "home": "Lille",
+   "away": "Slovan Bratislava",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-19",
+   "uk": "20:00",
+   "home": "Porto",
+   "away": "Slavia Praha",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-19",
+   "uk": "20:00",
+   "home": "Real Madrid",
+   "away": "LASK",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-19",
+   "uk": "20:00",
+   "home": "Stuttgart",
+   "away": "Club Brugge",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports or Prime Video (TBC)"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-20",
+   "uk": "17:45",
+   "home": "Fenerbahçe",
+   "away": "Villarreal",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-20",
+   "uk": "17:45",
+   "home": "Sabah",
+   "away": "Napoli",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-20",
+   "uk": "20:00",
+   "home": "Como",
+   "away": "Paris Saint-Germain",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-20",
+   "uk": "20:00",
+   "home": "Leipzig",
+   "away": "Shakhtar Donetsk",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-20",
+   "uk": "20:00",
+   "home": "Lens",
+   "away": "Manchester City",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-20",
+   "uk": "20:00",
+   "home": "Manchester United",
+   "away": "Bayern München",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-20",
+   "uk": "20:00",
+   "home": "Real Betis",
+   "away": "Arsenal",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-20",
+   "uk": "20:00",
+   "home": "Sporting CP",
+   "away": "Barcelona",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-20",
+   "uk": "20:00",
+   "home": "Viking",
+   "away": "PSV Eindhoven",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-21",
+   "uk": "17:45",
+   "home": "Ararat-Armenia",
+   "away": "Celje",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-21",
+   "uk": "17:45",
+   "home": "Beşiktaş",
+   "away": "Union SG",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-21",
+   "uk": "17:45",
+   "home": "Ferencváros",
+   "away": "Juventus",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-21",
+   "uk": "17:45",
+   "home": "Jagiellonia",
+   "away": "Lyon",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-21",
+   "uk": "17:45",
+   "home": "Lillestrøm",
+   "away": "Bournemouth",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-21",
+   "uk": "17:45",
+   "home": "N.E.C. Nijmegen",
+   "away": "Benfica",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-21",
+   "uk": "17:45",
+   "home": "Olympiacos",
+   "away": "Hoffenheim",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-21",
+   "uk": "17:45",
+   "home": "Real Sociedad",
+   "away": "Viktoria Plzeň",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-21",
+   "uk": "17:45",
+   "home": "Sturm Graz",
+   "away": "OFI Crete",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-21",
+   "uk": "20:00",
+   "home": "AZ Alkmaar",
+   "away": "GNK Dinamo",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-21",
+   "uk": "20:00",
+   "home": "Anderlecht",
+   "away": "Sunderland",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-21",
+   "uk": "20:00",
+   "home": "Celtic",
+   "away": "Marseille",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-21",
+   "uk": "20:00",
+   "home": "Crystal Palace",
+   "away": "Sparta Praha",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-21",
+   "uk": "20:00",
+   "home": "Hapoel Beer-Sheva",
+   "away": "Celta",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-21",
+   "uk": "20:00",
+   "home": "Lech Poznań",
+   "away": "Torreense",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-21",
+   "uk": "20:00",
+   "home": "Leverkusen",
+   "away": "Salzburg",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-21",
+   "uk": "20:00",
+   "home": "Levski Sofia",
+   "away": "Milan",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-21",
+   "uk": "20:00",
+   "home": "Rennes",
+   "away": "Omonia",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-27",
+   "uk": "20:00",
+   "home": "Arsenal",
+   "away": "Sabah",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-27",
+   "uk": "20:00",
+   "home": "Atlético de Madrid",
+   "away": "Fenerbahçe",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-27",
+   "uk": "20:00",
+   "home": "Barcelona",
+   "away": "Como",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-27",
+   "uk": "20:00",
+   "home": "Bayern München",
+   "away": "Real Betis",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-27",
+   "uk": "20:00",
+   "home": "Borussia Dortmund",
+   "away": "AEK Athens",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-27",
+   "uk": "20:00",
+   "home": "Club Brugge",
+   "away": "Bodø/Glimt",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-27",
+   "uk": "20:00",
+   "home": "Feyenoord",
+   "away": "Leipzig",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-27",
+   "uk": "20:00",
+   "home": "LASK",
+   "away": "Porto",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-27",
+   "uk": "20:00",
+   "home": "Liverpool",
+   "away": "Lens",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-27",
+   "uk": "20:00",
+   "home": "Manchester City",
+   "away": "Sporting CP",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-27",
+   "uk": "20:00",
+   "home": "Napoli",
+   "away": "Viking",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-27",
+   "uk": "20:00",
+   "home": "PSV Eindhoven",
+   "away": "Stuttgart",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-27",
+   "uk": "20:00",
+   "home": "Paris Saint-Germain",
+   "away": "Galatasaray",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-27",
+   "uk": "20:00",
+   "home": "Roma",
+   "away": "Lille",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-27",
+   "uk": "20:00",
+   "home": "Shakhtar Donetsk",
+   "away": "Real Madrid",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-27",
+   "uk": "20:00",
+   "home": "Slavia Praha",
+   "away": "Aston Villa",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-27",
+   "uk": "20:00",
+   "home": "Slovan Bratislava",
+   "away": "Inter",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-27",
+   "uk": "20:00",
+   "home": "Villarreal",
+   "away": "Manchester United",
+   "comp": "UEFA Champions League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "ucl"
+  },
+  {
+   "date": "2027-01-28",
+   "uk": "20:00",
+   "home": "Benfica",
+   "away": "AZ Alkmaar",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-28",
+   "uk": "20:00",
+   "home": "Bournemouth",
+   "away": "Hapoel Beer-Sheva",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-28",
+   "uk": "20:00",
+   "home": "Celje",
+   "away": "N.E.C. Nijmegen",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-28",
+   "uk": "20:00",
+   "home": "Celta",
+   "away": "Lillestrøm",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-28",
+   "uk": "20:00",
+   "home": "GNK Dinamo",
+   "away": "Sturm Graz",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-28",
+   "uk": "20:00",
+   "home": "Hoffenheim",
+   "away": "Ferencváros",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-28",
+   "uk": "20:00",
+   "home": "Juventus",
+   "away": "Real Sociedad",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-28",
+   "uk": "20:00",
+   "home": "Lyon",
+   "away": "Leverkusen",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-28",
+   "uk": "20:00",
+   "home": "Marseille",
+   "away": "Anderlecht",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-28",
+   "uk": "20:00",
+   "home": "Milan",
+   "away": "Ararat-Armenia",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-28",
+   "uk": "20:00",
+   "home": "OFI Crete",
+   "away": "Lech Poznań",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-28",
+   "uk": "20:00",
+   "home": "Omonia",
+   "away": "Beşiktaş",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-28",
+   "uk": "20:00",
+   "home": "Salzburg",
+   "away": "Crystal Palace",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-28",
+   "uk": "20:00",
+   "home": "Sparta Praha",
+   "away": "Rennes",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-28",
+   "uk": "20:00",
+   "home": "Sunderland",
+   "away": "Levski Sofia",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-28",
+   "uk": "20:00",
+   "home": "Torreense",
+   "away": "Olympiacos",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-28",
+   "uk": "20:00",
+   "home": "Union SG",
+   "away": "Celtic",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2027-01-28",
+   "uk": "20:00",
+   "home": "Viktoria Plzeň",
+   "away": "Jagiellonia",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
   }
  ]
 }

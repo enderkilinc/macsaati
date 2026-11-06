@@ -30,8 +30,11 @@ for f in FIX:
     tr = dt.astimezone(IST)
     f["tr"] = tr.strftime("%H:%M")
     f["tr_next"] = tr.date() != dt.date()
-    f["turk"] = f["comp"] == "Süper Lig" or "Türkiye" in (f["home"], f["away"])
+    f["turk"] = False  # set below once the list of Turkish clubs is known
 
+TURK_CLUBS = {t for f in FIX if f["comp"] == "Süper Lig" for t in (f["home"], f["away"])} | {"Galatasaray", "Fenerbahçe", "Beşiktaş", "Trabzonspor", "Türkiye"}
+for f in FIX:
+    f["turk"] = f["comp"] == "Süper Lig" or f["home"] in TURK_CLUBS or f["away"] in TURK_CLUBS
 GEN = datetime.fromisoformat(D["generated"]).date()
 WEEK_END = GEN + timedelta(days=6)
 WEEK = [f for f in FIX if f["dt"].date() <= WEEK_END]
