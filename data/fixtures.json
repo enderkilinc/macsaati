@@ -108,6 +108,14 @@
   "primeucl": {
    "name": "Amazon – Champions League on Prime Video (top Tuesday pick)",
    "url": "https://www.aboutamazon.co.uk/news/entertainment/champions-league-prime-video-uk-renewal"
+  },
+  "laliga": {
+   "name": "LALIGA – where to watch (UK: Disney+ Saturday night, Premier Sports)",
+   "url": "https://www.laliga.com/en-GB/where-to-watch-laliga-easports"
+  },
+  "disneylaliga": {
+   "name": "Disney+ UK – Valencia vs Real Madrid (LALIGA round 12)",
+   "url": "https://www.disneyplus.com/en-gb/browse/entity-d66e82c5-9002-4f9f-9837-0f0ea4ba5350"
   }
  },
  "fixtures": [
@@ -4649,6 +4657,17 @@
     "HBO Max"
    ],
    "source": "uel"
+  },
+  {
+   "date": "2026-11-07",
+   "uk": "20:00",
+   "home": "Valencia",
+   "away": "Real Madrid",
+   "comp": "La Liga",
+   "channels": [
+    "Disney+"
+   ],
+   "source": "disneylaliga"
   }
  ]
 }
