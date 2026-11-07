@@ -139,6 +139,16 @@ a.tag{text-decoration:none}a.tag.live:hover,a.tag.ft:hover{filter:brightness(.92
 <p class="small">© 2026 Maç Saati · macsaati.co.uk · Independent guide, not affiliated with any broadcaster or league.</p></div></footer>
 <script>(function(){
   var lang = document.body.dataset.lang || "en";
+  // Hide days before today (UK date), in case the page was cached before the daily rebuild.
+  (function(){
+    var today = new Intl.DateTimeFormat("en-CA", {timeZone:"Europe/London", year:"numeric", month:"2-digit", day:"2-digit"}).format(new Date());
+    document.querySelectorAll("section.day-sec[id^='d']").forEach(function(s){ if (s.id.slice(1) < today) s.remove(); });
+    document.querySelectorAll("a.day[href^='#d']").forEach(function(a){ if (a.getAttribute("href").slice(2) < today) a.remove(); });
+    document.querySelectorAll("h2.month").forEach(function(h){
+      var n = h.nextElementSibling;
+      if (!n || !n.classList.contains("day-sec")) h.remove();
+    });
+  })();
   var store = {
     get: function(k, d){ try{ var v = localStorage.getItem("macsaati:"+k); return v===null ? d : JSON.parse(v); }catch(e){ return d; } },
     set: function(k, v){ try{ localStorage.setItem("macsaati:"+k, JSON.stringify(v)); }catch(e){} }

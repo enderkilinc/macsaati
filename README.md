@@ -20,3 +20,6 @@ While a match is live (kick-off to +115 min) the status tag becomes a "Live scor
 
 ## IndexNow
 `src/static/<key>.txt` is the IndexNow key file (published at the site root). `.github/workflows/indexnow.yml` pings IndexNow with every sitemap URL after each push that changes `docs/`, so Bing re-crawls new fixtures quickly. It can also be run by hand from the Actions tab.
+
+## Daily rebuild
+`.github/workflows/daily-rebuild.yml` rebuilds the site just after UK midnight so past days drop off and the page opens on today; it pings IndexNow when something changed. `build.py` skips fixtures before today (UK date); `MACSAATI_TODAY=YYYY-MM-DD` overrides that for testing. `src/app.js` also hides past days in the browser in case a cached page is shown. Club pages stay even when a club has no upcoming match.

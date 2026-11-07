@@ -18,7 +18,12 @@ DOMAIN = N["domain"].rstrip("/")
 SITE = N["site_name"]
 SOURCES = D["sources"]
 EXCLUDED = set(N.get("excluded_competitions", []))
-FIX = sorted((f for f in D["fixtures"] if f["comp"] not in EXCLUDED and " Women" not in f["home"]),
+# "Today" in UK time. The site is rebuilt every day by .github/workflows/daily-rebuild.yml,
+# so yesterday's matches drop off the top. MACSAATI_TODAY=YYYY-MM-DD overrides it for testing.
+TODAY = (datetime.fromisoformat(os.environ["MACSAATI_TODAY"]).date() if os.environ.get("MACSAATI_TODAY")
+         else datetime.now(ZoneInfo("Europe/London")).date())
+FIX = sorted((f for f in D["fixtures"] if f["comp"] not in EXCLUDED and " Women" not in f["home"]
+              and f["date"] >= TODAY.isoformat()),
              key=lambda f: (f["date"], f["uk"], f["home"]))
 
 esc = lambda s: html.escape(str(s), quote=True)
@@ -34,17 +39,18 @@ for f in FIX:
     f["tr_next"] = tr.date() != dt.date()
     f["turk"] = False  # set below once the list of Turkish clubs is known
 
-TURK_CLUBS = {t for f in FIX if f["comp"] == "Süper Lig" for t in (f["home"], f["away"])} | {"Galatasaray", "Fenerbahçe", "Beşiktaş", "Trabzonspor", "Türkiye"}
+ALL_SL_CLUBS = {t for f in D["fixtures"] if f["comp"] == "Süper Lig" for t in (f["home"], f["away"])}  # incl. past days, so club pages never vanish
+TURK_CLUBS = ALL_SL_CLUBS | {"Galatasaray", "Fenerbahçe", "Beşiktaş", "Trabzonspor", "Türkiye"}
 for f in FIX:
     f["turk"] = f["comp"] == "Süper Lig" or f["home"] in TURK_CLUBS or f["away"] in TURK_CLUBS
-GEN = datetime.fromisoformat(D["generated"]).date()
+GEN = max(datetime.fromisoformat(D["generated"]).date(), TODAY)  # "this week" starts today
 WEEK_END = GEN + timedelta(days=6)
 WEEK = [f for f in FIX if f["dt"].date() <= WEEK_END]
 LATER = [f for f in FIX if f["dt"].date() > WEEK_END]
 _last = datetime.fromisoformat(FIX[-1]["date"]) if FIX else datetime.now()
 LAST_LABEL = f"{_last.day} {_last.strftime('%b %Y')}"
 SUPERLIG = [f for f in FIX if f["comp"] == "Süper Lig"]
-CLUBS = sorted({t for f in SUPERLIG for t in (f["home"], f["away"])}, key=lambda s: s.translate(TRMAP))
+CLUBS = sorted(ALL_SL_CLUBS, key=lambda s: s.translate(TRMAP))
 BIG = ["Galatasaray", "Fenerbahçe", "Beşiktaş", "Trabzonspor"]
 for b in BIG:
     if b not in CLUBS: CLUBS.append(b)

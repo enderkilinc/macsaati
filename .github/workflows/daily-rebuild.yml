@@ -1,0 +1,42 @@
+name: Daily rebuild
+# Rebuild the site just after midnight UK time so yesterday's matches drop off
+# and the page opens on today. Two schedules cover GMT (00:05 UTC) and BST (23:05 UTC);
+# the build uses the UK date, so the run before UK midnight changes nothing.
+on:
+  schedule:
+    - cron: "5 0 * * *"
+    - cron: "5 23 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: site-build, cancel-in-progress: false }
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Build
+        run: python build.py
+      - name: Commit and push if changed
+        id: push
+        run: |
+          if git diff --quiet -- docs; then echo "No change"; echo "changed=0" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git config user.name "Ender Kilinc"
+          git config user.email "enderkilinc@users.noreply.github.com"
+          git add docs
+          git commit -m "Daily rebuild $(TZ=Europe/London date +%F)"
+          git pull --rebase -X theirs origin main || { git rebase --abort; git reset --hard origin/main; python build.py; git add docs; git commit -m "Daily rebuild $(TZ=Europe/London date +%F)" || true; }
+          git push origin HEAD:main
+          echo "changed=1" >> "$GITHUB_OUTPUT"
+      - name: Ping IndexNow
+        if: steps.push.outputs.changed == '1'
+        run: |
+          sleep 90
+          KEY=$(basename $(ls src/static/*.txt) .txt)
+          URLS=$(grep -o '<loc>[^<]*</loc>' docs/sitemap.xml | sed 's/<[^>]*>//g' | jq -R . | jq -s .)
+          jq -n --arg key "$KEY" --argjson urls "$URLS" \
+            '{host:"macsaati.co.uk",key:$key,keyLocation:("https://macsaati.co.uk/"+$key+".txt"),urlList:$urls}' > body.json
+          curl -sS -o /dev/null -w "IndexNow HTTP %{http_code}\n" -X POST https://api.indexnow.org/indexnow \
+            -H "Content-Type: application/json; charset=utf-8" --data @body.json
