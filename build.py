@@ -149,20 +149,48 @@ def listing(fixtures, lang="en", empty=None, months=False):
                    f'{"".join(blocks)}</section>')
     return "".join(out)
 
+ORGANISER = [  # competition -> organising body (schema.org "organizer")
+    (("Süper Lig",), "Türkiye Futbol Federasyonu", "https://www.tff.org"),
+    (("UEFA",), "UEFA", "https://www.uefa.com"),
+    (("FIFA", "World Cup"), "FIFA", "https://www.fifa.com"),
+    (("Premier League",), "Premier League", "https://www.premierleague.com"),
+    (("Championship", "League One", "League Two", "EFL"), "English Football League", "https://www.efl.com"),
+    (("FA Cup",), "The Football Association", "https://www.thefa.com"),
+    (("Scottish",), "SPFL", "https://spfl.co.uk"),
+    (("La Liga",), "LALIGA", "https://www.laliga.com"),
+    (("Serie A",), "Lega Serie A", "https://www.legaseriea.it"),
+    (("Bundesliga",), "DFL Deutsche Fußball Liga", "https://www.bundesliga.com"),
+    (("Ligue 1",), "Ligue de Football Professionnel", "https://www.ligue1.com"),
+    (("MLS",), "Major League Soccer", "https://www.mlssoccer.com"),
+]
+def organiser(comp):
+    for keys, name, url in ORGANISER:
+        if any(k in comp for k in keys): return {"@type": "SportsOrganization", "name": name, "url": url}
+    return {"@type": "SportsOrganization", "name": comp}
+
+OG_IMAGE = DOMAIN + "/og-image.png"
+
 def jsonld(fixtures, page_url, title):
     events = []
     for f in fixtures:
+        start = datetime.fromisoformat(f["iso"].replace("Z", "+00:00"))
+        end = (start + timedelta(minutes=115)).strftime("%Y-%m-%dT%H:%M:%SZ")
+        watch = next((u for u in (ch_link(c) for c in f["channels"]) if u), page_url)
+        home = {"@type": "SportsTeam", "name": f["home"]}; away = {"@type": "SportsTeam", "name": f["away"]}
         events.append({
-          "@type": "SportsEvent", "name": f'{f["home"]} v {f["away"]}', "sport": "Football",
-          "startDate": f["iso"], "eventStatus": "https://schema.org/EventScheduled",
-          "homeTeam": {"@type": "SportsTeam", "name": f["home"]},
-          "awayTeam": {"@type": "SportsTeam", "name": f["away"]},
-          "superEvent": {"@type": "SportsEvent", "name": f["comp"]},
+          "@type": "SportsEvent", "name": f'{f["home"]} v {f["away"]} – {f["comp"]}', "sport": "Football",
+          "startDate": f["iso"], "endDate": end,
+          "eventStatus": "https://schema.org/EventScheduled",
+          "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+          "location": {"@type": "VirtualLocation", "url": watch},
+          "homeTeam": home, "awayTeam": away, "competitor": [home, away], "performer": [home, away],
+          "organizer": organiser(f["comp"]),
+          "image": [OG_IMAGE],
           "description": f'{f["comp"]}: {f["home"]} v {f["away"]}, kick-off {f["uk"]} UK time. On TV: {", ".join(f["channels"])}.',
           "url": page_url,
         })
     return json.dumps({"@context": "https://schema.org", "@graph": [
-        {"@type": "WebPage", "name": title, "url": page_url},
+        {"@type": "WebPage", "name": title, "url": page_url, "primaryImageOfPage": OG_IMAGE},
         *events]}, ensure_ascii=False)
 
 CSS = open(os.path.join(ROOT, "src", "style.css"), encoding="utf-8").read()
@@ -228,7 +256,7 @@ def page(path, title, desc, h1, intro, body, fixtures, lang="en", hreflang=None,
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{url}">{alt}
-<meta property="og:type" content="website"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{url}"><meta property="og:site_name" content="{SITE}">
+<meta property="og:type" content="website"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{url}"><meta property="og:site_name" content="{SITE}"><meta property="og:image" content="{OG_IMAGE}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#B5000F">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23E30A17'/%3E%3Crect x='6' y='8' width='20' height='13' rx='2' fill='none' stroke='%23ffffff' stroke-width='2.4'/%3E%3Cpath d='M11 26h10' stroke='%23ffffff' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
