@@ -58,7 +58,7 @@ for b in BIG:
 
 GROUPS = [
   ("Turkish football", ["Süper Lig"]),
-  ("British", ["Premier League","Championship","League One","League Two","FA Cup","Carabao Cup","EFL Trophy","WSL","Scottish Premiership","Scottish Championship"]),
+  ("British", ["Premier League","Championship","League One","League Two","FA Cup","Carabao Cup","EFL Trophy","WSL","Scottish Premiership","Scottish League Cup","Scottish Championship"]),
   ("UEFA competitions", ["UEFA Champions League","UEFA Europa League","UEFA Conference League","UEFA Nations League","Women's Champions League"]),
   ("FIFA competitions", ["FIFA World Cup","FIFA World Cup qualifiers","FIFA Club World Cup","FIFA U-17 Women's World Cup"]),
   ("European leagues", ["La Liga","La Liga 2","Serie A","Bundesliga","Ligue 1"]),

@@ -224,6 +224,18 @@
   "mlspo": {
    "name": "MLS – 2026 MLS Cup Playoffs Round One schedule (all on Apple TV)",
    "url": "https://www.mlssoccer.com/news/mls-announces-schedule-for-audi-2026-mls-cup-playoffs-round-one-best-of-3-series"
+  },
+  "spflfx": {
+   "name": "SPFL – William Hill Premiership fixture update (matches moved for Premier Sports Cup final)",
+   "url": "https://spfl.co.uk/news/william-hill-premiership-fixture-update-51491"
+  },
+  "spflfinal": {
+   "name": "SPFL – 2026/27 Premier Sports Cup final details (live on Premier Sports)",
+   "url": "https://spfl.co.uk/news/202627-premier-sports-cup-final-details-confirme"
+  },
+  "aa716": {
+   "name": "Anadolu Ajansı – Trendyol Süper Lig 7–16. haftaların programı açıklandı (TFF, 15 Sep 2026)",
+   "url": "https://www.aa.com.tr/tr/spor/trendyol-super-ligde-7-16-haftalarin-programi-aciklandi/4057906"
   }
  },
  "fixtures": [
@@ -421,17 +433,6 @@
   {
    "date": "2026-11-10",
    "uk": "19:00",
-   "home": "Grimsby Town",
-   "away": "Nottingham Forest U21",
-   "comp": "EFL Trophy",
-   "channels": [
-    "Sky Sports+"
-   ],
-   "source": "eflt"
-  },
-  {
-   "date": "2026-11-10",
-   "uk": "19:00",
    "home": "Huddersfield Town",
    "away": "Liverpool U21",
    "comp": "EFL Trophy",
@@ -456,17 +457,6 @@
    "uk": "19:00",
    "home": "Mansfield Town",
    "away": "Chesterfield",
-   "comp": "EFL Trophy",
-   "channels": [
-    "Sky Sports+"
-   ],
-   "source": "eflt"
-  },
-  {
-   "date": "2026-11-10",
-   "uk": "19:00",
-   "home": "Northampton Town",
-   "away": "Gillingham",
    "comp": "EFL Trophy",
    "channels": [
     "Sky Sports+"
@@ -533,28 +523,6 @@
    "uk": "19:30",
    "home": "Bromley",
    "away": "MK Dons",
-   "comp": "EFL Trophy",
-   "channels": [
-    "Sky Sports+"
-   ],
-   "source": "eflt"
-  },
-  {
-   "date": "2026-11-10",
-   "uk": "19:30",
-   "home": "Crawley Town",
-   "away": "Brentford U21",
-   "comp": "EFL Trophy",
-   "channels": [
-    "Sky Sports+"
-   ],
-   "source": "eflt"
-  },
-  {
-   "date": "2026-11-10",
-   "uk": "19:45",
-   "home": "Colchester United",
-   "away": "Ipswich Town U21",
    "comp": "EFL Trophy",
    "channels": [
     "Sky Sports+"
@@ -873,6 +841,72 @@
   },
   {
    "date": "2026-11-15",
+   "uk": "14:00",
+   "home": "Cyprus",
+   "away": "Montenegro",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-15",
+   "uk": "14:00",
+   "home": "Latvia",
+   "away": "Armenia",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-15",
+   "uk": "17:00",
+   "home": "Belarus",
+   "away": "Albania",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-15",
+   "uk": "17:00",
+   "home": "Finland",
+   "away": "San Marino",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-15",
+   "uk": "19:45",
+   "home": "Belgium",
+   "away": "Italy",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-15",
+   "uk": "19:45",
+   "home": "Croatia",
+   "away": "Czechia",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-15",
    "uk": "19:45",
    "home": "France",
    "away": "Türkiye",
@@ -880,6 +914,128 @@
    "channels": [
     "Prime Video",
     "ATV (TR)"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-15",
+   "uk": "19:45",
+   "home": "Spain",
+   "away": "England",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "ITV1",
+    "ITVX"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-16",
+   "uk": "15:00",
+   "home": "Faroe Islands",
+   "away": "Moldova",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-16",
+   "uk": "15:00",
+   "home": "Kazakhstan",
+   "away": "Slovakia",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-16",
+   "uk": "17:00",
+   "home": "Estonia",
+   "away": "Bulgaria",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-16",
+   "uk": "17:00",
+   "home": "Iceland",
+   "away": "Luxembourg",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-16",
+   "uk": "17:00",
+   "home": "Lithuania",
+   "away": "Liechtenstein",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-16",
+   "uk": "19:45",
+   "home": "Germany",
+   "away": "Netherlands",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-16",
+   "uk": "19:45",
+   "home": "Gibraltar",
+   "away": "Malta",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-16",
+   "uk": "19:45",
+   "home": "Greece",
+   "away": "Serbia",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-16",
+   "uk": "19:45",
+   "home": "North Macedonia",
+   "away": "Slovenia",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-16",
+   "uk": "19:45",
+   "home": "Switzerland",
+   "away": "Scotland",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "BBC iPlayer"
    ],
    "source": "unlfx"
   },
@@ -893,6 +1049,94 @@
     "Sky Sports+"
    ],
    "source": "eflt"
+  },
+  {
+   "date": "2026-11-17",
+   "uk": "19:45",
+   "home": "Bosnia and Herzegovina",
+   "away": "Romania",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-17",
+   "uk": "19:45",
+   "home": "Denmark",
+   "away": "Norway",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-17",
+   "uk": "19:45",
+   "home": "Hungary",
+   "away": "Northern Ireland",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "BBC iPlayer"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-17",
+   "uk": "19:45",
+   "home": "Israel",
+   "away": "Austria",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-17",
+   "uk": "19:45",
+   "home": "Poland",
+   "away": "Sweden",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-17",
+   "uk": "19:45",
+   "home": "Republic of Ireland",
+   "away": "Kosovo",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-17",
+   "uk": "19:45",
+   "home": "Ukraine",
+   "away": "Georgia",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "Prime Video"
+   ],
+   "source": "unlfx"
+  },
+  {
+   "date": "2026-11-17",
+   "uk": "19:45",
+   "home": "Wales",
+   "away": "Portugal",
+   "comp": "UEFA Nations League",
+   "channels": [
+    "S4C"
+   ],
+   "source": "unlfx"
   },
   {
    "date": "2026-11-20",
@@ -937,7 +1181,7 @@
    "channels": [
     "Premier Sports (TBC)"
    ],
-   "source": "laligacal"
+   "source": "k45"
   },
   {
    "date": "2026-11-20",
@@ -982,7 +1226,7 @@
    "away": "Cardiff City",
    "comp": "Championship",
    "channels": [
-    "Sky Sports"
+    "Sky Sports+"
    ],
    "source": "skyefl"
   },
@@ -1004,7 +1248,7 @@
    "away": "Wigan Athletic",
    "comp": "League One",
    "channels": [
-    "Sky Sports"
+    "Sky Sports+"
    ],
    "source": "skyefl"
   },
@@ -1015,7 +1259,7 @@
    "away": "Bromley",
    "comp": "League One",
    "channels": [
-    "Sky Sports"
+    "Sky Sports+"
    ],
    "source": "skyefl"
   },
@@ -1040,7 +1284,7 @@
    "channels": [
     "Premier Sports (TBC)"
    ],
-   "source": "laligacal"
+   "source": "k45"
   },
   {
    "date": "2026-11-21",
@@ -1094,17 +1338,6 @@
   },
   {
    "date": "2026-11-21",
-   "uk": "15:15",
-   "home": "Rayo Vallecano",
-   "away": "Valencia",
-   "comp": "La Liga",
-   "channels": [
-    "Premier Sports (TBC)"
-   ],
-   "source": "laligacal"
-  },
-  {
-   "date": "2026-11-21",
    "uk": "16:00",
    "home": "Kocaelispor",
    "away": "Fenerbahçe",
@@ -1137,7 +1370,7 @@
    "channels": [
     "Premier Sports (TBC)"
    ],
-   "source": "laligacal"
+   "source": "k45"
   },
   {
    "date": "2026-11-21",
@@ -1272,7 +1505,7 @@
    "channels": [
     "Premier Sports (TBC)"
    ],
-   "source": "laligacal"
+   "source": "k45"
   },
   {
    "date": "2026-11-22",
@@ -1413,7 +1646,7 @@
    "channels": [
     "Premier Sports (TBC)"
    ],
-   "source": "laligacal"
+   "source": "k45"
   },
   {
    "date": "2026-11-22",
@@ -1482,7 +1715,7 @@
    "channels": [
     "Premier Sports (TBC)"
    ],
-   "source": "laligacal"
+   "source": "k45"
   },
   {
    "date": "2026-11-23",
@@ -1529,6 +1762,17 @@
     "HBO Max"
    ],
    "source": "ucl"
+  },
+  {
+   "date": "2026-11-24",
+   "uk": "19:00",
+   "home": "Oxford United",
+   "away": "Tottenham Hotspur U21",
+   "comp": "EFL Trophy",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "eflt"
   },
   {
    "date": "2026-11-24",
@@ -1838,7 +2082,7 @@
   {
    "date": "2026-11-25",
    "uk": "20:00",
-   "home": "Atlético de Madrid",
+   "home": "Atlético Madrid",
    "away": "Viking",
    "comp": "UEFA Champions League",
    "channels": [
@@ -2066,44 +2310,8 @@
   {
    "date": "2026-11-26",
    "uk": "17:45",
-   "home": "Ferencváros",
-   "away": "Celje",
-   "comp": "UEFA Europa League",
-   "channels": [
-    "TNT Sports",
-    "HBO Max"
-   ],
-   "source": "uel"
-  },
-  {
-   "date": "2026-11-26",
-   "uk": "17:45",
    "home": "GNK Dinamo",
    "away": "Leverkusen",
-   "comp": "UEFA Europa League",
-   "channels": [
-    "TNT Sports",
-    "HBO Max"
-   ],
-   "source": "uel"
-  },
-  {
-   "date": "2026-11-26",
-   "uk": "17:45",
-   "home": "Hoffenheim",
-   "away": "Sturm Graz",
-   "comp": "UEFA Europa League",
-   "channels": [
-    "TNT Sports",
-    "HBO Max"
-   ],
-   "source": "uel"
-  },
-  {
-   "date": "2026-11-26",
-   "uk": "17:45",
-   "home": "Juventus",
-   "away": "Omonia",
    "comp": "UEFA Europa League",
    "channels": [
     "TNT Sports",
@@ -2140,30 +2348,6 @@
    "uk": "17:45",
    "home": "Salzburg",
    "away": "Ararat-Armenia",
-   "comp": "UEFA Europa League",
-   "channels": [
-    "TNT Sports",
-    "HBO Max"
-   ],
-   "source": "uel"
-  },
-  {
-   "date": "2026-11-26",
-   "uk": "17:45",
-   "home": "Sunderland",
-   "away": "Jagiellonia",
-   "comp": "UEFA Europa League",
-   "channels": [
-    "TNT Sports",
-    "HBO Max"
-   ],
-   "source": "uel"
-  },
-  {
-   "date": "2026-11-26",
-   "uk": "17:45",
-   "home": "Torreense",
-   "away": "Celtic",
    "comp": "UEFA Europa League",
    "channels": [
     "TNT Sports",
@@ -2317,6 +2501,42 @@
   {
    "date": "2026-11-26",
    "uk": "20:00",
+   "home": "Ferencváros",
+   "away": "Celje",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "20:00",
+   "home": "Hoffenheim",
+   "away": "Sturm Graz",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "20:00",
+   "home": "Juventus",
+   "away": "Omonia",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "20:00",
    "home": "Lyon",
    "away": "Lillestrøm",
    "comp": "UEFA Europa League",
@@ -2355,6 +2575,30 @@
    "uk": "20:00",
    "home": "Sparta Praha",
    "away": "AZ Alkmaar",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "20:00",
+   "home": "Sunderland",
+   "away": "Jagiellonia",
+   "comp": "UEFA Europa League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "uel"
+  },
+  {
+   "date": "2026-11-26",
+   "uk": "20:00",
+   "home": "Torreense",
+   "away": "Celtic",
    "comp": "UEFA Europa League",
    "channels": [
     "TNT Sports",
@@ -2433,7 +2677,7 @@
    "channels": [
     "Premier Sports (TBC)"
    ],
-   "source": "laligacal"
+   "source": "k46"
   },
   {
    "date": "2026-11-27",
@@ -2521,7 +2765,7 @@
    "channels": [
     "Premier Sports (TBC)"
    ],
-   "source": "laligacal"
+   "source": "k46"
   },
   {
    "date": "2026-11-28",
@@ -2547,17 +2791,6 @@
     "DAZN"
    ],
    "source": "daznsa"
-  },
-  {
-   "date": "2026-11-28",
-   "uk": "15:15",
-   "home": "Málaga",
-   "away": "Athletic Bilbao",
-   "comp": "La Liga",
-   "channels": [
-    "Premier Sports (TBC)"
-   ],
-   "source": "laligacal"
   },
   {
    "date": "2026-11-28",
@@ -2593,7 +2826,7 @@
    "channels": [
     "Premier Sports (TBC)"
    ],
-   "source": "laligacal"
+   "source": "k46"
   },
   {
    "date": "2026-11-28",
@@ -2853,7 +3086,7 @@
    "channels": [
     "Premier Sports (TBC)"
    ],
-   "source": "laligacal"
+   "source": "k46"
   },
   {
    "date": "2026-11-29",
@@ -2911,7 +3144,7 @@
    "channels": [
     "Premier Sports (TBC)"
    ],
-   "source": "laligacal"
+   "source": "k46"
   },
   {
    "date": "2026-11-29",
@@ -2944,7 +3177,7 @@
    "channels": [
     "Premier Sports (TBC)"
    ],
-   "source": "laligacal"
+   "source": "k46"
   },
   {
    "date": "2026-11-30",
@@ -4015,7 +4248,7 @@
    "date": "2026-12-09",
    "uk": "20:00",
    "home": "PSV Eindhoven",
-   "away": "Atlético de Madrid",
+   "away": "Atlético Madrid",
    "comp": "UEFA Champions League",
    "channels": [
     "TNT Sports",
@@ -4694,17 +4927,6 @@
   },
   {
    "date": "2026-12-13",
-   "uk": "12:00",
-   "home": "St Johnstone",
-   "away": "Rangers",
-   "comp": "Scottish Premiership",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "k39"
-  },
-  {
-   "date": "2026-12-13",
    "uk": "13:00",
    "home": "Göztepe",
    "away": "Konyaspor",
@@ -4785,6 +5007,17 @@
     "Prime Video (pay-per-view)"
    ],
    "source": "k50"
+  },
+  {
+   "date": "2026-12-13",
+   "uk": "15:00",
+   "home": "Hibernian",
+   "away": "Rangers",
+   "comp": "Scottish League Cup",
+   "channels": [
+    "Premier Sports"
+   ],
+   "source": "spflfinal"
   },
   {
    "date": "2026-12-13",
@@ -7209,6 +7442,17 @@
    "source": "k43"
   },
   {
+   "date": "2027-01-13",
+   "uk": "20:00",
+   "home": "St Johnstone",
+   "away": "Rangers",
+   "comp": "Scottish Premiership",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "spflfx"
+  },
+  {
    "date": "2027-01-15",
    "uk": "19:30",
    "home": "VfB Stuttgart",
@@ -7257,7 +7501,7 @@
    "date": "2027-01-19",
    "uk": "17:45",
    "home": "Bodø/Glimt",
-   "away": "Atlético de Madrid",
+   "away": "Atlético Madrid",
    "comp": "UEFA Champions League",
    "channels": [
     "TNT Sports or Prime Video (TBC)"
@@ -7388,17 +7632,6 @@
   {
    "date": "2027-01-19",
    "uk": "19:45",
-   "home": "Wigan Athletic",
-   "away": "Oxford United",
-   "comp": "League One",
-   "channels": [
-    "Sky Sports+"
-   ],
-   "source": "k43"
-  },
-  {
-   "date": "2027-01-19",
-   "uk": "19:45",
    "home": "Wycombe Wanderers",
    "away": "Cambridge United",
    "comp": "League One",
@@ -7507,6 +7740,17 @@
     "HBO Max"
    ],
    "source": "ucl"
+  },
+  {
+   "date": "2027-01-20",
+   "uk": "20:00",
+   "home": "Wigan Athletic",
+   "away": "Oxford United",
+   "comp": "League One",
+   "channels": [
+    "Sky Sports+"
+   ],
+   "source": "k43"
   },
   {
    "date": "2027-01-20",
@@ -8022,7 +8266,7 @@
   {
    "date": "2027-01-27",
    "uk": "20:00",
-   "home": "Atlético de Madrid",
+   "home": "Atlético Madrid",
    "away": "Fenerbahçe",
    "comp": "UEFA Champions League",
    "channels": [
