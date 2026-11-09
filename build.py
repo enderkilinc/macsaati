@@ -5,6 +5,7 @@ Run:  python3 build.py
 import json, os, re, shutil, html, sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "src"))
 from flags import flag, COMP_FLAG, TEAM_FLAG
+import pages as CONTENT
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
@@ -71,6 +72,7 @@ FTA = re.compile(r"^(BBC|ITV|STV|S4C|Channel 4)")
 
 def ch_class(c):
     if c == "No UK TV" or "TBC" in c: return "none"
+    if c.startswith("Digiturk"): return "digi"
     if "(TR)" in c: return "bein" if "beIN" in c else "tr"
     for pat, cl in [(r"^Sky","sky"),(r"^TNT|HBO","tnt"),(r"^BBC","bbc"),(r"^ITV|^STV","itv"),(r"^Premier","prem"),
                     (r"DAZN","dazn"),(r"Amazon|Prime","amazon"),(r"Apple","apple"),(r"Disney","disney"),(r"YouTube","yt")]:
@@ -78,6 +80,7 @@ def ch_class(c):
     return ""
 def ch_link(c):
     s = SOURCES
+    if c.startswith("Digiturk"): return CONTENT.GUIDE_EN
     for pat, key in [(r"^Sky","sky"),(r"^TNT|HBO","tnt"),(r"^BBC","bbc"),(r"^ITV|^STV","itv"),(r"^Premier","premier"),
                      (r"DAZN","dazn"),(r"Disney","disney"),(r"Prime Video|Amazon","amazon"),(r"Apple","apple"),(r"beIN|TOD","tff")]:
         if re.search(pat, c) and key in s: return s[key]["url"]
@@ -261,8 +264,8 @@ def superlig_banner(lang):
         nxt = (f'<p class="nx"><b>{cur[0]["round"]}. hafta:</b> {_range(cur, "tr")} — maç saatleri aşağıda.</p>' if lang == "tr"
                else f'<p class="nx"><b>Next – Week {cur[0]["round"]}:</b> {_range(cur, "en")}; kick-off times are in the listings below.</p>')
     note = N.get("banner_note_tr" if lang == "tr" else "banner_note", "")
-    sub = ("İngiltere'de 2026/27 için yayıncı yok; Türkiye'de tüm maçlar beIN SPORTS ve TOD'da." if lang == "tr"
-           else "No UK broadcaster for 2026/27 — in Türkiye every match is live on beIN SPORTS and TOD.") if not N.get("uk_superlig_rights") else ""
+    sub = ("İngiltere'de 2026/27 için TV yayıncısı yok; İngiltere'de yasal olarak Digiturk Play Yurt Dışı Spor paketiyle izlenebilir (rehbere bakın). Türkiye'de: beIN SPORTS ve TOD." if lang == "tr"
+           else "No UK TV channel for 2026/27 — watch legally in the UK on Digiturk Play's international Sports package (see our guide). In Türkiye: beIN SPORTS and TOD.") if not N.get("uk_superlig_rights") else ""
     return (f'<section class="sl"><div class="slh"><h2><span class="tag slg">Süper Lig</span> {esc(title)}</h2>'
             f'<a class="btn" href="{"/tr/" if lang=="tr" else "/super-lig-on-tv-uk/"}">{"Süper Lig programı" if lang=="tr" else "Süper Lig on TV"}</a></div>'
             f'<ul class="slg-list">{"".join(cells)}</ul>{nxt}'
@@ -310,7 +313,7 @@ def page(path, title, desc, h1, intro, body, fixtures, lang="en", hreflang=None,
     srcs = "".join(f'<li><a href="{esc(s["url"])}" target="_blank" rel="noopener nofollow">{esc(s["name"])}</a></li>' for k, s in SOURCES.items() if k in used)
     foot_en = (f'<p><b>Times</b> are UK time by default; switch to TSİ for Turkish time. Kick-offs and channels can change — always check with the broadcaster.</p>'
                f'<p><b>How this guide is built:</b> every match is listed only once it appears on a broadcaster\'s, league\'s or organiser\'s own page; each row shows its source and every channel links to that broadcaster. Updated every Friday. Last update: {esc(D["generated"])}.</p>'
-               f'<p><b>Süper Lig in the UK:</b> {"no UK TV deal has been announced for 2026/27, so Süper Lig matches show the Turkish broadcasters." if not N.get("uk_superlig_rights") else "UK channels shown where confirmed."}</p>')
+               f'<p><b>Süper Lig in the UK:</b> {'no UK TV channel has the rights for 2026/27. The legal way to watch in the UK is Digiturk Play\'s international Sports package — see <a href="' + CONTENT.GUIDE_EN + '">how to watch the Süper Lig in the UK</a>.' if not N.get("uk_superlig_rights") else "UK channels shown where confirmed."}</p>')
     foot_tr = (f'<p><b>Saatler</b> varsayılan olarak İngiltere saatidir; Türkiye saati için TSİ\'yi seçin. Maç saatleri ve kanallar değişebilir — yayıncıdan kontrol edin.</p>'
                f'<p><b>Nasıl hazırlanıyor:</b> her maç yalnızca yayıncının veya organizatörün kendi sayfasında yer aldıktan sonra listelenir. Her cuma güncellenir. Son güncelleme: {esc(D["generated"])}.</p>')
     return f"""<!DOCTYPE html>
@@ -346,6 +349,7 @@ def page(path, title, desc, h1, intro, body, fixtures, lang="en", hreflang=None,
 {body}
 </main>
 <footer><div class="wrap">{foot_tr if lang=="tr" else foot_en}<p><b>{"Sources" if lang=="en" else "Kaynaklar"}:</b></p><ul class="srclist">{srcs}</ul>
+<p class="footlinks"><a href="{CONTENT.GUIDE_TR if lang=="tr" else CONTENT.GUIDE_EN}">{"İngiltere'de Süper Lig nasıl izlenir?" if lang=="tr" else "How to watch the Süper Lig in the UK"}</a> · <a href="/about/">{"Hakkımızda" if lang=="tr" else "About"}</a> · <a href="/contact/">{"İletişim" if lang=="tr" else "Contact"}</a> · <a href="/privacy/">{"Gizlilik" if lang=="tr" else "Privacy"}</a></p>
 <p class="small">© {datetime.now().year} {SITE} · macsaati.co.uk · {"Independent guide, not affiliated with any broadcaster or league." if lang=="en" else "Bağımsız rehber; hiçbir yayıncı veya lig ile bağlantılı değildir."}</p></div></footer>
 <script>{JS}</script>
 </body></html>"""
@@ -376,8 +380,8 @@ def build():
         f'<!DOCTYPE html><html><head><meta charset="utf-8"><title>{SITE}</title><link rel="canonical" href="{DOMAIN}/">'
         f'<meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=/"></head><body><a href="/">{SITE}</a></body></html>')
     # Super Lig (EN)
-    sl_intro = ("No UK broadcaster has announced Süper Lig rights for 2026/27, so there is currently no way to watch it on UK TV. "
-                "In Türkiye every match is live on beIN SPORTS and the TOD app. Below are all of this week's fixtures with UK and Turkish kick-off times.") \
+    sl_intro = ("No UK TV channel has Süper Lig rights for 2026/27, but every match can be watched legally in the UK on Digiturk Play's international Sports package "
+                f'(<a href="{CONTENT.GUIDE_EN}" style="color:#fff;text-decoration:underline">how to watch</a>). In Türkiye matches are on beIN SPORTS and TOD. All fixtures with UK and Turkish kick-off times are below.') \
                if not N.get("uk_superlig_rights") else "This week's Süper Lig fixtures with UK channels and kick-off times."
     write("/super-lig-on-tv-uk/", page("/super-lig-on-tv-uk/",
         f"Süper Lig on TV in the UK – {N['superlig_round']} fixtures & UK kick-off times | {SITE}",
@@ -390,7 +394,8 @@ def build():
     write("/tr/", page("/tr/", f"İngiltere'de Süper Lig maçları saat kaçta, hangi kanalda? | {SITE}",
         f"Süper Lig {N['superlig_round']} maçları İngiltere saati ve Türkiye saati ile: Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor maçları hangi kanalda? İngiltere'de yaşayanlar için haftalık maç rehberi.",
         "İngiltere'de Süper Lig maç saatleri ve kanallar",
-        "İngiltere'de yaşayan futbolseverler için Süper Lig ve A Milli Takım maçları, İngiltere ve Türkiye saatiyle. 2026/27 sezonu için İngiltere'de Süper Lig yayıncısı açıklanmadı; Türkiye'de tüm maçlar beIN SPORTS ve TOD'da.",
+        "İngiltere'de yaşayan futbolseverler için Süper Lig ve A Milli Takım maçları, İngiltere ve Türkiye saatiyle. 2026/27'de Süper Lig İngiliz kanallarında yok; İngiltere'de yasal olarak Digiturk Play Yurt Dışı Spor paketiyle izlenebilir "
+        f'(<a href="{CONTENT.GUIDE_TR}" style="color:#fff;text-decoration:underline">nasıl izlenir</a>). Türkiye\'de tüm maçlar beIN SPORTS ve TOD\'da.',
         listing(turk, "tr", empty="Bu hafta Türk futbolu maçı yok."), turk, lang="tr", hreflang=[("tr","/tr/"),("en-GB","/super-lig-on-tv-uk/")], controls=False))
     pages.append(("/tr/", "daily", "0.9"))
     # Türkiye national team
@@ -407,7 +412,7 @@ def build():
         nxt = fx[0] if fx else None
         TRM = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"]
         TRD = ["Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi","Pazar"]
-        no_uk = " There is no UK TV deal for the Süper Lig in 2026/27; matches are live in Türkiye on beIN SPORTS and TOD." if not N.get("uk_superlig_rights") else ""
+        no_uk = f' Süper Lig matches are not on UK TV in 2026/27 but can be watched legally on Digiturk Play\'s international Sports package (<a href="{CONTENT.GUIDE_EN}" style="color:#fff;text-decoration:underline">how to watch</a>).' if not N.get("uk_superlig_rights") else ""
         if nxt:
             d = nxt["dt"].date()
             rel_en = "Today" if d == TODAY else "Tomorrow" if d == TODAY + timedelta(days=1) else nxt["dt"].strftime("%a")
@@ -435,6 +440,37 @@ def build():
     for p in ["index.html", "super-lig-on-tv-uk/index.html"]:
         fp = os.path.join(OUT, p); s = open(fp, encoding="utf-8").read()
         open(fp, "w", encoding="utf-8").write(s.replace("</main>", clubs_html + "</main>", 1))
+    # Content pages (guide EN/TR, about, contact, privacy)
+    club_links = lambda lang: '<ul class="clublinks">' + "".join(
+        f'<li><a href="/{slug(c)}-on-tv/">{esc(c)}{" maçı" if lang=="tr" else " on TV"}</a></li>' for c in CLUBS) + "</ul>"
+    def faq_html(qas): return "".join(f"<details class=faq><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q, a in qas)
+    content = [
+        (CONTENT.GUIDE_EN, "en", f"How to watch the Süper Lig in the UK (2026/27) – legal options, channels & UK kick-off times | {SITE}",
+         "Is the Turkish Süper Lig on UK TV? Not in 2026/27 – here is the legal way to watch Galatasaray, Fenerbahçe, Beşiktaş and every Süper Lig match in the UK, plus Turkish clubs in Europe and UK kick-off times.",
+         "How to watch the Süper Lig in the UK", "Every legal option for 2026/27, Turkish clubs in Europe, the national team and UK kick-off times.",
+         CONTENT.GUIDE_EN_BODY.replace("{CLUB_LINKS}", club_links("en")).replace("{FAQ}", faq_html(CONTENT.GUIDE_EN_FAQ)),
+         CONTENT.GUIDE_EN_FAQ, [("en-GB", CONTENT.GUIDE_EN), ("tr", CONTENT.GUIDE_TR)], "0.8"),
+        (CONTENT.GUIDE_TR, "tr", f"İngiltere'de Süper Lig nasıl izlenir? (2026/27) Yasal yollar, kanallar ve İngiltere saati | {SITE}",
+         "Süper Lig İngiltere'de televizyonda var mı? 2026/27'de yok – Galatasaray, Fenerbahçe, Beşiktaş ve tüm Süper Lig maçlarını İngiltere'de yasal olarak izlemenin yolu, Türk takımlarının Avrupa maçları ve İngiltere saati.",
+         "İngiltere'de Süper Lig nasıl izlenir?", "2026/27 için tüm yasal yollar, Türk takımlarının Avrupa maçları, A Milli Takım ve İngiltere saati.",
+         CONTENT.GUIDE_TR_BODY.replace("{CLUB_LINKS}", club_links("tr")).replace("{FAQ}", faq_html(CONTENT.GUIDE_TR_FAQ)),
+         CONTENT.GUIDE_TR_FAQ, [("en-GB", CONTENT.GUIDE_EN), ("tr", CONTENT.GUIDE_TR)], "0.8"),
+        ("/about/", "en", f"About Maç Saati – football on TV for the Turkish community in the UK | {SITE}",
+         "Maç Saati is a free, independent guide to football on TV for the Turkish community in the UK, with UK and Turkish kick-off times and channels from official sources.",
+         "About Maç Saati", "Hakkımızda · Football on TV for the Turkish community in the UK.", CONTENT.ABOUT_BODY, None, None, "0.4"),
+        ("/contact/", "en", f"Contact Maç Saati | {SITE}", "Contact Maç Saati with corrections, questions or sponsorship enquiries.",
+         "Contact", "İletişim · Corrections, questions and ideas.", CONTENT.CONTACT_BODY, None, None, "0.3"),
+        ("/privacy/", "en", f"Privacy policy | {SITE}", "How Maç Saati handles your data: no accounts, no adverts, no analytics and no cookies.",
+         "Privacy policy", "No accounts, no adverts, no analytics, no cookies.", CONTENT.PRIVACY_BODY, None, None, "0.2"),
+    ]
+    for path, lang, title, desc, h1, intro, body, faq, hl, prio in content:
+        html_ = page(path, title, desc, h1, esc(intro), body, [], lang=lang, hreflang=hl, controls=False, banner=False)
+        html_ = re.sub(r'<div class="controls slim">.*?</div></div>', "", html_, count=1, flags=re.S)
+        if faq:
+            extra = json.dumps({"@context": "https://schema.org", **CONTENT.faq_jsonld(faq)}, ensure_ascii=False)
+            html_ = html_.replace("</head>", f'<script type="application/ld+json">{extra}</script></head>', 1)
+        write(path, html_)
+        pages.append((path, "monthly", prio))
     # 404
     open(os.path.join(OUT, "404.html"), "w", encoding="utf-8").write(
         page("/404.html", f"Page not found | {SITE}", "Page not found", "Page not found",

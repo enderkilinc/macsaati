@@ -26,3 +26,6 @@ While a match is live (kick-off to +115 min) the status tag becomes a "Live scor
 
 ## Süper Lig summary bar
 Built automatically from `data/fixtures.json`: every Süper Lig row has `"round": N` and, once played, `"score": "H-A"`. The bar shows the current round (all matches, UK and TSİ times, scores as they come in); between rounds it shows the last round's results plus a "Next" line. `banner_note` / `banner_note_tr` in `data/notes.json` add an optional extra line (e.g. international break). A scheduled task adds scores on Sunday, Monday and Tuesday mornings.
+
+## Content pages
+`src/pages.py` holds the Süper Lig guide (EN `/how-to-watch-super-lig-in-uk/`, TR `/tr/ingilterede-super-lig-nasil-izlenir/`), About, Contact and Privacy. Re-check the guide's facts (rights, Digiturk Play package and price) each season. Süper Lig rows use the channels ["Digiturk Play (UK)","beIN SPORTS (TR)","TOD (TR)"]; the Digiturk badge links to the guide.
