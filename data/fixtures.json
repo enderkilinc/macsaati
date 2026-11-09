@@ -132,6 +132,18 @@
   "bl10": {
    "name": "Bundesliga – Matchday 10 fixtures",
    "url": "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/10"
+  },
+  "pldec": {
+   "name": "Premier League – broadcast selections for December 2026",
+   "url": "https://www.premierleague.com/en/news/4743152/fixture-amendments-for-premier-league-matches-in-december/"
+  },
+  "plfest": {
+   "name": "Premier League – festive fixtures 26 Dec–7 Jan (broadcast selections)",
+   "url": "https://www.premierleague.com/en/news/4713230"
+  },
+  "tff716": {
+   "name": "TFF – Süper Lig weeks 7–16 programme (via AA/İHA)",
+   "url": "https://www.hurriyet.com.tr/sporarena/super-ligde-7-16-haftalarin-programi-aciklandi-43307638"
   }
  },
  "fixtures": [
@@ -5103,6 +5115,1175 @@
     "Sky Sports"
    ],
    "source": "bl10"
+  },
+  {
+   "date": "2026-12-01",
+   "uk": "20:00",
+   "home": "Coventry City",
+   "away": "Ipswich Town",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-02",
+   "uk": "19:30",
+   "home": "Chelsea",
+   "away": "Crystal Palace",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-02",
+   "uk": "19:30",
+   "home": "Hull City",
+   "away": "Nottingham Forest",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-02",
+   "uk": "19:30",
+   "home": "Liverpool",
+   "away": "Sunderland",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-02",
+   "uk": "19:30",
+   "home": "Manchester City",
+   "away": "Leeds United",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-02",
+   "uk": "20:15",
+   "home": "AFC Bournemouth",
+   "away": "Brighton & Hove Albion",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-02",
+   "uk": "20:15",
+   "home": "Aston Villa",
+   "away": "Everton",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-02",
+   "uk": "20:15",
+   "home": "Brentford",
+   "away": "Arsenal",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-02",
+   "uk": "20:15",
+   "home": "Newcastle United",
+   "away": "Manchester United",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-03",
+   "uk": "20:00",
+   "home": "Tottenham Hotspur",
+   "away": "Fulham",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-05",
+   "uk": "12:30",
+   "home": "Chelsea",
+   "away": "Liverpool",
+   "comp": "Premier League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-05",
+   "uk": "17:30",
+   "home": "Nottingham Forest",
+   "away": "Brighton & Hove Albion",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-05",
+   "uk": "20:00",
+   "home": "Brentford",
+   "away": "Manchester City",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-06",
+   "uk": "14:00",
+   "home": "Everton",
+   "away": "Fulham",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-06",
+   "uk": "14:00",
+   "home": "Newcastle United",
+   "away": "Sunderland",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-06",
+   "uk": "16:30",
+   "home": "Tottenham Hotspur",
+   "away": "Arsenal",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-12",
+   "uk": "17:30",
+   "home": "Manchester City",
+   "away": "Chelsea",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-13",
+   "uk": "14:00",
+   "home": "Arsenal",
+   "away": "AFC Bournemouth",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-13",
+   "uk": "14:00",
+   "home": "Brighton & Hove Albion",
+   "away": "Everton",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-13",
+   "uk": "14:00",
+   "home": "Sunderland",
+   "away": "Nottingham Forest",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-13",
+   "uk": "16:30",
+   "home": "Coventry City",
+   "away": "Aston Villa",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-13",
+   "uk": "19:00",
+   "home": "Crystal Palace",
+   "away": "Manchester United",
+   "comp": "Premier League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-14",
+   "uk": "20:00",
+   "home": "Hull City",
+   "away": "Tottenham Hotspur",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-19",
+   "uk": "12:30",
+   "home": "Brentford",
+   "away": "Newcastle United",
+   "comp": "Premier League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-19",
+   "uk": "17:30",
+   "home": "Liverpool",
+   "away": "Tottenham Hotspur",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-20",
+   "uk": "14:00",
+   "home": "Brighton & Hove Albion",
+   "away": "Ipswich Town",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-20",
+   "uk": "14:00",
+   "home": "Sunderland",
+   "away": "Crystal Palace",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-20",
+   "uk": "16:30",
+   "home": "Arsenal",
+   "away": "Manchester United",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-21",
+   "uk": "20:00",
+   "home": "Chelsea",
+   "away": "Aston Villa",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pldec"
+  },
+  {
+   "date": "2026-12-26",
+   "uk": "12:30",
+   "home": "Aston Villa",
+   "away": "Leeds United",
+   "comp": "Premier League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2026-12-26",
+   "uk": "17:30",
+   "home": "Hull City",
+   "away": "Liverpool",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2026-12-26",
+   "uk": "20:00",
+   "home": "Newcastle United",
+   "away": "Manchester City",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2026-12-27",
+   "uk": "14:00",
+   "home": "Coventry City",
+   "away": "Chelsea",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2026-12-27",
+   "uk": "16:30",
+   "home": "Manchester United",
+   "away": "Nottingham Forest",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2026-12-27",
+   "uk": "19:00",
+   "home": "Crystal Palace",
+   "away": "Arsenal",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2026-12-29",
+   "uk": "19:30",
+   "home": "Hull City",
+   "away": "Leeds United",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2026-12-29",
+   "uk": "19:30",
+   "home": "Tottenham Hotspur",
+   "away": "Brighton & Hove Albion",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2026-12-29",
+   "uk": "20:15",
+   "home": "Everton",
+   "away": "Manchester City",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2026-12-30",
+   "uk": "19:30",
+   "home": "Coventry City",
+   "away": "Brentford",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2026-12-30",
+   "uk": "19:30",
+   "home": "Crystal Palace",
+   "away": "AFC Bournemouth",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2026-12-30",
+   "uk": "19:30",
+   "home": "Fulham",
+   "away": "Arsenal",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2026-12-30",
+   "uk": "19:30",
+   "home": "Manchester United",
+   "away": "Sunderland",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2026-12-30",
+   "uk": "19:30",
+   "home": "Newcastle United",
+   "away": "Nottingham Forest",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2026-12-30",
+   "uk": "20:15",
+   "home": "Aston Villa",
+   "away": "Liverpool",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2026-12-30",
+   "uk": "20:15",
+   "home": "Ipswich Town",
+   "away": "Chelsea",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2027-01-01",
+   "uk": "20:00",
+   "home": "Leeds United",
+   "away": "Everton",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2027-01-02",
+   "uk": "12:30",
+   "home": "Brighton & Hove Albion",
+   "away": "Manchester United",
+   "comp": "Premier League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2027-01-02",
+   "uk": "17:30",
+   "home": "AFC Bournemouth",
+   "away": "Aston Villa",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2027-01-03",
+   "uk": "14:00",
+   "home": "Chelsea",
+   "away": "Newcastle United",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2027-01-03",
+   "uk": "16:30",
+   "home": "Manchester City",
+   "away": "Tottenham Hotspur",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2027-01-05",
+   "uk": "19:30",
+   "home": "Arsenal",
+   "away": "Brentford",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2027-01-05",
+   "uk": "19:30",
+   "home": "Brighton & Hove Albion",
+   "away": "AFC Bournemouth",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2027-01-05",
+   "uk": "19:30",
+   "home": "Everton",
+   "away": "Aston Villa",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2027-01-05",
+   "uk": "19:30",
+   "home": "Nottingham Forest",
+   "away": "Hull City",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2027-01-05",
+   "uk": "20:15",
+   "home": "Sunderland",
+   "away": "Liverpool",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2027-01-06",
+   "uk": "19:30",
+   "home": "Crystal Palace",
+   "away": "Chelsea",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2027-01-06",
+   "uk": "19:30",
+   "home": "Fulham",
+   "away": "Tottenham Hotspur",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2027-01-06",
+   "uk": "19:30",
+   "home": "Ipswich Town",
+   "away": "Coventry City",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2027-01-06",
+   "uk": "20:15",
+   "home": "Leeds United",
+   "away": "Manchester City",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2027-01-07",
+   "uk": "20:00",
+   "home": "Manchester United",
+   "away": "Newcastle United",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "plfest"
+  },
+  {
+   "date": "2026-11-27",
+   "uk": "17:00",
+   "home": "Çaykur Rizespor",
+   "away": "Kasımpaşa",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 13
+  },
+  {
+   "date": "2026-11-27",
+   "uk": "17:00",
+   "home": "Alanyaspor",
+   "away": "Konyaspor",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 13
+  },
+  {
+   "date": "2026-11-28",
+   "uk": "13:00",
+   "home": "Samsunspor",
+   "away": "Gençlerbirliği",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 13
+  },
+  {
+   "date": "2026-11-28",
+   "uk": "16:00",
+   "home": "Gaziantep FK",
+   "away": "Amedspor",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 13
+  },
+  {
+   "date": "2026-11-29",
+   "uk": "10:30",
+   "home": "Çorum FK",
+   "away": "Kocaelispor",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 13
+  },
+  {
+   "date": "2026-11-29",
+   "uk": "13:00",
+   "home": "Eyüpspor",
+   "away": "Başakşehir",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 13
+  },
+  {
+   "date": "2026-11-29",
+   "uk": "16:00",
+   "home": "Fenerbahçe",
+   "away": "Erzurumspor FK",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 13
+  },
+  {
+   "date": "2026-11-30",
+   "uk": "16:00",
+   "home": "Göztepe",
+   "away": "Trabzonspor",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 13
+  },
+  {
+   "date": "2026-11-30",
+   "uk": "18:00",
+   "home": "Beşiktaş",
+   "away": "Galatasaray",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 13
+  },
+  {
+   "date": "2026-12-04",
+   "uk": "17:00",
+   "home": "Galatasaray",
+   "away": "Çaykur Rizespor",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 14
+  },
+  {
+   "date": "2026-12-05",
+   "uk": "10:30",
+   "home": "Konyaspor",
+   "away": "Gaziantep FK",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 14
+  },
+  {
+   "date": "2026-12-05",
+   "uk": "13:00",
+   "home": "Amedspor",
+   "away": "Alanyaspor",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 14
+  },
+  {
+   "date": "2026-12-05",
+   "uk": "16:00",
+   "home": "Başakşehir",
+   "away": "Fenerbahçe",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 14
+  },
+  {
+   "date": "2026-12-06",
+   "uk": "10:30",
+   "home": "Erzurumspor FK",
+   "away": "Kocaelispor",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 14
+  },
+  {
+   "date": "2026-12-06",
+   "uk": "13:00",
+   "home": "Gençlerbirliği",
+   "away": "Eyüpspor",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 14
+  },
+  {
+   "date": "2026-12-06",
+   "uk": "13:00",
+   "home": "Beşiktaş",
+   "away": "Samsunspor",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 14
+  },
+  {
+   "date": "2026-12-06",
+   "uk": "16:00",
+   "home": "Trabzonspor",
+   "away": "Çorum FK",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 14
+  },
+  {
+   "date": "2026-12-07",
+   "uk": "17:00",
+   "home": "Kasımpaşa",
+   "away": "Göztepe",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 14
+  },
+  {
+   "date": "2026-12-11",
+   "uk": "17:00",
+   "home": "Çorum FK",
+   "away": "Amedspor",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 15
+  },
+  {
+   "date": "2026-12-12",
+   "uk": "10:30",
+   "home": "Erzurumspor FK",
+   "away": "Kasımpaşa",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 15
+  },
+  {
+   "date": "2026-12-12",
+   "uk": "13:00",
+   "home": "Alanyaspor",
+   "away": "Samsunspor",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 15
+  },
+  {
+   "date": "2026-12-12",
+   "uk": "16:00",
+   "home": "Eyüpspor",
+   "away": "Galatasaray",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 15
+  },
+  {
+   "date": "2026-12-13",
+   "uk": "10:30",
+   "home": "Kocaelispor",
+   "away": "Gençlerbirliği",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 15
+  },
+  {
+   "date": "2026-12-13",
+   "uk": "13:00",
+   "home": "Çaykur Rizespor",
+   "away": "Başakşehir",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 15
+  },
+  {
+   "date": "2026-12-13",
+   "uk": "13:00",
+   "home": "Göztepe",
+   "away": "Konyaspor",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 15
+  },
+  {
+   "date": "2026-12-13",
+   "uk": "16:00",
+   "home": "Fenerbahçe",
+   "away": "Trabzonspor",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 15
+  },
+  {
+   "date": "2026-12-14",
+   "uk": "17:00",
+   "home": "Gaziantep FK",
+   "away": "Beşiktaş",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 15
+  },
+  {
+   "date": "2026-12-18",
+   "uk": "17:00",
+   "home": "Amedspor",
+   "away": "Göztepe",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 16
+  },
+  {
+   "date": "2026-12-18",
+   "uk": "17:00",
+   "home": "Kasımpaşa",
+   "away": "Fenerbahçe",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 16
+  },
+  {
+   "date": "2026-12-19",
+   "uk": "10:30",
+   "home": "Konyaspor",
+   "away": "Eyüpspor",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 16
+  },
+  {
+   "date": "2026-12-19",
+   "uk": "13:00",
+   "home": "Başakşehir",
+   "away": "Erzurumspor FK",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 16
+  },
+  {
+   "date": "2026-12-19",
+   "uk": "16:00",
+   "home": "Galatasaray",
+   "away": "Alanyaspor",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 16
+  },
+  {
+   "date": "2026-12-20",
+   "uk": "10:30",
+   "home": "Gençlerbirliği",
+   "away": "Çorum FK",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 16
+  },
+  {
+   "date": "2026-12-20",
+   "uk": "13:00",
+   "home": "Samsunspor",
+   "away": "Gaziantep FK",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 16
+  },
+  {
+   "date": "2026-12-20",
+   "uk": "16:00",
+   "home": "Beşiktaş",
+   "away": "Çaykur Rizespor",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 16
+  },
+  {
+   "date": "2026-12-21",
+   "uk": "17:00",
+   "home": "Trabzonspor",
+   "away": "Kocaelispor",
+   "comp": "Süper Lig",
+   "channels": [
+    "Digiturk Play (UK)",
+    "beIN SPORTS (TR)",
+    "TOD (TR)"
+   ],
+   "source": "tff716",
+   "round": 16
   }
  ]
 }
