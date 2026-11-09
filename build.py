@@ -554,13 +554,19 @@ def build():
         page("/404.html", f"Page not found | {SITE}", "Page not found", "Page not found",
              'That page doesn\'t exist. <a href="/" style="color:#fff;text-decoration:underline">Go to this week\'s listings</a>.', "", [], controls=False, banner=False)
         .replace('<link rel="canonical"', '<meta name="robots" content="noindex"><link rel="canonical"'))
+    # Instagram images (docs/social/, noindex) – skipped quietly if Pillow is missing
+    try:
+        import social
+        social.build_social(FIX, TODAY, os.path.join(OUT, "social"), comp_rank, match_path, DOMAIN)
+    except ImportError:
+        print("Pillow not installed – social images skipped")
     # sitemap / robots / CNAME
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for p, freq, pri in pages:
         sm.append(f"<url><loc>{DOMAIN}{p}</loc><lastmod>{D['generated']}</lastmod><changefreq>{freq}</changefreq><priority>{pri}</priority></url>")
     sm.append("</urlset>")
     open(os.path.join(OUT, "sitemap.xml"), "w").write("\n".join(sm))
-    open(os.path.join(OUT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n")
+    open(os.path.join(OUT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nDisallow: /social/\nSitemap: {DOMAIN}/sitemap.xml\n")
     open(os.path.join(OUT, "CNAME"), "w").write(DOMAIN.split("//")[1])
     open(os.path.join(OUT, ".nojekyll"), "w").write("")
     print(f"Built {len(pages)} pages, {len(FIX)} fixtures -> {OUT}")

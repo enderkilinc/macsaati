@@ -32,3 +32,6 @@ Built automatically from `data/fixtures.json`: every Süper Lig row has `"round"
 
 ## Match pages and sharing
 Every match involving a Turkish club or Türkiye gets its own bilingual page at `/mac/<home>-<away>-<date>/` (title "X – Y hangi kanalda, saat kaçta?"), built automatically and listed in the sitemap; the last Süper Lig round keeps its pages with the result for 10 days. Every row has a WhatsApp "Share/Paylaş" link; Turkish rows also link to their match page.
+
+## Instagram images
+`src/social.py` (needs Pillow) writes daily images to `docs/social/` — https://macsaati.co.uk/social/ (noindex, blocked in robots.txt): "Bugün TV'de" story and post, this week's Turkish-interest matches, one post per Turkish-interest match today/tomorrow, a profile picture, and ready-made captions. Own graphics only (no crests or broadcaster logos). Fonts: DejaVu (src/fonts, free licence).
