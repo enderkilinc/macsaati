@@ -116,6 +116,10 @@
   "disneylaliga": {
    "name": "Disney+ UK – Valencia vs Real Madrid (LALIGA round 12)",
    "url": "https://www.disneyplus.com/en-gb/browse/entity-d66e82c5-9002-4f9f-9837-0f0ea4ba5350"
+  },
+  "laligarm": {
+   "name": "LALIGA – Real Madrid vs Celta (matchday 13, UK time)",
+   "url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-rc-celta-13"
   }
  },
  "fixtures": [
@@ -4812,6 +4816,17 @@
    ],
    "source": "tff",
    "round": 12
+  },
+  {
+   "date": "2026-11-21",
+   "uk": "20:00",
+   "home": "Real Madrid",
+   "away": "Celta Vigo",
+   "comp": "La Liga",
+   "channels": [
+    "Disney+"
+   ],
+   "source": "laligarm"
   }
  ]
 }
