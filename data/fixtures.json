@@ -120,6 +120,18 @@
   "laligarm": {
    "name": "LALIGA – Real Madrid vs Celta (matchday 13, UK time)",
    "url": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-rc-celta-13"
+  },
+  "laligacal": {
+   "name": "LALIGA – club calendars (UK kick-off times)",
+   "url": "https://www.laliga.com/en-GB/laliga-easports/calendar"
+  },
+  "legaseriea": {
+   "name": "Lega Serie A – anticipi e posticipi (all matches on DAZN in the UK)",
+   "url": "https://www.legaseriea.it/serie-a/news/anticipi-e-posticipi-fino-alla-fine-del-girone-di-andata"
+  },
+  "bl10": {
+   "name": "Bundesliga – Matchday 10 fixtures",
+   "url": "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/10"
   }
  },
  "fixtures": [
@@ -4827,6 +4839,270 @@
     "Disney+"
    ],
    "source": "laligarm"
+  },
+  {
+   "date": "2026-11-20",
+   "uk": "20:00",
+   "home": "Athletic Bilbao",
+   "away": "Espanyol",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laligacal"
+  },
+  {
+   "date": "2026-11-21",
+   "uk": "13:00",
+   "home": "Alavés",
+   "away": "Deportivo La Coruña",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laligacal"
+  },
+  {
+   "date": "2026-11-21",
+   "uk": "15:15",
+   "home": "Rayo Vallecano",
+   "away": "Valencia",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laligacal"
+  },
+  {
+   "date": "2026-11-21",
+   "uk": "17:30",
+   "home": "Sevilla",
+   "away": "Real Betis",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laligacal"
+  },
+  {
+   "date": "2026-11-22",
+   "uk": "13:00",
+   "home": "Barcelona",
+   "away": "Villarreal",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laligacal"
+  },
+  {
+   "date": "2026-11-22",
+   "uk": "17:30",
+   "home": "Osasuna",
+   "away": "Málaga",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laligacal"
+  },
+  {
+   "date": "2026-11-23",
+   "uk": "20:00",
+   "home": "Levante",
+   "away": "Elche",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laligacal"
+  },
+  {
+   "date": "2026-11-27",
+   "uk": "20:00",
+   "home": "Levante",
+   "away": "Racing Santander",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laligacal"
+  },
+  {
+   "date": "2026-11-28",
+   "uk": "13:00",
+   "home": "Real Betis",
+   "away": "Rayo Vallecano",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laligacal"
+  },
+  {
+   "date": "2026-11-28",
+   "uk": "15:15",
+   "home": "Málaga",
+   "away": "Athletic Bilbao",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laligacal"
+  },
+  {
+   "date": "2026-11-28",
+   "uk": "17:30",
+   "home": "Elche",
+   "away": "Atlético Madrid",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laligacal"
+  },
+  {
+   "date": "2026-11-29",
+   "uk": "15:15",
+   "home": "Deportivo La Coruña",
+   "away": "Barcelona",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laligacal"
+  },
+  {
+   "date": "2026-11-29",
+   "uk": "17:30",
+   "home": "Celta Vigo",
+   "away": "Villarreal",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laligacal"
+  },
+  {
+   "date": "2026-11-29",
+   "uk": "20:00",
+   "home": "Real Sociedad",
+   "away": "Sevilla",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laligacal"
+  },
+  {
+   "date": "2026-11-21",
+   "uk": "14:00",
+   "home": "Como",
+   "away": "Cagliari",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "legaseriea"
+  },
+  {
+   "date": "2026-11-21",
+   "uk": "14:00",
+   "home": "Lazio",
+   "away": "Lecce",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "legaseriea"
+  },
+  {
+   "date": "2026-11-21",
+   "uk": "19:45",
+   "home": "Napoli",
+   "away": "Torino",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "legaseriea"
+  },
+  {
+   "date": "2026-11-22",
+   "uk": "11:30",
+   "home": "Juventus",
+   "away": "Venezia",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "legaseriea"
+  },
+  {
+   "date": "2026-11-22",
+   "uk": "14:00",
+   "home": "Bologna",
+   "away": "Udinese",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "legaseriea"
+  },
+  {
+   "date": "2026-11-22",
+   "uk": "14:00",
+   "home": "Sassuolo",
+   "away": "Genoa",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "legaseriea"
+  },
+  {
+   "date": "2026-11-22",
+   "uk": "17:00",
+   "home": "Milan",
+   "away": "Frosinone",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "legaseriea"
+  },
+  {
+   "date": "2026-11-22",
+   "uk": "19:45",
+   "home": "Atalanta",
+   "away": "Inter",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "legaseriea"
+  },
+  {
+   "date": "2026-11-23",
+   "uk": "19:45",
+   "home": "Monza",
+   "away": "Fiorentina",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "legaseriea"
+  },
+  {
+   "date": "2026-11-21",
+   "uk": "17:30",
+   "home": "Schalke 04",
+   "away": "VfB Stuttgart",
+   "comp": "Bundesliga",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "bl10"
   }
  ]
 }
