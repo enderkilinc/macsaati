@@ -23,3 +23,6 @@ While a match is live (kick-off to +115 min) the status tag becomes a "Live scor
 
 ## Daily rebuild
 `.github/workflows/daily-rebuild.yml` rebuilds the site just after UK midnight so past days drop off and the page opens on today; it pings IndexNow when something changed. `build.py` skips fixtures before today (UK date); `MACSAATI_TODAY=YYYY-MM-DD` overrides that for testing. `src/app.js` also hides past days in the browser in case a cached page is shown. Club pages stay even when a club has no upcoming match.
+
+## Süper Lig summary bar
+Built automatically from `data/fixtures.json`: every Süper Lig row has `"round": N` and, once played, `"score": "H-A"`. The bar shows the current round (all matches, UK and TSİ times, scores as they come in); between rounds it shows the last round's results plus a "Next" line. `banner_note` / `banner_note_tr` in `data/notes.json` add an optional extra line (e.g. international break). A scheduled task adds scores on Sunday, Monday and Tuesday mornings.

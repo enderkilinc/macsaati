@@ -209,6 +209,65 @@ def nav(lang):
     return ('<nav class="links"><a href="/">All matches (to {last})</a><a href="/super-lig-on-tv-uk/">Süper Lig on TV</a>'
             '<a href="/turkey-on-tv/">Türkiye</a><a href="/tr/">Türkçe</a></nav>').replace("{last}", LAST_LABEL)
 
+# ---- Süper Lig summary bar: built from fixtures.json (Süper Lig rows carry "round" and, once played, "score") ----
+TRM_FULL = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"]
+TRD_SHORT = ["Pzt","Sal","Çar","Per","Cum","Cmt","Paz"]
+def _sl_rounds():
+    rows = []
+    for f in D["fixtures"]:
+        if f["comp"] != "Süper Lig" or "round" not in f: continue
+        g = dict(f); dt = datetime.fromisoformat(f"{f['date']}T{f['uk']}").replace(tzinfo=LON)
+        g["dt"] = dt; g["tr"] = dt.astimezone(IST).strftime("%H:%M"); rows.append(g)
+    rounds = {}
+    for g in sorted(rows, key=lambda g: (g["dt"], g["home"])): rounds.setdefault(g["round"], []).append(g)
+    return [rounds[k] for k in sorted(rounds)]
+def _range(ms, lang):
+    a, z = ms[0]["dt"].date(), ms[-1]["dt"].date()
+    if lang == "tr":
+        return f"{a.day}–{z.day} {TRM_FULL[z.month-1]}" if a.month == z.month else f"{a.day} {TRM_FULL[a.month-1]} – {z.day} {TRM_FULL[z.month-1]}"
+    return f"{a.day}–{z.day} {z.strftime('%B')}" if a.month == z.month else f"{a.day} {a.strftime('%b')} – {z.day} {z.strftime('%b')}"
+def _team(t): return f'<a href="/{slug(t)}-on-tv/">{esc(t)}</a>' if t in ALL_SL_CLUBS else esc(t)
+def superlig_banner(lang):
+    rounds = _sl_rounds()
+    if not rounds: return ""
+    cur = next((r for r in rounds if any(g["dt"].date() >= TODAY for g in r)), None)
+    prev = None
+    if cur is None: prev = rounds[-1]
+    else:
+        i = rounds.index(cur)
+        if cur[0]["dt"].date() > TODAY + timedelta(days=3) and i > 0 and all(g.get("score") for g in rounds[i-1]): prev = rounds[i-1]
+    show = prev or cur
+    n = show[0]["round"]
+    done = all(g.get("score") for g in show)
+    if lang == "tr":
+        title = f"Süper Lig {n}. hafta " + ("sonuçları" if done else "") + f" · {_range(show, 'tr')}"
+    else:
+        title = f"Süper Lig Week {n} " + ("results" if done else "") + f" · {_range(show, 'en')}"
+    title = title.replace("  ", " ")
+    cells = []
+    for g in show:
+        d = g["dt"].date()
+        when = (f'{TRD_SHORT[d.weekday()]} {d.day}' if lang == "tr" else g["dt"].strftime("%a ") + str(d.day))
+        if g.get("score"):
+            h, a = g["score"].split("-")
+            mid = f'<b class="sc">{h}–{a}</b>'
+            meta = "MS" if lang == "tr" else "FT"
+        else:
+            mid = '<span class="v">v</span>'
+            meta = f'{when} · <span class="uk">{g["uk"]} UK</span> · <span>{g["tr"]} TSİ</span>'
+        cells.append(f'<li><span class="m">{_team(g["home"])} {mid} {_team(g["away"])}</span><span class="mt">{meta}</span></li>')
+    nxt = ""
+    if prev and cur:
+        nxt = (f'<p class="nx"><b>{cur[0]["round"]}. hafta:</b> {_range(cur, "tr")} — maç saatleri aşağıda.</p>' if lang == "tr"
+               else f'<p class="nx"><b>Next – Week {cur[0]["round"]}:</b> {_range(cur, "en")}; kick-off times are in the listings below.</p>')
+    note = N.get("banner_note_tr" if lang == "tr" else "banner_note", "")
+    sub = ("İngiltere'de 2026/27 için yayıncı yok; Türkiye'de tüm maçlar beIN SPORTS ve TOD'da." if lang == "tr"
+           else "No UK broadcaster for 2026/27 — in Türkiye every match is live on beIN SPORTS and TOD.") if not N.get("uk_superlig_rights") else ""
+    return (f'<section class="sl"><div class="slh"><h2><span class="tag slg">Süper Lig</span> {esc(title)}</h2>'
+            f'<a class="btn" href="{"/tr/" if lang=="tr" else "/super-lig-on-tv-uk/"}">{"Süper Lig programı" if lang=="tr" else "Süper Lig on TV"}</a></div>'
+            f'<ul class="slg-list">{"".join(cells)}</ul>{nxt}'
+            f'<p class="sub">{esc(sub)}{(" " + esc(note)) if note else ""}</p></section>')
+
 def page(path, title, desc, h1, intro, body, fixtures, lang="en", hreflang=None, controls=True, banner=True):
     url = DOMAIN + path
     alt = ""
@@ -246,11 +305,7 @@ def page(path, title, desc, h1, intro, body, fixtures, lang="en", hreflang=None,
            f'<label class="toggle tr"><input type="checkbox" id="turkOnly"> {t["turk"]}</label>'
            f'<label class="toggle"><input type="checkbox" id="ftaOnly"> {t["fta"]}</label>'
            f'<span class="cx"><button type="button" id="collapseAll">{"Collapse all" if lang=="en" else "Tümünü kapat"}</button><button type="button" id="expandAll">{"Expand all" if lang=="en" else "Tümünü aç"}</button></span></div></div>') if controls else '<div class="controls slim"><div class="wrap ctl"><span class="cx"><button type="button" id="collapseAll">' + ("Collapse all" if lang=="en" else "Tümünü kapat") + '</button><button type="button" id="expandAll">' + ("Expand all" if lang=="en" else "Tümünü aç") + '</button></span></div></div>'
-    band = ""
-    if banner and N.get("banner_title"):
-        band = (f'<section class="sl"><div><h2><span class="tag slg">Süper Lig</span> {esc(N.get("banner_title_tr", N["banner_title"]) if lang=="tr" else N["banner_title"])}</h2>'
-                f'<p>{esc(N["banner_text_tr"] if lang=="tr" else N["banner_text"])}</p></div>'
-                f'<a class="btn" href="{"/tr/" if lang=="tr" else "/super-lig-on-tv-uk/"}">{"Süper Lig programı" if lang=="tr" else "Süper Lig on TV"}</a></section>')
+    band = superlig_banner(lang) if banner else ""
     used = {f["source"] for f in FIX} | {k for k in ("amazon", "apple", "bbc", "itv", "tnt", "sky") if k in SOURCES}
     srcs = "".join(f'<li><a href="{esc(s["url"])}" target="_blank" rel="noopener nofollow">{esc(s["name"])}</a></li>' for k, s in SOURCES.items() if k in used)
     foot_en = (f'<p><b>Times</b> are UK time by default; switch to TSİ for Turkish time. Kick-offs and channels can change — always check with the broadcaster.</p>'
