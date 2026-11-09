@@ -58,7 +58,7 @@ for b in BIG:
 
 GROUPS = [
   ("Turkish football", ["Süper Lig"]),
-  ("British", ["Premier League","Championship","League One","League Two","FA Cup","EFL Trophy","WSL","Scottish Premiership","Scottish Championship"]),
+  ("British", ["Premier League","Championship","League One","League Two","FA Cup","Carabao Cup","EFL Trophy","WSL","Scottish Premiership","Scottish Championship"]),
   ("UEFA competitions", ["UEFA Champions League","UEFA Europa League","UEFA Conference League","UEFA Nations League","Women's Champions League"]),
   ("FIFA competitions", ["FIFA World Cup","FIFA World Cup qualifiers","FIFA Club World Cup","FIFA U-17 Women's World Cup"]),
   ("European leagues", ["La Liga","La Liga 2","Serie A","Bundesliga","Ligue 1"]),
@@ -163,7 +163,7 @@ ORGANISER = [  # competition -> organising body (schema.org "organizer")
     (("UEFA",), "UEFA", "https://www.uefa.com"),
     (("FIFA", "World Cup"), "FIFA", "https://www.fifa.com"),
     (("Premier League",), "Premier League", "https://www.premierleague.com"),
-    (("Championship", "League One", "League Two", "EFL"), "English Football League", "https://www.efl.com"),
+    (("Championship", "League One", "League Two", "EFL", "Carabao Cup"), "English Football League", "https://www.efl.com"),
     (("FA Cup",), "The Football Association", "https://www.thefa.com"),
     (("Scottish",), "SPFL", "https://spfl.co.uk"),
     (("La Liga",), "LALIGA", "https://www.laliga.com"),
