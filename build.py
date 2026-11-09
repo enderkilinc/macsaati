@@ -224,8 +224,12 @@ def page(path, title, desc, h1, intro, body, fixtures, lang="en", hreflang=None,
             f'<span>{datetime.fromisoformat(d).day}{"<i class=tr-dot></i>" if any(f["turk"] and f["date"]==d for f in fixtures) else ""}</span></a>' for d in wk_days)
         strip += "".join(f'<a class="day mon" href="#m{m}"><b>{month_name(m+"-01", lang).split()[0][:3]}</b><span>{m[:4]}</span></a>' for m in later_ms)
     else:
+      spread = len(days) > 1 and (datetime.fromisoformat(days[-1]) - datetime.fromisoformat(days[0])).days > 6
+      trm = ["Oca","Şub","Mar","Nis","May","Haz","Tem","Ağu","Eyl","Eki","Kas","Ara"]
+      lab = lambda d: (datetime.fromisoformat(d).strftime("%b") if lang=="en" else trm[datetime.fromisoformat(d).month-1]) if spread else \
+                      (datetime.fromisoformat(d).strftime("%a") if lang=="en" else ["Pzt","Sal","Çar","Per","Cum","Cmt","Paz"][datetime.fromisoformat(d).weekday()])
       strip = "".join(
-        f'<a class="day" href="#d{d}"><b>{datetime.fromisoformat(d).strftime("%a") if lang=="en" else ["Pzt","Sal","Çar","Per","Cum","Cmt","Paz"][datetime.fromisoformat(d).weekday()]}</b>'
+        f'<a class="day" href="#d{d}"><b>{lab(d)}</b>'
         f'<span>{datetime.fromisoformat(d).day}{"<i class=tr-dot></i>" if any(f["turk"] and f["date"]==d for f in fixtures) else ""}</span></a>'
         for d in days)
     t = {"uk": "UK time" if lang=="en" else "İngiltere saati", "tr": "TSİ (TR)",
@@ -346,13 +350,30 @@ def build():
         fx = [f for f in FIX if c in (f["home"], f["away"])]
         sl = f"/{slug(c)}-on-tv/"
         nxt = fx[0] if fx else None
-        intro = (f"Next televised match: <b>{esc(nxt['home'])} v {esc(nxt['away'])}</b> on {fmt_day(nxt['date'])} at {nxt['uk']} UK time ({nxt['tr']} TSİ)."
-                 if nxt else f"{esc(c)} have no match in this week's listings.") + \
-                (" There is no UK TV deal for the Süper Lig in 2026/27; matches are live in Türkiye on beIN SPORTS and TOD." if not N.get("uk_superlig_rights") else "")
-        write(sl, page(sl, f"{c} on TV – next match, UK kick-off time & channel | {SITE}",
-            f"When is {c} playing? {c} fixtures with UK kick-off times and TV channels (UK and Türkiye), updated every week.",
-            f"{c} on TV", intro, listing(fx, empty=f"No {c} match this week."), fx, controls=False, banner=False))
-        pages.append((sl, "weekly", "0.6"))
+        TRM = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"]
+        TRD = ["Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi","Pazar"]
+        no_uk = " There is no UK TV deal for the Süper Lig in 2026/27; matches are live in Türkiye on beIN SPORTS and TOD." if not N.get("uk_superlig_rights") else ""
+        if nxt:
+            d = nxt["dt"].date()
+            rel_en = "Today" if d == TODAY else "Tomorrow" if d == TODAY + timedelta(days=1) else nxt["dt"].strftime("%a")
+            rel_tr = "Bugün" if d == TODAY else "Yarın" if d == TODAY + timedelta(days=1) else TRD[d.weekday()]
+            en_day = f'{rel_en} {d.day} {nxt["dt"].strftime("%b")}'
+            tr_day = f'{d.day} {TRM[d.month-1]} {rel_tr}'
+            vs = f'{nxt["home"]} v {nxt["away"]}'
+            chans = ", ".join(nxt["channels"])
+            title = f'{c} maçı hangi kanalda? {vs} – {en_day} {nxt["uk"]} UK ({nxt["tr"]} TSİ) | {SITE}'
+            desc = (f'{c} maçı saat kaçta? {nxt["home"]} – {nxt["away"]}: {tr_day}, İngiltere saati {nxt["uk"]}, Türkiye saati {nxt["tr"]}. '
+                    f'Kanal: {chans}. What channel is {c} on in the UK? {vs}, {en_day}, kick-off {nxt["uk"]} UK time.')
+            intro = (f'<b>{esc(vs)}</b> · {esc(en_day)} · {nxt["uk"]} UK time ({nxt["tr"]} TSİ) · {esc(chans)}<br>'
+                     f'{esc(c)} maçı {esc(tr_day)} günü İngiltere saatiyle {nxt["uk"]}\'da (TSİ {nxt["tr"]}) başlıyor.' + no_uk)
+        else:
+            title = f"{c} maçı hangi kanalda, saat kaçta? İngiltere saati | {c} on TV UK | {SITE}"
+            desc = (f"{c} maçları İngiltere saati ve Türkiye saati ile, yayın kanallarıyla. What channel is {c} on in the UK? "
+                    f"{c} fixtures with UK kick-off times, updated every day.")
+            intro = f"{esc(c)} have no match in the current listings yet. / Henüz açıklanmış {esc(c)} maçı yok." + no_uk
+        write(sl, page(sl, title, desc, f"{c} maçı hangi kanalda? · {c} on TV", intro,
+            listing(fx, empty=f"No {c} match in the listings yet."), fx, controls=False, banner=False))
+        pages.append((sl, "daily", "0.7"))
     # Club index section on home & super lig page is via links list
     clubs_html = '<section class="clubs"><h2>Süper Lig clubs</h2><ul>' + "".join(
         f'<li><a href="/{slug(c)}-on-tv/">{esc(c)} on TV</a></li>' for c in CLUBS) + "</ul></section>"
