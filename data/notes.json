@@ -1,7 +1,7 @@
 {
  "site_name": "Maç Saati",
  "domain": "https://macsaati.co.uk",
- "week_label": "6–12 November 2026",
+ "week_label": "9–15 November 2026",
  "superlig_round": "Week 12",
  "uk_superlig_rights": false,
  "excluded_competitions": [
@@ -10,6 +10,6 @@
   "FIFA U-17 Women's World Cup",
   "League Two"
  ],
- "banner_note": "International break first: Türkiye v Belgium (Thu 12 Nov, 17:00) and France v Türkiye (Sun 15 Nov, 19:45), both on Prime Video in the UK.",
- "banner_note_tr": "Önce milli ara: Türkiye–Belçika (12 Kasım Perşembe, İngiltere saati 17:00) ve Fransa–Türkiye (15 Kasım Pazar, 19:45), İngiltere'de Prime Video'da."
+ "banner_note": "International break: Türkiye v Belgium (Thu 12 Nov, 17:00) and France v Türkiye (Sun 15 Nov, 19:45), both on Prime Video in the UK. Süper Lig Week 12 starts Sat 21 Nov.",
+ "banner_note_tr": "Milli ara: Türkiye–Belçika (12 Kasım Perşembe, İngiltere saati 17:00) ve Fransa–Türkiye (15 Kasım Pazar, 19:45), İngiltere'de Prime Video'da. Süper Lig'de 12. hafta 21 Kasım Cumartesi başlıyor."
 }
