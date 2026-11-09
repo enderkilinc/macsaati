@@ -127,7 +127,7 @@ def row(f, lang="en"):
     search = " ".join([f["home"], f["away"], f["comp"], *f["channels"]]).translate(TRMAP).lower()
     return (f'<div class="row{" turk" if f["turk"] else ""}" data-iso="{f["iso"]}" data-comp="{esc(f["comp"])}" '
             f'data-turk="{int(f["turk"])}" data-live="{esc(live_url(f))}" data-fta="{int(any(FTA.search(c) for c in f["channels"]))}" data-q="{esc(search)}">'
-            f'<div class="time"><span class="uk">{f["uk"]}</span><span class="trt">{f["tr"]}{"<small>+1</small>" if f["tr_next"] else ""}</span></div>'
+            f'<div class="time" data-nosnippet><span class="uk">{f["uk"]}</span><span class="trt">{f["tr"]}{"<small>+1</small>" if f["tr_next"] else ""}</span></div>'
             f'<div class="fx"><div class="teams">{tname(f["home"], f["comp"])}<span class="v">v</span>{tname(f["away"], f["comp"])}</div>'
             f'<div class="comp">{" ".join(tags)} <span class="st"></span> {srcl}'
             + (f'<a class="mp" href="{match_path(f)}">{"Match page" if lang=="en" else "Maç sayfası"} →</a>' if f["turk"] else "")
@@ -347,7 +347,7 @@ def page(path, title, desc, h1, intro, body, fixtures, lang="en", hreflang=None,
 <link rel="canonical" href="{url}">{alt}
 <meta property="og:type" content="website"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{url}"><meta property="og:site_name" content="{SITE}"><meta property="og:image" content="{OG_IMAGE}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#B5000F">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23E30A17'/%3E%3Crect x='6' y='8' width='20' height='13' rx='2' fill='none' stroke='%23ffffff' stroke-width='2.4'/%3E%3Cpath d='M11 26h10' stroke='%23ffffff' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png"><link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Narrow:wght@600;700&display=swap" rel="stylesheet">
 <style>{CSS}</style>
