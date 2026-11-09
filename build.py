@@ -82,7 +82,7 @@ def ch_link(c):
     s = SOURCES
     if c.startswith("Digiturk"): return CONTENT.GUIDE_EN
     for pat, key in [(r"^Sky","sky"),(r"^TNT|HBO","tnt"),(r"^BBC","bbc"),(r"^ITV|^STV","itv"),(r"^Premier","premier"),
-                     (r"DAZN","dazn"),(r"Disney","disney"),(r"Prime Video|Amazon","amazon"),(r"Apple","apple"),(r"beIN|TOD","tff")]:
+                     (r"DAZN","dazn"),(r"Disney","disney"),(r"^Ligue 1\+","ligue1plus"),(r"Prime Video|Amazon","amazon"),(r"Apple","apple"),(r"beIN|TOD","tff")]:
         if re.search(pat, c) and key in s: return s[key]["url"]
     if c.startswith("ATV"): return "https://www.atv.com.tr/canli-yayin"
     return ""

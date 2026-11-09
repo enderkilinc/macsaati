@@ -236,6 +236,14 @@
   "aa716": {
    "name": "Anadolu Ajansı – Trendyol Süper Lig 7–16. haftaların programı açıklandı (TFF, 15 Sep 2026)",
    "url": "https://www.aa.com.tr/tr/spor/trendyol-super-ligde-7-16-haftalarin-programi-aciklandi/4057906"
+  },
+  "ligue1": {
+   "name": "Ligue 1 McDonald's – Programmation TV (Ligue 1+)",
+   "url": "https://ligue1.com/fr/articles/l1_article_5979-programmation-tv-de-la-j13-a-la-j18"
+  },
+  "ligue1plus": {
+   "name": "Ligue 1+ – UK & Ireland streaming service (terms: every match except UK Saturday blackout)",
+   "url": "https://ligue1.com/en/legal/cg-l1plus"
   }
  },
  "fixtures": [
@@ -1174,6 +1182,17 @@
   },
   {
    "date": "2026-11-20",
+   "uk": "19:45",
+   "home": "Troyes",
+   "away": "Le Havre",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-11-20",
    "uk": "20:00",
    "home": "Athletic Bilbao",
    "away": "Espanyol",
@@ -1408,6 +1427,50 @@
   {
    "date": "2026-11-21",
    "uk": "19:45",
+   "home": "Lens",
+   "away": "Toulouse",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-11-21",
+   "uk": "19:45",
+   "home": "Lille",
+   "away": "Lyon",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-11-21",
+   "uk": "19:45",
+   "home": "Monaco",
+   "away": "Auxerre",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-11-21",
+   "uk": "19:45",
+   "home": "Strasbourg",
+   "away": "Brest",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-11-21",
+   "uk": "19:45",
    "home": "Napoli",
    "away": "Torino",
    "comp": "Serie A",
@@ -1538,6 +1601,17 @@
   {
    "date": "2026-11-22",
    "uk": "14:00",
+   "home": "Paris FC",
+   "away": "Angers",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-11-22",
+   "uk": "14:00",
    "home": "Hull City",
    "away": "Brighton & Hove Albion",
    "comp": "Premier League",
@@ -1606,6 +1680,17 @@
   },
   {
    "date": "2026-11-22",
+   "uk": "16:15",
+   "home": "Lorient",
+   "away": "Rennes",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-11-22",
    "uk": "16:30",
    "home": "Werder Bremen",
    "away": "Hamburger SV",
@@ -1647,6 +1732,17 @@
     "Premier Sports (TBC)"
    ],
    "source": "k45"
+  },
+  {
+   "date": "2026-11-22",
+   "uk": "19:45",
+   "home": "Marseille",
+   "away": "Le Mans",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
   },
   {
    "date": "2026-11-22",
@@ -2649,6 +2745,17 @@
   {
    "date": "2026-11-27",
    "uk": "19:45",
+   "home": "Brest",
+   "away": "Paris FC",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-11-27",
+   "uk": "19:45",
    "home": "Venezia",
    "away": "Bologna",
    "comp": "Serie A",
@@ -2875,6 +2982,50 @@
   {
    "date": "2026-11-28",
    "uk": "19:45",
+   "home": "Le Havre",
+   "away": "Strasbourg",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-11-28",
+   "uk": "19:45",
+   "home": "Le Mans",
+   "away": "Lille",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-11-28",
+   "uk": "19:45",
+   "home": "Nice",
+   "away": "Troyes",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-11-28",
+   "uk": "19:45",
+   "home": "Paris Saint-Germain",
+   "away": "Lorient",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-11-28",
+   "uk": "19:45",
    "home": "Inter",
    "away": "Genoa",
    "comp": "Serie A",
@@ -3003,6 +3154,17 @@
   {
    "date": "2026-11-29",
    "uk": "14:00",
+   "home": "Auxerre",
+   "away": "Marseille",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-11-29",
+   "uk": "14:00",
    "home": "Sassuolo",
    "away": "Napoli",
    "comp": "Serie A",
@@ -3104,6 +3266,17 @@
   },
   {
    "date": "2026-11-29",
+   "uk": "16:15",
+   "home": "Toulouse",
+   "away": "Rennes",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-11-29",
    "uk": "16:30",
    "home": "Hoffenheim",
    "away": "FC Augsburg",
@@ -3156,6 +3329,17 @@
     "Prime Video (pay-per-view)"
    ],
    "source": "k48"
+  },
+  {
+   "date": "2026-11-29",
+   "uk": "19:45",
+   "home": "Lyon",
+   "away": "Monaco",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
   },
   {
    "date": "2026-11-29",
@@ -3544,6 +3728,17 @@
   {
    "date": "2026-12-04",
    "uk": "19:45",
+   "home": "Toulouse",
+   "away": "Paris Saint-Germain",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-12-04",
+   "uk": "19:45",
    "home": "Bologna",
    "away": "Roma",
    "comp": "Serie A",
@@ -3697,6 +3892,50 @@
   {
    "date": "2026-12-05",
    "uk": "19:45",
+   "home": "Lens",
+   "away": "Le Havre",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-12-05",
+   "uk": "19:45",
+   "home": "Monaco",
+   "away": "Angers",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-12-05",
+   "uk": "19:45",
+   "home": "Paris FC",
+   "away": "Le Mans",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-12-05",
+   "uk": "19:45",
+   "home": "Strasbourg",
+   "away": "Lorient",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-12-05",
+   "uk": "19:45",
    "home": "Napoli",
    "away": "Lecce",
    "comp": "Serie A",
@@ -3783,6 +4022,17 @@
   {
    "date": "2026-12-06",
    "uk": "14:00",
+   "home": "Troyes",
+   "away": "Lyon",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-12-06",
+   "uk": "14:00",
    "home": "Everton",
    "away": "Fulham",
    "comp": "Premier League",
@@ -3840,6 +4090,17 @@
   },
   {
    "date": "2026-12-06",
+   "uk": "16:15",
+   "home": "Rennes",
+   "away": "Brest",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-12-06",
    "uk": "16:30",
    "home": "SV Elversberg",
    "away": "VfB Stuttgart",
@@ -3870,6 +4131,17 @@
     "DAZN"
    ],
    "source": "daznsa"
+  },
+  {
+   "date": "2026-12-06",
+   "uk": "19:45",
+   "home": "Marseille",
+   "away": "Nice",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
   },
   {
    "date": "2026-12-06",
@@ -4740,6 +5012,17 @@
   {
    "date": "2026-12-11",
    "uk": "19:45",
+   "home": "Auxerre",
+   "away": "Toulouse",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-12-11",
+   "uk": "19:45",
    "home": "Udinese",
    "away": "Frosinone",
    "comp": "Serie A",
@@ -4892,6 +5175,50 @@
   {
    "date": "2026-12-12",
    "uk": "19:45",
+   "home": "Angers",
+   "away": "Strasbourg",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-12-12",
+   "uk": "19:45",
+   "home": "Brest",
+   "away": "Troyes",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-12-12",
+   "uk": "19:45",
+   "home": "Le Havre",
+   "away": "Le Mans",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-12-12",
+   "uk": "19:45",
+   "home": "Nice",
+   "away": "Lens",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-12-12",
+   "uk": "19:45",
    "home": "Como",
    "away": "Bologna",
    "comp": "Serie A",
@@ -4952,6 +5279,17 @@
    ],
    "source": "tff716",
    "round": 15
+  },
+  {
+   "date": "2026-12-13",
+   "uk": "14:00",
+   "home": "Lorient",
+   "away": "Lille",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
   },
   {
    "date": "2026-12-13",
@@ -5035,6 +5373,17 @@
   },
   {
    "date": "2026-12-13",
+   "uk": "16:15",
+   "home": "Rennes",
+   "away": "Monaco",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2026-12-13",
    "uk": "16:30",
    "home": "Hoffenheim",
    "away": "Bayern Munich",
@@ -5088,6 +5437,17 @@
     "HBO Max"
    ],
    "source": "pldec"
+  },
+  {
+   "date": "2026-12-13",
+   "uk": "19:45",
+   "home": "Lyon",
+   "away": "Marseille",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
   },
   {
    "date": "2026-12-13",
@@ -6935,6 +7295,61 @@
    "source": "daznsa"
   },
   {
+   "date": "2027-01-02",
+   "uk": "20:00",
+   "home": "Lorient",
+   "away": "Auxerre",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2027-01-02",
+   "uk": "20:00",
+   "home": "Monaco",
+   "away": "Nice",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2027-01-02",
+   "uk": "20:00",
+   "home": "Paris FC",
+   "away": "Le Havre",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2027-01-02",
+   "uk": "20:00",
+   "home": "Toulouse",
+   "away": "Angers",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2027-01-02",
+   "uk": "20:00",
+   "home": "Troyes",
+   "away": "Rennes",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
    "date": "2027-01-03",
    "uk": "11:30",
    "home": "Inter",
@@ -6955,6 +7370,17 @@
     "Sky Sports"
    ],
    "source": "k42"
+  },
+  {
+   "date": "2027-01-03",
+   "uk": "14:00",
+   "home": "Le Mans",
+   "away": "Lyon",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
   },
   {
    "date": "2027-01-03",
@@ -7002,6 +7428,17 @@
   },
   {
    "date": "2027-01-03",
+   "uk": "16:15",
+   "home": "Lille",
+   "away": "Strasbourg",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2027-01-03",
    "uk": "16:30",
    "home": "Manchester City",
    "away": "Tottenham Hotspur",
@@ -7021,6 +7458,17 @@
     "DAZN"
    ],
    "source": "daznsa"
+  },
+  {
+   "date": "2027-01-03",
+   "uk": "19:45",
+   "home": "Lens",
+   "away": "Paris Saint-Germain",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
   },
   {
    "date": "2027-01-03",
@@ -7465,6 +7913,17 @@
    "source": "k53"
   },
   {
+   "date": "2027-01-15",
+   "uk": "19:45",
+   "home": "Marseille",
+   "away": "Lille",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
    "date": "2027-01-16",
    "uk": "17:30",
    "home": "Eintracht Frankfurt",
@@ -7474,6 +7933,61 @@
     "Sky Sports"
    ],
    "source": "k53"
+  },
+  {
+   "date": "2027-01-16",
+   "uk": "19:45",
+   "home": "Auxerre",
+   "away": "Troyes",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2027-01-16",
+   "uk": "19:45",
+   "home": "Nice",
+   "away": "Le Havre",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2027-01-16",
+   "uk": "19:45",
+   "home": "Rennes",
+   "away": "Lens",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2027-01-16",
+   "uk": "19:45",
+   "home": "Strasbourg",
+   "away": "Le Mans",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2027-01-17",
+   "uk": "14:00",
+   "home": "Paris FC",
+   "away": "Toulouse",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
   },
   {
    "date": "2027-01-17",
@@ -7488,6 +8002,17 @@
   },
   {
    "date": "2027-01-17",
+   "uk": "16:15",
+   "home": "Monaco",
+   "away": "Brest",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2027-01-17",
    "uk": "16:30",
    "home": "Bayer Leverkusen",
    "away": "Schalke 04",
@@ -7496,6 +8021,17 @@
     "Prime Video (pay-per-view)"
    ],
    "source": "k53"
+  },
+  {
+   "date": "2027-01-17",
+   "uk": "19:45",
+   "home": "Lyon",
+   "away": "Lorient",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
   },
   {
    "date": "2027-01-19",
@@ -8065,6 +8601,17 @@
    "source": "k54"
   },
   {
+   "date": "2027-01-22",
+   "uk": "19:45",
+   "home": "Troyes",
+   "away": "Monaco",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
    "date": "2027-01-23",
    "uk": "17:30",
    "home": "Hamburger SV",
@@ -8076,6 +8623,61 @@
    "source": "k54"
   },
   {
+   "date": "2027-01-23",
+   "uk": "19:45",
+   "home": "Le Mans",
+   "away": "Angers",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2027-01-23",
+   "uk": "19:45",
+   "home": "Lens",
+   "away": "Brest",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2027-01-23",
+   "uk": "19:45",
+   "home": "Paris Saint-Germain",
+   "away": "Auxerre",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2027-01-23",
+   "uk": "19:45",
+   "home": "Toulouse",
+   "away": "Nice",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2027-01-24",
+   "uk": "14:00",
+   "home": "Le Havre",
+   "away": "Rennes",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
    "date": "2027-01-24",
    "uk": "14:30",
    "home": "Eintracht Frankfurt",
@@ -8085,6 +8687,17 @@
     "Prime Video (pay-per-view)"
    ],
    "source": "k54"
+  },
+  {
+   "date": "2027-01-24",
+   "uk": "16:15",
+   "home": "Lorient",
+   "away": "Marseille",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
   },
   {
    "date": "2027-01-24",
@@ -8107,6 +8720,17 @@
     "Prime Video (pay-per-view)"
    ],
    "source": "k54"
+  },
+  {
+   "date": "2027-01-24",
+   "uk": "19:45",
+   "home": "Strasbourg",
+   "away": "Lyon",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
   },
   {
    "date": "2027-01-26",
@@ -8682,6 +9306,94 @@
     "HBO Max"
    ],
    "source": "uel"
+  },
+  {
+   "date": "2027-01-29",
+   "uk": "19:45",
+   "home": "Brest",
+   "away": "Strasbourg",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2027-01-30",
+   "uk": "19:45",
+   "home": "Angers",
+   "away": "Le Havre",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2027-01-30",
+   "uk": "19:45",
+   "home": "Le Mans",
+   "away": "Nice",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2027-01-30",
+   "uk": "19:45",
+   "home": "Paris FC",
+   "away": "Auxerre",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2027-01-30",
+   "uk": "19:45",
+   "home": "Toulouse",
+   "away": "Lens",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2027-01-31",
+   "uk": "14:00",
+   "home": "Rennes",
+   "away": "Lorient",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2027-01-31",
+   "uk": "16:15",
+   "home": "Marseille",
+   "away": "Troyes",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
+  },
+  {
+   "date": "2027-01-31",
+   "uk": "19:45",
+   "home": "Lyon",
+   "away": "Lille",
+   "comp": "Ligue 1",
+   "channels": [
+    "Ligue 1+"
+   ],
+   "source": "ligue1"
   }
  ]
 }
