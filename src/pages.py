@@ -156,7 +156,7 @@ and the main British, European and world competitions.</p>
 <ul>
 <li>Every match is added only after it appears on a <b>broadcaster's, league's or governing body's own page</b> (for example Sky Sports, TNT Sports,
 UEFA, the Premier League, LALIGA or the Turkish Football Federation). Each row links to its source.</li>
-<li>New TV picks are added every Friday, Süper Lig results on the morning after each match day, and past days drop off every night.</li>
+<li>The listings are checked every morning: new TV picks and kick-off changes are added, Süper Lig results go in the morning after each match day, and past days drop off every night.</li>
 <li>Kick-off times and channels can change at short notice, so always check with the broadcaster before the match.</li>
 </ul>
 <h2>Independent</h2>

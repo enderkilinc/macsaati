@@ -312,10 +312,10 @@ def page(path, title, desc, h1, intro, body, fixtures, lang="en", hreflang=None,
     used = {f["source"] for f in FIX} | {k for k in ("amazon", "apple", "bbc", "itv", "tnt", "sky") if k in SOURCES}
     srcs = "".join(f'<li><a href="{esc(s["url"])}" target="_blank" rel="noopener nofollow">{esc(s["name"])}</a></li>' for k, s in SOURCES.items() if k in used)
     foot_en = (f'<p><b>Times</b> are UK time by default; switch to TSİ for Turkish time. Kick-offs and channels can change — always check with the broadcaster.</p>'
-               f'<p><b>How this guide is built:</b> every match is listed only once it appears on a broadcaster\'s, league\'s or organiser\'s own page; each row shows its source and every channel links to that broadcaster. Updated every Friday. Last update: {esc(D["generated"])}.</p>'
+               f'<p><b>How this guide is built:</b> every match is listed only once it appears on a broadcaster\'s, league\'s or organiser\'s own page; each row shows its source and every channel links to that broadcaster. Updated every morning. Last update: {esc(D["generated"])}.</p>'
                f'<p><b>Süper Lig in the UK:</b> {'no UK TV channel has the rights for 2026/27. The legal way to watch in the UK is Digiturk Play\'s international Sports package — see <a href="' + CONTENT.GUIDE_EN + '">how to watch the Süper Lig in the UK</a>.' if not N.get("uk_superlig_rights") else "UK channels shown where confirmed."}</p>')
     foot_tr = (f'<p><b>Saatler</b> varsayılan olarak İngiltere saatidir; Türkiye saati için TSİ\'yi seçin. Maç saatleri ve kanallar değişebilir — yayıncıdan kontrol edin.</p>'
-               f'<p><b>Nasıl hazırlanıyor:</b> her maç yalnızca yayıncının veya organizatörün kendi sayfasında yer aldıktan sonra listelenir. Her cuma güncellenir. Son güncelleme: {esc(D["generated"])}.</p>')
+               f'<p><b>Nasıl hazırlanıyor:</b> her maç yalnızca yayıncının veya organizatörün kendi sayfasında yer aldıktan sonra listelenir. Her sabah güncellenir. Son güncelleme: {esc(D["generated"])}.</p>')
     return f"""<!DOCTYPE html>
 <html lang="{lang}">
 <head>
