@@ -29,3 +29,6 @@ Built automatically from `data/fixtures.json`: every Süper Lig row has `"round"
 
 ## Content pages
 `src/pages.py` holds the Süper Lig guide (EN `/how-to-watch-super-lig-in-uk/`, TR `/tr/ingilterede-super-lig-nasil-izlenir/`), About, Contact and Privacy. Re-check the guide's facts (rights, Digiturk Play package and price) each season. Süper Lig rows use the channels ["Digiturk Play (UK)","beIN SPORTS (TR)","TOD (TR)"]; the Digiturk badge links to the guide.
+
+## Match pages and sharing
+Every match involving a Turkish club or Türkiye gets its own bilingual page at `/mac/<home>-<away>-<date>/` (title "X – Y hangi kanalda, saat kaçta?"), built automatically and listed in the sitemap; the last Süper Lig round keeps its pages with the result for 10 days. Every row has a WhatsApp "Share/Paylaş" link; Turkish rows also link to their match page.

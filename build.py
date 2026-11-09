@@ -95,6 +95,24 @@ def fmt_day(d, lang="en"):
         return f"{dt.day} {months[dt.month-1]} {dt.year}, {days[dt.weekday()]}"
     return dt.strftime("%A ") + str(dt.day) + dt.strftime(" %B %Y")
 
+TRD_FULL = ["Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi","Pazar"]
+TRM_ALL = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"]
+def match_path(f):
+    """Dedicated page for every match involving a Turkish club or Türkiye."""
+    return f"/mac/{slug(f['home'])}-{slug(f['away'])}-{f['date']}/"
+def mday_tr(f):
+    d = f["dt"].date(); return f"{d.day} {TRM_ALL[d.month-1]} {TRD_FULL[d.weekday()]}"
+def mday_en(f):
+    return f["dt"].strftime("%a ") + str(f["dt"].day) + f["dt"].strftime(" %b")
+def wa_link(f):
+    url = DOMAIN + (match_path(f) if f["turk"] else f"/#d{f['date']}")
+    txt = (f"⚽ {f['home']} – {f['away']} ({f['comp']})\n"
+           f"🗓 {mday_tr(f)} · {f['uk']} İngiltere saati ({f['tr']} TSİ)\n"
+           f"📺 {', '.join(f['channels'])}\n{url}")
+    from urllib.parse import quote
+    return "https://wa.me/?text=" + quote(txt)
+WA_ICON = ('<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3a.5.5 0 0 0 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>')
+
 def row(f, lang="en"):
     chs = []
     for c in f["channels"]:
@@ -111,7 +129,10 @@ def row(f, lang="en"):
             f'data-turk="{int(f["turk"])}" data-live="{esc(live_url(f))}" data-fta="{int(any(FTA.search(c) for c in f["channels"]))}" data-q="{esc(search)}">'
             f'<div class="time"><span class="uk">{f["uk"]}</span><span class="trt">{f["tr"]}{"<small>+1</small>" if f["tr_next"] else ""}</span></div>'
             f'<div class="fx"><div class="teams">{tname(f["home"], f["comp"])}<span class="v">v</span>{tname(f["away"], f["comp"])}</div>'
-            f'<div class="comp">{" ".join(tags)} <span class="st"></span> {srcl}</div></div>'
+            f'<div class="comp">{" ".join(tags)} <span class="st"></span> {srcl}'
+            + (f'<a class="mp" href="{match_path(f)}">{"Match page" if lang=="en" else "Maç sayfası"} →</a>' if f["turk"] else "")
+            + f'<a class="wa" href="{esc(wa_link(f))}" target="_blank" rel="noopener nofollow" title="WhatsApp">{WA_ICON}{"Share" if lang=="en" else "Paylaş"}</a>'
+            + '</div></div>'
             f'<div class="chs">{"".join(chs)}</div></div>')
 
 MONTHS_EN = ["January","February","March","April","May","June","July","August","September","October","November","December"]
@@ -424,7 +445,7 @@ def build():
             title = f'{c} maçı hangi kanalda? {vs} – {en_day} {nxt["uk"]} UK ({nxt["tr"]} TSİ) | {SITE}'
             desc = (f'{c} maçı saat kaçta? {nxt["home"]} – {nxt["away"]}: {tr_day}, İngiltere saati {nxt["uk"]}, Türkiye saati {nxt["tr"]}. '
                     f'Kanal: {chans}. What channel is {c} on in the UK? {vs}, {en_day}, kick-off {nxt["uk"]} UK time.')
-            intro = (f'<b>{esc(vs)}</b> · {esc(en_day)} · {nxt["uk"]} UK time ({nxt["tr"]} TSİ) · {esc(chans)}<br>'
+            intro = (f'<a href="{match_path(nxt)}" style="color:#fff"><b>{esc(vs)}</b></a> · {esc(en_day)} · {nxt["uk"]} UK time ({nxt["tr"]} TSİ) · {esc(chans)}<br>'
                      f'{esc(c)} maçı {esc(tr_day)} günü İngiltere saatiyle {nxt["uk"]}\'da (TSİ {nxt["tr"]}) başlıyor.' + no_uk)
         else:
             title = f"{c} maçı hangi kanalda, saat kaçta? İngiltere saati | {c} on TV UK | {SITE}"
@@ -440,6 +461,63 @@ def build():
     for p in ["index.html", "super-lig-on-tv-uk/index.html"]:
         fp = os.path.join(OUT, p); s = open(fp, encoding="utf-8").read()
         open(fp, "w", encoding="utf-8").write(s.replace("</main>", clubs_html + "</main>", 1))
+    # Match pages: every match with a Turkish club or Türkiye (upcoming + last Süper Lig round with scores)
+    extra = []
+    seen = {(f["date"], f["home"], f["away"]) for f in FIX}
+    for g in D["fixtures"]:
+        if g["comp"] in EXCLUDED or (g["date"], g["home"], g["away"]) in seen: continue
+        if not g.get("score") or g["date"] < (TODAY - timedelta(days=10)).isoformat(): continue
+        h = dict(g); dt = datetime.fromisoformat(f"{g['date']}T{g['uk']}").replace(tzinfo=LON)
+        h.update(dt=dt, iso=dt.astimezone(ZoneInfo("UTC")).strftime("%Y-%m-%dT%H:%M:%SZ"), tr=dt.astimezone(IST).strftime("%H:%M"),
+                 tr_next=dt.astimezone(IST).date() != dt.date(), turk=True)
+        extra.append(h)
+    turk_fx = [f for f in FIX if f["turk"]] + extra
+    upcoming_turk = [f for f in FIX if f["turk"]]
+    for f in turk_fx:
+        p = match_path(f)
+        uk_ch = [c for c in f["channels"] if "(TR)" not in c]
+        tr_ch = [c.replace(" (TR)", "") for c in f["channels"] if "(TR)" in c]
+        score = f.get("score")
+        sl = f["comp"] == "Süper Lig"
+        if sl:
+            how = (f'<p><b>İngiltere\'de nasıl izlenir?</b> Süper Lig 2026/27\'de İngiliz TV kanallarında yok. İngiltere\'de yasal yol <b>Digiturk Play Yurt Dışı Spor paketi</b>. '
+                   f'Türkiye\'de maç beIN SPORTS ve TOD\'da. <a href="{CONTENT.GUIDE_TR}">Ayrıntılı rehber →</a></p>'
+                   f'<p><b>How to watch in the UK:</b> the Süper Lig is not on UK TV in 2026/27; the legal option is Digiturk Play\'s international Sports package. '
+                   f'<a href="{CONTENT.GUIDE_EN}">Full guide →</a></p>')
+        else:
+            how = (f'<p><b>İngiltere\'de nasıl izlenir?</b> Bu maç İngiltere\'de <b>{esc(", ".join(uk_ch))}</b> üzerinden yayınlanıyor.</p>'
+                   f'<p><b>How to watch in the UK:</b> live on <b>{esc(", ".join(uk_ch))}</b>.</p>')
+        rows_ = [("Organizasyon / Competition", esc(f["comp"])),
+                 ("Tarih / Date", f'{esc(mday_tr(f))} · {f["dt"].strftime("%A")} {f["dt"].day} {f["dt"].strftime("%B %Y")}'),
+                 ("İngiltere saati / UK time", f'<b>{f["uk"]}</b>'),
+                 ("Türkiye saati / TSİ", f'<b>{f["tr"]}</b>{" (+1 gün)" if f["tr_next"] else ""}'),
+                 ("İngiltere'de / UK", esc(", ".join(uk_ch)) or "—"),
+                 ("Türkiye'de / In Türkiye", esc(", ".join(tr_ch)) or "—")]
+        if score: rows_.insert(0, ("Sonuç / Result", f'<b class="big">{esc(score.replace("-", " – "))}</b>'))
+        clubs = [t for t in (f["home"], f["away"]) if t in ALL_SL_CLUBS]
+        others = [g for g in upcoming_turk if g is not f][:8]
+        vs_tr = f'{f["home"]} – {f["away"]}'
+        body = (f'<article class="prose match">'
+                + (f'<p class="lead"><b>{esc(vs_tr)}</b> maçı <b>{esc(mday_tr(f))}</b> günü İngiltere saatiyle <b>{f["uk"]}</b>\'da (TSİ {f["tr"]}) başlıyor. '
+                   f'{esc(f["home"])} v {esc(f["away"])} kicks off at <b>{f["uk"]} UK time</b> on {esc(f["dt"].strftime("%A"))} {f["dt"].day} {esc(f["dt"].strftime("%B"))}.</p>' if not score else
+                   f'<p class="lead"><b>{esc(vs_tr)}</b> maçı <b>{esc(score)}</b> sona erdi. {esc(f["home"])} {esc(score)} {esc(f["away"])} (full time).</p>')
+                + '<table class="mt">' + "".join(f"<tr><th>{k}</th><td>{v}</td></tr>" for k, v in rows_) + '</table>'
+                + how
+                + f'<p><a class="wa big" href="{esc(wa_link(f))}" target="_blank" rel="noopener nofollow">{WA_ICON} WhatsApp\'ta paylaş / Share on WhatsApp</a></p>'
+                + ('<h2>Takım sayfaları</h2><p>' + " · ".join(f'<a href="/{slug(c)}-on-tv/">{esc(c)} maçları / on TV</a>' for c in clubs) + '</p>' if clubs else '')
+                + ('<h2>Diğer Türk takımı maçları · More Turkish matches</h2><ul class="others">' + "".join(
+                    f'<li><a href="{match_path(g)}">{esc(g["home"])} – {esc(g["away"])}</a> <span>{esc(mday_tr(g))} · {g["uk"]} UK</span></li>' for g in others) + '</ul>' if others else '')
+                + '</article>')
+        title = (f'{vs_tr} hangi kanalda, saat kaçta? {f["dt"].day} {TRM_ALL[f["dt"].month-1]} · İngiltere {f["uk"]} (TSİ {f["tr"]}) | {SITE}' if not score
+                 else f'{f["home"]} {score} {f["away"]} – maç sonucu ({f["dt"].day} {TRM_ALL[f["dt"].month-1]}) | {SITE}')
+        desc = (f'{vs_tr} maçı ne zaman, saat kaçta, hangi kanalda? {mday_tr(f)}, İngiltere saati {f["uk"]}, Türkiye saati {f["tr"]}. '
+                f'Kanal: {", ".join(f["channels"])}. What time is {f["home"]} v {f["away"]} in the UK and what channel is it on?')
+        html_ = page(p, title, desc, f'{vs_tr} hangi kanalda?',
+                     f'{esc(f["comp"])} · {esc(mday_tr(f))} · {f["uk"]} İngiltere saati · {f["tr"]} TSİ', body, [f], lang="tr", controls=False, banner=False)
+        html_ = re.sub(r'<div class="controls slim">.*?</div></div>', "", html_, count=1, flags=re.S)
+        write(p, html_)
+        pages.append((p, "daily", "0.6"))
+
     # Content pages (guide EN/TR, about, contact, privacy)
     club_links = lambda lang: '<ul class="clublinks">' + "".join(
         f'<li><a href="/{slug(c)}-on-tv/">{esc(c)}{" maçı" if lang=="tr" else " on TV"}</a></li>' for c in CLUBS) + "</ul>"
