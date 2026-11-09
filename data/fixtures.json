@@ -144,6 +144,10 @@
   "tff716": {
    "name": "TFF – Süper Lig weeks 7–16 programme (via AA/İHA)",
    "url": "https://www.hurriyet.com.tr/sporarena/super-ligde-7-16-haftalarin-programi-aciklandi-43307638"
+  },
+  "daznsa": {
+   "name": "DAZN – Serie A Enilive 2026/27 calendar, rounds 13–19 (official times; every match on DAZN in the UK)",
+   "url": "https://www.dazn.com/it-IT/news/calcio/calendario-completo-serie-a-dove-vedere-le-partite/1qtugc7g9k7w71sjt6einxmm8w"
   }
  },
  "fixtures": [
@@ -1350,17 +1354,6 @@
   },
   {
    "date": "2026-11-14",
-   "uk": "12:30",
-   "home": "Exeter City",
-   "away": "Cheltenham Town",
-   "comp": "League Two",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skyefl"
-  },
-  {
-   "date": "2026-11-14",
    "uk": "14:00",
    "home": "Kosovo",
    "away": "Israel",
@@ -1391,17 +1384,6 @@
     "S4C"
    ],
    "source": "unlfx"
-  },
-  {
-   "date": "2026-11-14",
-   "uk": "17:30",
-   "home": "Fleetwood Town",
-   "away": "Tranmere Rovers",
-   "comp": "League Two",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skyefl"
   },
   {
    "date": "2026-11-14",
@@ -1607,17 +1589,6 @@
   {
    "date": "2026-11-21",
    "uk": "12:30",
-   "home": "Gillingham",
-   "away": "Crewe Alexandra",
-   "comp": "League Two",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skyefl"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "12:30",
    "home": "Manchester City",
    "away": "Fulham",
    "comp": "Premier League",
@@ -1633,17 +1604,6 @@
    "home": "Millwall",
    "away": "QPR",
    "comp": "Championship",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skyefl"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "12:30",
-   "home": "Newport County",
-   "away": "Swindon Town",
-   "comp": "League Two",
    "channels": [
     "Sky Sports"
    ],
@@ -2471,28 +2431,6 @@
    "home": "Blackburn Rovers",
    "away": "Charlton Athletic",
    "comp": "Championship",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skyefl"
-  },
-  {
-   "date": "2026-11-28",
-   "uk": "12:30",
-   "home": "Bristol Rovers",
-   "away": "Tranmere Rovers",
-   "comp": "League Two",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skyefl"
-  },
-  {
-   "date": "2026-11-28",
-   "uk": "12:30",
-   "home": "Exeter City",
-   "away": "Crawley Town",
-   "comp": "League Two",
    "channels": [
     "Sky Sports"
    ],
@@ -3394,17 +3332,6 @@
   {
    "date": "2026-12-12",
    "uk": "12:30",
-   "home": "Chesterfield",
-   "away": "Grimsby Town",
-   "comp": "League Two",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skyefl"
-  },
-  {
-   "date": "2026-12-12",
-   "uk": "12:30",
    "home": "Preston North End",
    "away": "Middlesbrough",
    "comp": "Championship",
@@ -3441,17 +3368,6 @@
    "home": "Stoke City",
    "away": "West Brom",
    "comp": "Championship",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skyefl"
-  },
-  {
-   "date": "2026-12-12",
-   "uk": "12:30",
-   "home": "Tranmere Rovers",
-   "away": "York City",
-   "comp": "League Two",
    "channels": [
     "Sky Sports"
    ],
@@ -3516,17 +3432,6 @@
     "HBO Max"
    ],
    "source": "uecl"
-  },
-  {
-   "date": "2026-12-17",
-   "uk": "20:00",
-   "home": "Crewe Alexandra",
-   "away": "Salford City",
-   "comp": "League Two",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skyefl"
   },
   {
    "date": "2026-12-17",
@@ -3720,28 +3625,6 @@
   {
    "date": "2026-12-19",
    "uk": "12:30",
-   "home": "Colchester United",
-   "away": "Fleetwood Town",
-   "comp": "League Two",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skyefl"
-  },
-  {
-   "date": "2026-12-19",
-   "uk": "12:30",
-   "home": "Northampton Town",
-   "away": "Exeter City",
-   "comp": "League Two",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skyefl"
-  },
-  {
-   "date": "2026-12-19",
-   "uk": "12:30",
    "home": "Sheffield Wednesday",
    "away": "Luton Town",
    "comp": "League One",
@@ -3797,42 +3680,9 @@
   {
    "date": "2027-01-09",
    "uk": "12:30",
-   "home": "Barnet",
-   "away": "Grimsby Town",
-   "comp": "League Two",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skyefl"
-  },
-  {
-   "date": "2027-01-09",
-   "uk": "12:30",
-   "home": "Chesterfield",
-   "away": "Accrington Stanley",
-   "comp": "League Two",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skyefl"
-  },
-  {
-   "date": "2027-01-09",
-   "uk": "12:30",
    "home": "Oxford United",
    "away": "AFC Wimbledon",
    "comp": "League One",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skyefl"
-  },
-  {
-   "date": "2027-01-09",
-   "uk": "12:30",
-   "home": "Shrewsbury Town",
-   "away": "Walsall",
-   "comp": "League Two",
    "channels": [
     "Sky Sports"
    ],
@@ -6284,6 +6134,710 @@
    ],
    "source": "tff716",
    "round": 16
+  },
+  {
+   "date": "2026-11-27",
+   "uk": "19:45",
+   "home": "Venezia",
+   "away": "Bologna",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-11-28",
+   "uk": "14:00",
+   "home": "Frosinone",
+   "away": "Parma",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-11-28",
+   "uk": "19:45",
+   "home": "Inter",
+   "away": "Genoa",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-11-29",
+   "uk": "11:30",
+   "home": "Udinese",
+   "away": "Fiorentina",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-11-29",
+   "uk": "14:00",
+   "home": "Sassuolo",
+   "away": "Napoli",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-11-29",
+   "uk": "17:00",
+   "home": "Roma",
+   "away": "Monza",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-11-29",
+   "uk": "19:45",
+   "home": "Como",
+   "away": "Juventus",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-11-30",
+   "uk": "17:30",
+   "home": "Lecce",
+   "away": "Atalanta",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-11-30",
+   "uk": "19:45",
+   "home": "Cagliari",
+   "away": "Milan",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-04",
+   "uk": "19:45",
+   "home": "Bologna",
+   "away": "Roma",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-05",
+   "uk": "14:00",
+   "home": "Monza",
+   "away": "Como",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-05",
+   "uk": "19:45",
+   "home": "Napoli",
+   "away": "Lecce",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-06",
+   "uk": "11:30",
+   "home": "Genoa",
+   "away": "Torino",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-06",
+   "uk": "14:00",
+   "home": "Lazio",
+   "away": "Atalanta",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-06",
+   "uk": "17:00",
+   "home": "Juventus",
+   "away": "Udinese",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-06",
+   "uk": "19:45",
+   "home": "Milan",
+   "away": "Parma",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-07",
+   "uk": "17:30",
+   "home": "Venezia",
+   "away": "Sassuolo",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-07",
+   "uk": "19:45",
+   "home": "Fiorentina",
+   "away": "Cagliari",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-11",
+   "uk": "19:45",
+   "home": "Udinese",
+   "away": "Frosinone",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-12",
+   "uk": "14:00",
+   "home": "Cagliari",
+   "away": "Venezia",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-12",
+   "uk": "19:45",
+   "home": "Como",
+   "away": "Bologna",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-13",
+   "uk": "11:30",
+   "home": "Lazio",
+   "away": "Roma",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-13",
+   "uk": "14:00",
+   "home": "Inter",
+   "away": "Torino",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-13",
+   "uk": "17:00",
+   "home": "Parma",
+   "away": "Fiorentina",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-13",
+   "uk": "19:45",
+   "home": "Napoli",
+   "away": "Milan",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-14",
+   "uk": "17:30",
+   "home": "Atalanta",
+   "away": "Genoa",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-14",
+   "uk": "19:45",
+   "home": "Juventus",
+   "away": "Monza",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-18",
+   "uk": "17:30",
+   "home": "Frosinone",
+   "away": "Lazio",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-18",
+   "uk": "19:45",
+   "home": "Lecce",
+   "away": "Inter",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-19",
+   "uk": "14:00",
+   "home": "Sassuolo",
+   "away": "Parma",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-19",
+   "uk": "19:45",
+   "home": "Roma",
+   "away": "Juventus",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-20",
+   "uk": "11:30",
+   "home": "Fiorentina",
+   "away": "Bologna",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-20",
+   "uk": "14:00",
+   "home": "Torino",
+   "away": "Cagliari",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-20",
+   "uk": "14:00",
+   "home": "Venezia",
+   "away": "Monza",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-20",
+   "uk": "17:00",
+   "home": "Genoa",
+   "away": "Udinese",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2026-12-20",
+   "uk": "19:45",
+   "home": "Atalanta",
+   "away": "Napoli",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-02",
+   "uk": "11:30",
+   "home": "Cagliari",
+   "away": "Genoa",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-02",
+   "uk": "14:00",
+   "home": "Fiorentina",
+   "away": "Lazio",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-02",
+   "uk": "14:00",
+   "home": "Torino",
+   "away": "Venezia",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-02",
+   "uk": "19:45",
+   "home": "Monza",
+   "away": "Milan",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-03",
+   "uk": "11:30",
+   "home": "Inter",
+   "away": "Sassuolo",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-03",
+   "uk": "14:00",
+   "home": "Como",
+   "away": "Lecce",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-03",
+   "uk": "14:00",
+   "home": "Udinese",
+   "away": "Atalanta",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-03",
+   "uk": "17:00",
+   "home": "Parma",
+   "away": "Napoli",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-03",
+   "uk": "19:45",
+   "home": "Bologna",
+   "away": "Juventus",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-05",
+   "uk": "17:30",
+   "home": "Genoa",
+   "away": "Monza",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-05",
+   "uk": "17:30",
+   "home": "Venezia",
+   "away": "Roma",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-05",
+   "uk": "19:45",
+   "home": "Milan",
+   "away": "Fiorentina",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-06",
+   "uk": "11:30",
+   "home": "Juventus",
+   "away": "Torino",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-06",
+   "uk": "14:00",
+   "home": "Frosinone",
+   "away": "Bologna",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-06",
+   "uk": "14:00",
+   "home": "Lecce",
+   "away": "Parma",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-06",
+   "uk": "17:00",
+   "home": "Atalanta",
+   "away": "Como",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-06",
+   "uk": "19:45",
+   "home": "Lazio",
+   "away": "Inter",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-07",
+   "uk": "17:30",
+   "home": "Sassuolo",
+   "away": "Udinese",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-07",
+   "uk": "19:45",
+   "home": "Napoli",
+   "away": "Cagliari",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-09",
+   "uk": "14:00",
+   "home": "Monza",
+   "away": "Frosinone",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-09",
+   "uk": "19:45",
+   "home": "Bologna",
+   "away": "Genoa",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-10",
+   "uk": "11:30",
+   "home": "Como",
+   "away": "Lazio",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-10",
+   "uk": "14:00",
+   "home": "Fiorentina",
+   "away": "Lecce",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-10",
+   "uk": "14:00",
+   "home": "Parma",
+   "away": "Venezia",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-10",
+   "uk": "17:00",
+   "home": "Torino",
+   "away": "Atalanta",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-10",
+   "uk": "19:45",
+   "home": "Inter",
+   "away": "Juventus",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-11",
+   "uk": "17:30",
+   "home": "Cagliari",
+   "away": "Sassuolo",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
+  },
+  {
+   "date": "2027-01-11",
+   "uk": "19:45",
+   "home": "Udinese",
+   "away": "Napoli",
+   "comp": "Serie A",
+   "channels": [
+    "DAZN"
+   ],
+   "source": "daznsa"
   }
  ]
 }
