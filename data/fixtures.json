@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09",
+ "generated": "2026-11-10",
  "sources": {
   "sky": {
    "name": "Sky Sports – Football on Sky",
@@ -381,18 +381,6 @@
    "source": "tff",
    "round": 11,
    "score": "3-0"
-  },
-  {
-   "date": "2026-11-09",
-   "uk": "19:30",
-   "home": "Plymouth Parkway",
-   "away": "Berkhamsted",
-   "comp": "FA Cup",
-   "channels": [
-    "TNT Sports 1",
-    "HBO Max"
-   ],
-   "source": "fa"
   },
   {
    "date": "2026-11-10",
