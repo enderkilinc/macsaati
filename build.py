@@ -97,6 +97,27 @@ def fmt_day(d, lang="en"):
 
 TRD_FULL = ["Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi","Pazar"]
 TRM_ALL = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"]
+NICK = {"Galatasaray": "GS", "Fenerbahçe": "FB", "Beşiktaş": "BJK", "Trabzonspor": "TS", "Başakşehir": "İBFK",
+        "Amedspor": "Amed", "Türkiye": "A Milli Takım"}
+def nick(t): return NICK.get(t, t)
+def club_faq(c, nxt, lang_uk_ch):
+    n = NICK.get(c)
+    names = f"{c} ({n})" if n and n != c else c
+    if nxt:
+        when = (f'{esc(nxt["home"])} – {esc(nxt["away"])}: {esc(mday_tr(nxt))}, İngiltere saatiyle {nxt["uk"]}, Türkiye saatiyle {nxt["tr"]}. '
+                f'Kanal: {esc(", ".join(nxt["channels"]))}.')
+        when_en = f'{esc(nxt["home"])} v {esc(nxt["away"])}, {esc(mday_en(nxt))}, kick-off {nxt["uk"]} UK time ({nxt["tr"]} TSİ).'
+    else:
+        when = "Henüz açıklanmış maç yok; maç saatleri açıklandığı gün bu sayfaya eklenir."
+        when_en = "No match has been announced yet; it appears here the day it is published."
+    qa = [(f"{n or c} maçı ne zaman, saat kaçta?", when),
+          (f"{c} maçı hangi kanalda? İngiltere'de nasıl izlenir?",
+           ("Süper Lig 2026/27'de İngiliz TV kanallarında yok; İngiltere'de yasal yol Digiturk Play Yurt Dışı Spor paketi. "
+            "Avrupa kupası maçları TNT Sports / Prime Video'da.") if c != "Türkiye" else "A Milli Takım maçları İngiltere'de Prime Video'da, Türkiye'de ATV ve S Sport'ta."),
+          (f"What time is the {c} match in the UK and what channel is it on?", when_en)]
+    html_ = ('<section class="prose faqbox"><h2>' + esc(names) + ' maçı – sık sorulanlar</h2>'
+             + "".join(f"<h3>{esc(q)}</h3><p>{a}</p>" for q, a in qa) + '</section>')
+    return html_
 def match_path(f):
     """Dedicated page for every match involving a Turkish club or Türkiye."""
     return f"/mac/{slug(f['home'])}-{slug(f['away'])}-{f['date']}/"
@@ -452,8 +473,9 @@ def build():
             desc = (f"{c} maçları İngiltere saati ve Türkiye saati ile, yayın kanallarıyla. What channel is {c} on in the UK? "
                     f"{c} fixtures with UK kick-off times, updated every day.")
             intro = f"{esc(c)} have no match in the current listings yet. / Henüz açıklanmış {esc(c)} maçı yok." + no_uk
+        if c in NICK: desc = f"{NICK[c]} maçı ne zaman? " + desc
         write(sl, page(sl, title, desc, f"{c} maçı hangi kanalda? · {c} on TV", intro,
-            listing(fx, empty=f"No {c} match in the listings yet."), fx, controls=False, banner=False))
+            listing(fx, empty=f"No {c} match in the listings yet.") + club_faq(c, nxt, None), fx, controls=False, banner=False))
         pages.append((sl, "daily", "0.7"))
     # Club index section on home & super lig page is via links list
     clubs_html = '<section class="clubs"><h2>Süper Lig clubs</h2><ul>' + "".join(
@@ -497,7 +519,8 @@ def build():
         clubs = [t for t in (f["home"], f["away"]) if t in ALL_SL_CLUBS]
         others = [g for g in upcoming_turk if g is not f][:8]
         vs_tr = f'{f["home"]} – {f["away"]}'
-        body = (f'<article class="prose match">'
+        nk2 = f'{nick(f["home"])} – {nick(f["away"])}'
+        body = (f'<article class="prose match">' + (f'<p class="nick">{esc(nk2)} maçı · {esc(vs_tr)} maç saati</p>' if nk2 != vs_tr else '')
                 + (f'<p class="lead"><b>{esc(vs_tr)}</b> maçı <b>{esc(mday_tr(f))}</b> günü İngiltere saatiyle <b>{f["uk"]}</b>\'da (TSİ {f["tr"]}) başlıyor. '
                    f'{esc(f["home"])} v {esc(f["away"])} kicks off at <b>{f["uk"]} UK time</b> on {esc(f["dt"].strftime("%A"))} {f["dt"].day} {esc(f["dt"].strftime("%B"))}.</p>' if not score else
                    f'<p class="lead"><b>{esc(vs_tr)}</b> maçı <b>{esc(score)}</b> sona erdi. {esc(f["home"])} {esc(score)} {esc(f["away"])} (full time).</p>')
@@ -510,7 +533,8 @@ def build():
                 + '</article>')
         title = (f'{vs_tr} hangi kanalda, saat kaçta? {f["dt"].day} {TRM_ALL[f["dt"].month-1]} · İngiltere {f["uk"]} (TSİ {f["tr"]}) | {SITE}' if not score
                  else f'{f["home"]} {score} {f["away"]} – maç sonucu ({f["dt"].day} {TRM_ALL[f["dt"].month-1]}) | {SITE}')
-        desc = (f'{vs_tr} maçı ne zaman, saat kaçta, hangi kanalda? {mday_tr(f)}, İngiltere saati {f["uk"]}, Türkiye saati {f["tr"]}. '
+        nk = f'{nick(f["home"])} – {nick(f["away"])}'
+        desc = ((f'{nk} maçı ne zaman? ' if nk != vs_tr else '') + f'{vs_tr} maçı ne zaman, saat kaçta, hangi kanalda? {mday_tr(f)}, İngiltere saati {f["uk"]}, Türkiye saati {f["tr"]}. '
                 f'Kanal: {", ".join(f["channels"])}. What time is {f["home"]} v {f["away"]} in the UK and what channel is it on?')
         html_ = page(p, title, desc, f'{vs_tr} hangi kanalda?',
                      f'{esc(f["comp"])} · {esc(mday_tr(f))} · {f["uk"]} İngiltere saati · {f["tr"]} TSİ', body, [f], lang="tr", controls=False, banner=False)
