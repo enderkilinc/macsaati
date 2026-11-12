@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11",
+ "generated": "2026-11-12",
  "sources": {
   "sky": {
    "name": "Sky Sports – Football on Sky",
@@ -381,28 +381,6 @@
    "source": "tff",
    "round": 11,
    "score": "3-0"
-  },
-  {
-   "date": "2026-11-11",
-   "uk": "19:00",
-   "home": "Barnsley",
-   "away": "Oldham Athletic",
-   "comp": "EFL Trophy",
-   "channels": [
-    "Sky Sports+"
-   ],
-   "source": "eflt"
-  },
-  {
-   "date": "2026-11-11",
-   "uk": "19:00",
-   "home": "Sheffield Wednesday",
-   "away": "Accrington Stanley",
-   "comp": "EFL Trophy",
-   "channels": [
-    "Sky Sports+"
-   ],
-   "source": "eflt"
   },
   {
    "date": "2026-11-12",
