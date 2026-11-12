@@ -517,6 +517,39 @@ def build():
                  ("Türkiye'de / In Türkiye", esc(", ".join(tr_ch)) or "—")]
         if score: rows_.insert(0, ("Sonuç / Result", f'<b class="big">{esc(score.replace("-", " – "))}</b>'))
         clubs = [t for t in (f["home"], f["away"]) if t in ALL_SL_CLUBS]
+        # --- extra, page-specific context (round, other matches of the round, recent results, next matches) ---
+        BIG4 = {"Galatasaray", "Fenerbahçe", "Beşiktaş", "Trabzonspor"}
+        rnd = f.get("round")
+        comp_tr = {"Süper Lig": "Trendyol Süper Lig", "UEFA Champions League": "UEFA Şampiyonlar Ligi", "UEFA Europa League": "UEFA Avrupa Ligi",
+                   "UEFA Conference League": "UEFA Konferans Ligi", "UEFA Nations League": "UEFA Uluslar Ligi"}.get(f["comp"], f["comp"])
+        bits = [f'{esc(f["home"])} ile {esc(f["away"])}, {esc(comp_tr)}' + (f' {rnd}. hafta' if rnd else '') + ' kapsamında karşılaşıyor.']
+        if f["home"] in BIG4 and f["away"] in BIG4: bits.append("Bu maç sezonun büyük derbilerinden biri.")
+        elif f["comp"] != "Süper Lig" and (f["home"] in TURK_CLUBS or f["away"] in TURK_CLUBS) and f["comp"].startswith("UEFA") and "Nations" not in f["comp"]:
+            tk = f["home"] if f["home"] in TURK_CLUBS else f["away"]
+            bits.append(f'{esc(tk)} Avrupa\'da Türkiye\'yi temsil ediyor; maç İngiltere\'de televizyonda canlı.')
+        bits.append(f'Maç {TRD_FULL[f["dt"].weekday()]} günü, İngiltere saatiyle {f["uk"]}\'da başlıyor; bu saat Türkiye\'de {f["tr"]}{" (ertesi gün)" if f["tr_next"] else ""}.')
+        context = "<p>" + " ".join(bits) + "</p>"
+        def recent(t):
+            rs = sorted([g for g in D["fixtures"] if g.get("score") and t in (g["home"], g["away"]) and g is not f and g["date"] <= f["date"]],
+                        key=lambda g: g["date"], reverse=True)[:2]
+            return [f'{esc(g["home"])} {esc(g["score"].replace("-", "–"))} {esc(g["away"])} ({datetime.fromisoformat(g["date"]).day} {TRM_ALL[datetime.fromisoformat(g["date"]).month-1]})' for g in rs]
+        def upcoming(t):
+            return [g for g in FIX if g is not f and g["dt"] > f["dt"] and t in (g["home"], g["away"])][:3]
+        form = ""
+        for t in (f["home"], f["away"]):
+            rr, uu = recent(t), upcoming(t)
+            if not rr and not uu: continue
+            form += f'<h3>{esc(t)}</h3>'
+            if rr: form += '<p><b>Son sonuç:</b> ' + " · ".join(rr) + '</p>'
+            if uu: form += '<p><b>Sonraki maçlar:</b> ' + " · ".join(
+                (f'<a href="{match_path(g)}">' if g["turk"] else "") + f'{esc(g["home"])} – {esc(g["away"])}' + ("</a>" if g["turk"] else "")
+                + f' ({esc(mday_tr(g))}, {g["uk"]} UK)' for g in uu) + '</p>'
+        if form: form = '<h2>Takımların durumu · Form & next matches</h2>' + form
+        same_round = [g for g in turk_fx if rnd and g.get("round") == rnd and g is not f and g["comp"] == f["comp"]]
+        round_html = ('<h2>' + (f'Süper Lig {rnd}. hafta – diğer maçlar' if rnd else '') + '</h2><ul class="others">' + "".join(
+            f'<li><a href="{match_path(g)}">{esc(g["home"])} – {esc(g["away"])}</a> <span>'
+            + (esc(g["score"].replace("-", "–")) if g.get("score") else f'{esc(mday_tr(g))} · {g["uk"]} UK') + '</span></li>'
+            for g in sorted(same_round, key=lambda g: g["dt"])) + '</ul>') if same_round else ""
         others = [g for g in upcoming_turk if g is not f][:8]
         vs_tr = f'{f["home"]} – {f["away"]}'
         nk2 = f'{nick(f["home"])} – {nick(f["away"])}'
@@ -525,11 +558,12 @@ def build():
                    f'{esc(f["home"])} v {esc(f["away"])} kicks off at <b>{f["uk"]} UK time</b> on {esc(f["dt"].strftime("%A"))} {f["dt"].day} {esc(f["dt"].strftime("%B"))}.</p>' if not score else
                    f'<p class="lead"><b>{esc(vs_tr)}</b> maçı <b>{esc(score)}</b> sona erdi. {esc(f["home"])} {esc(score)} {esc(f["away"])} (full time).</p>')
                 + '<table class="mt">' + "".join(f"<tr><th>{k}</th><td>{v}</td></tr>" for k, v in rows_) + '</table>'
-                + how
+                + context + how
                 + f'<p><a class="wa big" href="{esc(wa_link(f))}" target="_blank" rel="noopener nofollow">{WA_ICON} WhatsApp\'ta paylaş / Share on WhatsApp</a></p>'
+                + round_html + form
                 + ('<h2>Takım sayfaları</h2><p>' + " · ".join(f'<a href="/{slug(c)}-on-tv/">{esc(c)} maçları / on TV</a>' for c in clubs) + '</p>' if clubs else '')
                 + ('<h2>Diğer Türk takımı maçları · More Turkish matches</h2><ul class="others">' + "".join(
-                    f'<li><a href="{match_path(g)}">{esc(g["home"])} – {esc(g["away"])}</a> <span>{esc(mday_tr(g))} · {g["uk"]} UK</span></li>' for g in others) + '</ul>' if others else '')
+                    f'<li><a href="{match_path(g)}">{esc(g["home"])} – {esc(g["away"])}</a> <span>{esc(mday_tr(g))} · {g["uk"]} UK</span></li>' for g in others) + '</ul>' if others and not round_html else '')
                 + '</article>')
         title = (f'{vs_tr} hangi kanalda, saat kaçta? {f["dt"].day} {TRM_ALL[f["dt"].month-1]} · İngiltere {f["uk"]} (TSİ {f["tr"]}) | {SITE}' if not score
                  else f'{f["home"]} {score} {f["away"]} – maç sonucu ({f["dt"].day} {TRM_ALL[f["dt"].month-1]}) | {SITE}')
