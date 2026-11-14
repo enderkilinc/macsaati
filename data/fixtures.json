@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13",
+ "generated": "2026-11-14",
  "sources": {
   "sky": {
    "name": "Sky Sports – Football on Sky",
@@ -381,116 +381,6 @@
    "source": "tff",
    "round": 11,
    "score": "3-0"
-  },
-  {
-   "date": "2026-11-13",
-   "uk": "17:00",
-   "home": "Moldova",
-   "away": "Kazakhstan",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-13",
-   "uk": "19:45",
-   "home": "Andorra",
-   "away": "Gibraltar",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-13",
-   "uk": "19:45",
-   "home": "Bulgaria",
-   "away": "Iceland",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-13",
-   "uk": "19:45",
-   "home": "Liechtenstein",
-   "away": "Azerbaijan",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-13",
-   "uk": "19:45",
-   "home": "Luxembourg",
-   "away": "Estonia",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-13",
-   "uk": "19:45",
-   "home": "Netherlands",
-   "away": "Greece",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-13",
-   "uk": "19:45",
-   "home": "Scotland",
-   "away": "North Macedonia",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "BBC iPlayer"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-13",
-   "uk": "19:45",
-   "home": "Serbia",
-   "away": "Germany",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-13",
-   "uk": "19:45",
-   "home": "Slovakia",
-   "away": "Faroe Islands",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-13",
-   "uk": "19:45",
-   "home": "Slovenia",
-   "away": "Switzerland",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
   },
   {
    "date": "2026-11-14",
