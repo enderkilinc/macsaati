@@ -150,7 +150,7 @@ def row(f, lang="en"):
             f'data-turk="{int(f["turk"])}" data-live="{esc(live_url(f))}" data-fta="{int(any(FTA.search(c) for c in f["channels"]))}" data-q="{esc(search)}">'
             f'<div class="time" data-nosnippet><span class="uk">{f["uk"]}</span><span class="trt">{f["tr"]}{"<small>+1</small>" if f["tr_next"] else ""}</span></div>'
             f'<div class="fx"><div class="teams">{tname(f["home"], f["comp"])}<span class="v">v</span>{tname(f["away"], f["comp"])}</div>'
-            f'<div class="comp">{" ".join(tags)} <span class="st"></span> {srcl}'
+            f'<div class="comp"><span class="when">{esc(f["comp"])} · {(f["dt"].strftime("%a") if lang=="en" else ["Pzt","Sal","Çar","Per","Cum","Cmt","Paz"][f["dt"].weekday()])} {f["dt"].strftime("%d-%m-%Y")}</span> {" ".join(tags)} <span class="st"></span> {srcl}'
             + (f'<a class="mp" href="{match_path(f)}">{"Match page" if lang=="en" else "Maç sayfası"} →</a>' if f["turk"] else "")
             + f'<a class="wa" href="{esc(wa_link(f))}" target="_blank" rel="noopener nofollow" title="WhatsApp">{WA_ICON}{"Share" if lang=="en" else "Paylaş"}</a>'
             + '</div></div>'
