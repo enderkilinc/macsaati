@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14",
+ "generated": "2026-11-15",
  "sources": {
   "sky": {
    "name": "Sky Sports – Football on Sky",
@@ -244,6 +244,10 @@
   "ligue1plus": {
    "name": "Ligue 1+ – UK & Ireland streaming service (terms: every match except UK Saturday blackout)",
    "url": "https://ligue1.com/en/legal/cg-l1plus"
+  },
+  "spfl51518": {
+   "name": "SPFL – Premiership fixture update (Dundee United v Rangers live on Sky Sports, 9 January)",
+   "url": "https://spfl.co.uk/news/premiership-fixture-update-51518"
   }
  },
  "fixtures": [
@@ -381,94 +385,6 @@
    "source": "tff",
    "round": 11,
    "score": "3-0"
-  },
-  {
-   "date": "2026-11-14",
-   "uk": "14:00",
-   "home": "Kosovo",
-   "away": "Israel",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-14",
-   "uk": "17:00",
-   "home": "Georgia",
-   "away": "Hungary",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-14",
-   "uk": "17:00",
-   "home": "Norway",
-   "away": "Wales",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "S4C"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-14",
-   "uk": "19:45",
-   "home": "Austria",
-   "away": "Republic of Ireland",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-14",
-   "uk": "19:45",
-   "home": "Northern Ireland",
-   "away": "Ukraine",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "BBC iPlayer"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-14",
-   "uk": "19:45",
-   "home": "Portugal",
-   "away": "Denmark",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-14",
-   "uk": "19:45",
-   "home": "Romania",
-   "away": "Poland",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-14",
-   "uk": "19:45",
-   "home": "Sweden",
-   "away": "Bosnia and Herzegovina",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
   },
   {
    "date": "2026-11-15",
@@ -7390,6 +7306,17 @@
     "Sky Sports"
    ],
    "source": "k52"
+  },
+  {
+   "date": "2027-01-09",
+   "uk": "17:30",
+   "home": "Dundee United",
+   "away": "Rangers",
+   "comp": "Scottish Premiership",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "spfl51518"
   },
   {
    "date": "2027-01-09",
