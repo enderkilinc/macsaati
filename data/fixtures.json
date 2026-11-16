@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15",
+ "generated": "2026-11-16",
  "sources": {
   "sky": {
    "name": "Sky Sports – Football on Sky",
@@ -385,96 +385,6 @@
    "source": "tff",
    "round": 11,
    "score": "3-0"
-  },
-  {
-   "date": "2026-11-15",
-   "uk": "14:00",
-   "home": "Cyprus",
-   "away": "Montenegro",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-15",
-   "uk": "14:00",
-   "home": "Latvia",
-   "away": "Armenia",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-15",
-   "uk": "17:00",
-   "home": "Belarus",
-   "away": "Albania",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-15",
-   "uk": "17:00",
-   "home": "Finland",
-   "away": "San Marino",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-15",
-   "uk": "19:45",
-   "home": "Belgium",
-   "away": "Italy",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-15",
-   "uk": "19:45",
-   "home": "Croatia",
-   "away": "Czechia",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-15",
-   "uk": "19:45",
-   "home": "France",
-   "away": "Türkiye",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video",
-    "ATV (TR)"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-15",
-   "uk": "19:45",
-   "home": "Spain",
-   "away": "England",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "ITV1",
-    "ITVX"
-   ],
-   "source": "unlfx"
   },
   {
    "date": "2026-11-16",
