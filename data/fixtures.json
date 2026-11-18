@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17",
+ "generated": "2026-11-18",
  "sources": {
   "sky": {
    "name": "Sky Sports – Football on Sky",
@@ -387,105 +387,6 @@
    "score": "3-0"
   },
   {
-   "date": "2026-11-17",
-   "uk": "19:00",
-   "home": "Luton Town",
-   "away": "Peterborough United",
-   "comp": "EFL Trophy",
-   "channels": [
-    "Sky Sports+"
-   ],
-   "source": "eflt"
-  },
-  {
-   "date": "2026-11-17",
-   "uk": "19:45",
-   "home": "Bosnia and Herzegovina",
-   "away": "Romania",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-17",
-   "uk": "19:45",
-   "home": "Denmark",
-   "away": "Norway",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-17",
-   "uk": "19:45",
-   "home": "Hungary",
-   "away": "Northern Ireland",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "BBC iPlayer"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-17",
-   "uk": "19:45",
-   "home": "Israel",
-   "away": "Austria",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-17",
-   "uk": "19:45",
-   "home": "Poland",
-   "away": "Sweden",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-17",
-   "uk": "19:45",
-   "home": "Republic of Ireland",
-   "away": "Kosovo",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-17",
-   "uk": "19:45",
-   "home": "Ukraine",
-   "away": "Georgia",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "Prime Video"
-   ],
-   "source": "unlfx"
-  },
-  {
-   "date": "2026-11-17",
-   "uk": "19:45",
-   "home": "Wales",
-   "away": "Portugal",
-   "comp": "UEFA Nations League",
-   "channels": [
-    "S4C"
-   ],
-   "source": "unlfx"
-  },
-  {
    "date": "2026-11-20",
    "uk": "00:30",
    "home": "Orlando City",
@@ -537,9 +438,9 @@
    "away": "Espanyol",
    "comp": "La Liga",
    "channels": [
-    "Premier Sports (TBC)"
+    "Premier Sports"
    ],
-   "source": "k45"
+   "source": "premier"
   },
   {
    "date": "2026-11-20",
@@ -640,9 +541,9 @@
    "away": "Deportivo La Coruña",
    "comp": "La Liga",
    "channels": [
-    "Premier Sports (TBC)"
+    "Premier Sports"
    ],
-   "source": "k45"
+   "source": "premier"
   },
   {
    "date": "2026-11-21",
@@ -696,6 +597,17 @@
   },
   {
    "date": "2026-11-21",
+   "uk": "15:15",
+   "home": "Rayo Vallecano",
+   "away": "Valencia",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports"
+   ],
+   "source": "premier"
+  },
+  {
+   "date": "2026-11-21",
    "uk": "16:00",
    "home": "Kocaelispor",
    "away": "Fenerbahçe",
@@ -726,9 +638,9 @@
    "away": "Real Betis",
    "comp": "La Liga",
    "channels": [
-    "Premier Sports (TBC)"
+    "Premier Sports"
    ],
-   "source": "k45"
+   "source": "premier"
   },
   {
    "date": "2026-11-21",
@@ -828,6 +740,17 @@
     "Disney+"
    ],
    "source": "laligarm"
+  },
+  {
+   "date": "2026-11-21",
+   "uk": "20:00",
+   "home": "Tenerife",
+   "away": "Mallorca",
+   "comp": "La Liga 2",
+   "channels": [
+    "Premier Sports"
+   ],
+   "source": "premier"
   },
   {
    "date": "2026-11-21",
