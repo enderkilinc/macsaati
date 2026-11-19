@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18",
+ "generated": "2026-11-19",
  "sources": {
   "sky": {
    "name": "Sky Sports – Football on Sky",
@@ -828,9 +828,9 @@
    "away": "Villarreal",
    "comp": "La Liga",
    "channels": [
-    "Premier Sports (TBC)"
+    "Premier Sports"
    ],
-   "source": "k45"
+   "source": "premier"
   },
   {
    "date": "2026-11-22",
@@ -922,9 +922,9 @@
    "away": "Real Sociedad",
    "comp": "La Liga",
    "channels": [
-    "Premier Sports (TBC)"
+    "Premier Sports"
    ],
-   "source": "k45"
+   "source": "premier"
   },
   {
    "date": "2026-11-22",
@@ -991,9 +991,9 @@
    "away": "Málaga",
    "comp": "La Liga",
    "channels": [
-    "Premier Sports (TBC)"
+    "Premier Sports"
    ],
-   "source": "k45"
+   "source": "premier"
   },
   {
    "date": "2026-11-22",
@@ -1024,9 +1024,9 @@
    "away": "Atlético Madrid",
    "comp": "La Liga",
    "channels": [
-    "Premier Sports (TBC)"
+    "Premier Sports"
    ],
-   "source": "k45"
+   "source": "premier"
   },
   {
    "date": "2026-11-22",
@@ -1071,9 +1071,9 @@
    "away": "Elche",
    "comp": "La Liga",
    "channels": [
-    "Premier Sports (TBC)"
+    "Premier Sports"
    ],
-   "source": "k45"
+   "source": "premier"
   },
   {
    "date": "2026-11-23",
