@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19",
+ "generated": "2026-11-20",
  "sources": {
   "sky": {
    "name": "Sky Sports – Football on Sky",
@@ -248,6 +248,18 @@
   "spfl51518": {
    "name": "SPFL – Premiership fixture update (Dundee United v Rangers live on Sky Sports, 9 January)",
    "url": "https://spfl.co.uk/news/premiership-fixture-update-51518"
+  },
+  "pljan": {
+   "name": "Premier League – broadcast selections for matchweeks 21–23 (16 Jan–1 Feb 2027)",
+   "url": "https://www.premierleague.com/en/news/4764482/fixture-amendments-for-premier-league-matches-in-january-and-early-february"
+  },
+  "fa2": {
+   "name": "The FA – Emirates FA Cup second round broadcast selections",
+   "url": "https://www.thefa.com/news/2026/nov/12/efac-second-round-broadcast-selections-20261211"
+  },
+  "laliga15": {
+   "name": "LALIGA – Matchday 15 (UK times)",
+   "url": "https://www.laliga.com/en-GB/laliga-easports/results/2026-27/gameweek-15"
   }
  },
  "fixtures": [
@@ -2989,6 +3001,18 @@
   },
   {
    "date": "2026-12-04",
+   "uk": "19:30",
+   "home": "Wimborne Town",
+   "away": "Bradford City",
+   "comp": "FA Cup",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "fa2"
+  },
+  {
+   "date": "2026-12-04",
    "uk": "19:45",
    "home": "Toulouse",
    "away": "Paris Saint-Germain",
@@ -3019,6 +3043,17 @@
     "Sky Sports"
    ],
    "source": "skyefl"
+  },
+  {
+   "date": "2026-12-04",
+   "uk": "20:00",
+   "home": "Alavés",
+   "away": "Espanyol",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laliga15"
   },
   {
    "date": "2026-12-05",
@@ -3082,6 +3117,17 @@
   {
    "date": "2026-12-05",
    "uk": "13:00",
+   "home": "Racing Santander",
+   "away": "Deportivo La Coruña",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laliga15"
+  },
+  {
+   "date": "2026-12-05",
+   "uk": "13:00",
    "home": "Amedspor",
    "away": "Alanyaspor",
    "comp": "Süper Lig",
@@ -3106,6 +3152,17 @@
   },
   {
    "date": "2026-12-05",
+   "uk": "15:15",
+   "home": "Rayo Vallecano",
+   "away": "Levante",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laliga15"
+  },
+  {
+   "date": "2026-12-05",
    "uk": "16:00",
    "home": "Başakşehir",
    "away": "Fenerbahçe",
@@ -3120,6 +3177,20 @@
   },
   {
    "date": "2026-12-05",
+   "uk": "17:15",
+   "home": "Dover Athletic",
+   "away": "Leicester City",
+   "comp": "FA Cup",
+   "channels": [
+    "BBC Two",
+    "BBC iPlayer",
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "fa2"
+  },
+  {
+   "date": "2026-12-05",
    "uk": "17:30",
    "home": "Eintracht Frankfurt",
    "away": "Werder Bremen",
@@ -3128,6 +3199,17 @@
     "Sky Sports"
    ],
    "source": "k49"
+  },
+  {
+   "date": "2026-12-05",
+   "uk": "17:30",
+   "home": "Villarreal",
+   "away": "Real Sociedad",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laliga15"
   },
   {
    "date": "2026-12-05",
@@ -3209,6 +3291,29 @@
   {
    "date": "2026-12-05",
    "uk": "20:00",
+   "home": "Barrow",
+   "away": "Kidderminster Harriers",
+   "comp": "FA Cup",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "fa2"
+  },
+  {
+   "date": "2026-12-05",
+   "uk": "20:00",
+   "home": "Barcelona",
+   "away": "Celta Vigo",
+   "comp": "La Liga",
+   "channels": [
+    "Disney+"
+   ],
+   "source": "laliga15"
+  },
+  {
+   "date": "2026-12-05",
+   "uk": "20:00",
    "home": "Brentford",
    "away": "Manchester City",
    "comp": "Premier League",
@@ -3252,6 +3357,31 @@
     "Sky Sports"
    ],
    "source": "skyefl"
+  },
+  {
+   "date": "2026-12-06",
+   "uk": "12:15",
+   "home": "Salisbury",
+   "away": "Blackpool",
+   "comp": "FA Cup",
+   "channels": [
+    "BBC Two",
+    "BBC iPlayer",
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "fa2"
+  },
+  {
+   "date": "2026-12-06",
+   "uk": "13:00",
+   "home": "Osasuna",
+   "away": "Elche",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laliga15"
   },
   {
    "date": "2026-12-06",
@@ -3338,6 +3468,41 @@
   },
   {
    "date": "2026-12-06",
+   "uk": "14:30",
+   "home": "AFC Fylde",
+   "away": "Luton Town",
+   "comp": "FA Cup",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "fa2"
+  },
+  {
+   "date": "2026-12-06",
+   "uk": "15:15",
+   "home": "Crewe Alexandra",
+   "away": "Plymouth Argyle",
+   "comp": "FA Cup",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "fa2"
+  },
+  {
+   "date": "2026-12-06",
+   "uk": "15:15",
+   "home": "Athletic Bilbao",
+   "away": "Real Madrid",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laliga15"
+  },
+  {
+   "date": "2026-12-06",
    "uk": "16:00",
    "home": "Trabzonspor",
    "away": "Çorum FK",
@@ -3396,6 +3561,29 @@
   },
   {
    "date": "2026-12-06",
+   "uk": "17:30",
+   "home": "Plymouth Parkway",
+   "away": "Barnet",
+   "comp": "FA Cup",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "fa2"
+  },
+  {
+   "date": "2026-12-06",
+   "uk": "17:30",
+   "home": "Getafe",
+   "away": "Valencia",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laliga15"
+  },
+  {
+   "date": "2026-12-06",
    "uk": "19:45",
    "home": "Marseille",
    "away": "Nice",
@@ -3415,6 +3603,17 @@
     "DAZN"
    ],
    "source": "daznsa"
+  },
+  {
+   "date": "2026-12-06",
+   "uk": "20:00",
+   "home": "Atlético Madrid",
+   "away": "Real Betis",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laliga15"
   },
   {
    "date": "2026-12-07",
@@ -3443,6 +3642,18 @@
   },
   {
    "date": "2026-12-07",
+   "uk": "19:30",
+   "home": "Guiseley",
+   "away": "Notts County",
+   "comp": "FA Cup",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "fa2"
+  },
+  {
+   "date": "2026-12-07",
    "uk": "19:45",
    "home": "Fiorentina",
    "away": "Cagliari",
@@ -3451,6 +3662,17 @@
     "DAZN"
    ],
    "source": "daznsa"
+  },
+  {
+   "date": "2026-12-07",
+   "uk": "20:00",
+   "home": "Sevilla",
+   "away": "Málaga",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laliga15"
   },
   {
    "date": "2026-12-07",
@@ -7198,6 +7420,18 @@
   },
   {
    "date": "2027-01-16",
+   "uk": "12:30",
+   "home": "Coventry City",
+   "away": "Everton",
+   "comp": "Premier League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "pljan"
+  },
+  {
+   "date": "2027-01-16",
    "uk": "17:30",
    "home": "Eintracht Frankfurt",
    "away": "Bayern Munich",
@@ -7206,6 +7440,17 @@
     "Sky Sports"
    ],
    "source": "k53"
+  },
+  {
+   "date": "2027-01-16",
+   "uk": "17:30",
+   "home": "Aston Villa",
+   "away": "Manchester United",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pljan"
   },
   {
    "date": "2027-01-16",
@@ -7264,6 +7509,17 @@
   },
   {
    "date": "2027-01-17",
+   "uk": "14:00",
+   "home": "AFC Bournemouth",
+   "away": "Ipswich Town",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pljan"
+  },
+  {
+   "date": "2027-01-17",
    "uk": "14:30",
    "home": "Werder Bremen",
    "away": "SV Elversberg",
@@ -7297,6 +7553,17 @@
   },
   {
    "date": "2027-01-17",
+   "uk": "16:30",
+   "home": "Tottenham Hotspur",
+   "away": "Leeds United",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pljan"
+  },
+  {
+   "date": "2027-01-17",
    "uk": "19:45",
    "home": "Lyon",
    "away": "Lorient",
@@ -7305,6 +7572,17 @@
     "Ligue 1+"
    ],
    "source": "ligue1"
+  },
+  {
+   "date": "2027-01-18",
+   "uk": "20:00",
+   "home": "Brentford",
+   "away": "Brighton & Hove Albion",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pljan"
   },
   {
    "date": "2027-01-19",
@@ -7897,6 +8175,17 @@
   },
   {
    "date": "2027-01-23",
+   "uk": "17:30",
+   "home": "Arsenal",
+   "away": "Newcastle United",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pljan"
+  },
+  {
+   "date": "2027-01-23",
    "uk": "19:45",
    "home": "Le Mans",
    "away": "Angers",
@@ -7940,6 +8229,18 @@
    "source": "ligue1"
   },
   {
+   "date": "2027-01-23",
+   "uk": "20:00",
+   "home": "Brighton & Hove Albion",
+   "away": "Manchester City",
+   "comp": "Premier League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "pljan"
+  },
+  {
    "date": "2027-01-24",
    "uk": "14:00",
    "home": "Le Havre",
@@ -7949,6 +8250,50 @@
     "Ligue 1+"
    ],
    "source": "ligue1"
+  },
+  {
+   "date": "2027-01-24",
+   "uk": "14:00",
+   "home": "Crystal Palace",
+   "away": "Tottenham Hotspur",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pljan"
+  },
+  {
+   "date": "2027-01-24",
+   "uk": "14:00",
+   "home": "Everton",
+   "away": "Brentford",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pljan"
+  },
+  {
+   "date": "2027-01-24",
+   "uk": "14:00",
+   "home": "Nottingham Forest",
+   "away": "AFC Bournemouth",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pljan"
+  },
+  {
+   "date": "2027-01-24",
+   "uk": "14:00",
+   "home": "Sunderland",
+   "away": "Coventry City",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pljan"
   },
   {
    "date": "2027-01-24",
@@ -7985,6 +8330,17 @@
   },
   {
    "date": "2027-01-24",
+   "uk": "16:30",
+   "home": "Manchester United",
+   "away": "Liverpool",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pljan"
+  },
+  {
+   "date": "2027-01-24",
    "uk": "18:30",
    "home": "Hoffenheim",
    "away": "FC Köln",
@@ -8004,6 +8360,17 @@
     "Ligue 1+"
    ],
    "source": "ligue1"
+  },
+  {
+   "date": "2027-01-25",
+   "uk": "20:00",
+   "home": "Leeds United",
+   "away": "Chelsea",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pljan"
   },
   {
    "date": "2027-01-26",
@@ -8593,6 +8960,29 @@
   },
   {
    "date": "2027-01-30",
+   "uk": "12:30",
+   "home": "Liverpool",
+   "away": "Everton",
+   "comp": "Premier League",
+   "channels": [
+    "TNT Sports",
+    "HBO Max"
+   ],
+   "source": "pljan"
+  },
+  {
+   "date": "2027-01-30",
+   "uk": "17:30",
+   "home": "Chelsea",
+   "away": "Nottingham Forest",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pljan"
+  },
+  {
+   "date": "2027-01-30",
    "uk": "19:45",
    "home": "Angers",
    "away": "Le Havre",
@@ -8648,6 +9038,50 @@
   },
   {
    "date": "2027-01-31",
+   "uk": "14:00",
+   "home": "AFC Bournemouth",
+   "away": "Fulham",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pljan"
+  },
+  {
+   "date": "2027-01-31",
+   "uk": "14:00",
+   "home": "Coventry City",
+   "away": "Leeds United",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pljan"
+  },
+  {
+   "date": "2027-01-31",
+   "uk": "14:00",
+   "home": "Hull City",
+   "away": "Crystal Palace",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pljan"
+  },
+  {
+   "date": "2027-01-31",
+   "uk": "14:00",
+   "home": "Tottenham Hotspur",
+   "away": "Sunderland",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pljan"
+  },
+  {
+   "date": "2027-01-31",
    "uk": "16:15",
    "home": "Marseille",
    "away": "Troyes",
@@ -8659,6 +9093,17 @@
   },
   {
    "date": "2027-01-31",
+   "uk": "16:30",
+   "home": "Manchester City",
+   "away": "Arsenal",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pljan"
+  },
+  {
+   "date": "2027-01-31",
    "uk": "19:45",
    "home": "Lyon",
    "away": "Lille",
@@ -8667,6 +9112,17 @@
     "Ligue 1+"
    ],
    "source": "ligue1"
+  },
+  {
+   "date": "2027-02-01",
+   "uk": "20:00",
+   "home": "Brentford",
+   "away": "Manchester United",
+   "comp": "Premier League",
+   "channels": [
+    "Sky Sports"
+   ],
+   "source": "pljan"
   }
  ]
 }
