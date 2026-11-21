@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20",
+ "generated": "2026-11-21",
  "sources": {
   "sky": {
    "name": "Sky Sports – Football on Sky",
@@ -397,73 +397,6 @@
    "source": "tff",
    "round": 11,
    "score": "3-0"
-  },
-  {
-   "date": "2026-11-20",
-   "uk": "00:30",
-   "home": "Orlando City",
-   "away": "FC Cincinnati",
-   "comp": "MLS",
-   "channels": [
-    "Apple TV"
-   ],
-   "source": "mlspo"
-  },
-  {
-   "date": "2026-11-20",
-   "uk": "03:00",
-   "home": "Seattle Sounders",
-   "away": "Real Salt Lake",
-   "comp": "MLS",
-   "channels": [
-    "Apple TV"
-   ],
-   "source": "mlspo"
-  },
-  {
-   "date": "2026-11-20",
-   "uk": "19:30",
-   "home": "Bayern Munich",
-   "away": "FC Köln",
-   "comp": "Bundesliga",
-   "channels": [
-    "BBC iPlayer",
-    "BBC Sport website"
-   ],
-   "source": "bundesliga"
-  },
-  {
-   "date": "2026-11-20",
-   "uk": "19:45",
-   "home": "Troyes",
-   "away": "Le Havre",
-   "comp": "Ligue 1",
-   "channels": [
-    "Ligue 1+"
-   ],
-   "source": "ligue1"
-  },
-  {
-   "date": "2026-11-20",
-   "uk": "20:00",
-   "home": "Athletic Bilbao",
-   "away": "Espanyol",
-   "comp": "La Liga",
-   "channels": [
-    "Premier Sports"
-   ],
-   "source": "premier"
-  },
-  {
-   "date": "2026-11-20",
-   "uk": "20:00",
-   "home": "Barnsley",
-   "away": "Sheffield Wednesday",
-   "comp": "League One",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skyefl"
   },
   {
    "date": "2026-11-21",
