@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21",
+ "generated": "2026-11-22",
  "sources": {
   "sky": {
    "name": "Sky Sports – Football on Sky",
@@ -264,141 +264,6 @@
  },
  "fixtures": [
   {
-   "date": "2026-11-06",
-   "uk": "17:00",
-   "home": "Gaziantep FK",
-   "away": "Kasımpaşa",
-   "comp": "Süper Lig",
-   "channels": [
-    "Digiturk Play (UK)",
-    "beIN SPORTS (TR)",
-    "TOD (TR)"
-   ],
-   "source": "tff",
-   "round": 11,
-   "score": "0-2"
-  },
-  {
-   "date": "2026-11-07",
-   "uk": "10:30",
-   "home": "Eyüpspor",
-   "away": "Kocaelispor",
-   "comp": "Süper Lig",
-   "channels": [
-    "Digiturk Play (UK)",
-    "beIN SPORTS (TR)",
-    "TOD (TR)"
-   ],
-   "source": "tff",
-   "round": 11,
-   "score": "0-2"
-  },
-  {
-   "date": "2026-11-07",
-   "uk": "13:00",
-   "home": "Samsunspor",
-   "away": "Konyaspor",
-   "comp": "Süper Lig",
-   "channels": [
-    "Digiturk Play (UK)",
-    "beIN SPORTS (TR)",
-    "TOD (TR)"
-   ],
-   "source": "tff",
-   "round": 11,
-   "score": "1-0"
-  },
-  {
-   "date": "2026-11-07",
-   "uk": "16:00",
-   "home": "Galatasaray",
-   "away": "Amedspor",
-   "comp": "Süper Lig",
-   "channels": [
-    "Digiturk Play (UK)",
-    "beIN SPORTS (TR)",
-    "TOD (TR)"
-   ],
-   "source": "tff",
-   "round": 11,
-   "score": "4-3"
-  },
-  {
-   "date": "2026-11-07",
-   "uk": "16:00",
-   "home": "Göztepe",
-   "away": "Başakşehir",
-   "comp": "Süper Lig",
-   "channels": [
-    "Digiturk Play (UK)",
-    "beIN SPORTS (TR)",
-    "TOD (TR)"
-   ],
-   "source": "tff",
-   "round": 11,
-   "score": "1-2"
-  },
-  {
-   "date": "2026-11-08",
-   "uk": "10:30",
-   "home": "Çaykur Rizespor",
-   "away": "Erzurumspor FK",
-   "comp": "Süper Lig",
-   "channels": [
-    "Digiturk Play (UK)",
-    "beIN SPORTS (TR)",
-    "TOD (TR)"
-   ],
-   "source": "tff",
-   "round": 11,
-   "score": "2-1"
-  },
-  {
-   "date": "2026-11-08",
-   "uk": "13:00",
-   "home": "Çorum FK",
-   "away": "Fenerbahçe",
-   "comp": "Süper Lig",
-   "channels": [
-    "Digiturk Play (UK)",
-    "beIN SPORTS (TR)",
-    "TOD (TR)"
-   ],
-   "source": "tff",
-   "round": 11,
-   "score": "0-5"
-  },
-  {
-   "date": "2026-11-08",
-   "uk": "15:30",
-   "home": "Alanyaspor",
-   "away": "Trabzonspor",
-   "comp": "Süper Lig",
-   "channels": [
-    "Digiturk Play (UK)",
-    "beIN SPORTS (TR)",
-    "TOD (TR)"
-   ],
-   "source": "tff",
-   "round": 11,
-   "score": "0-2"
-  },
-  {
-   "date": "2026-11-08",
-   "uk": "18:00",
-   "home": "Beşiktaş",
-   "away": "Gençlerbirliği",
-   "comp": "Süper Lig",
-   "channels": [
-    "Digiturk Play (UK)",
-    "beIN SPORTS (TR)",
-    "TOD (TR)"
-   ],
-   "source": "tff",
-   "round": 11,
-   "score": "3-0"
-  },
-  {
    "date": "2026-11-21",
    "uk": "10:30",
    "home": "Gençlerbirliği",
@@ -412,84 +277,6 @@
    "source": "tff",
    "round": 12,
    "score": "1-0"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "12:30",
-   "home": "Millwall",
-   "away": "QPR",
-   "comp": "Championship",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skyefl"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "12:30",
-   "home": "Norwich City",
-   "away": "Cardiff City",
-   "comp": "Championship",
-   "channels": [
-    "Sky Sports+"
-   ],
-   "source": "skyefl"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "12:30",
-   "home": "Southampton",
-   "away": "Derby County",
-   "comp": "Championship",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skyefl"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "12:30",
-   "home": "Blackpool",
-   "away": "Wigan Athletic",
-   "comp": "League One",
-   "channels": [
-    "Sky Sports+"
-   ],
-   "source": "skyefl"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "12:30",
-   "home": "Reading",
-   "away": "Bromley",
-   "comp": "League One",
-   "channels": [
-    "Sky Sports+"
-   ],
-   "source": "skyefl"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "12:30",
-   "home": "Manchester City",
-   "away": "Fulham",
-   "comp": "Premier League",
-   "channels": [
-    "TNT Sports",
-    "HBO Max"
-   ],
-   "source": "tntpl"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "13:00",
-   "home": "Alavés",
-   "away": "Deportivo La Coruña",
-   "comp": "La Liga",
-   "channels": [
-    "Premier Sports"
-   ],
-   "source": "premier"
   },
   {
    "date": "2026-11-21",
@@ -523,39 +310,6 @@
   },
   {
    "date": "2026-11-21",
-   "uk": "14:00",
-   "home": "Como",
-   "away": "Cagliari",
-   "comp": "Serie A",
-   "channels": [
-    "DAZN"
-   ],
-   "source": "legaseriea"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "14:00",
-   "home": "Lazio",
-   "away": "Lecce",
-   "comp": "Serie A",
-   "channels": [
-    "DAZN"
-   ],
-   "source": "legaseriea"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "15:15",
-   "home": "Rayo Vallecano",
-   "away": "Valencia",
-   "comp": "La Liga",
-   "channels": [
-    "Premier Sports"
-   ],
-   "source": "premier"
-  },
-  {
-   "date": "2026-11-21",
    "uk": "16:00",
    "home": "Kocaelispor",
    "away": "Fenerbahçe",
@@ -568,171 +322,6 @@
    "source": "tff",
    "round": 12,
    "score": "2-2"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "17:30",
-   "home": "Schalke 04",
-   "away": "VfB Stuttgart",
-   "comp": "Bundesliga",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "bl10"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "17:30",
-   "home": "Sevilla",
-   "away": "Real Betis",
-   "comp": "La Liga",
-   "channels": [
-    "Premier Sports"
-   ],
-   "source": "premier"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "17:30",
-   "home": "Newcastle United",
-   "away": "Arsenal",
-   "comp": "Premier League",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skypl"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "17:45",
-   "home": "Dundee",
-   "away": "Hearts",
-   "comp": "Scottish Premiership",
-   "channels": [
-    "Premier Sports"
-   ],
-   "source": "k35"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "19:00",
-   "home": "New England Revolution",
-   "away": "Philadelphia Union",
-   "comp": "MLS",
-   "channels": [
-    "Apple TV"
-   ],
-   "source": "mlspo"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "19:45",
-   "home": "Lens",
-   "away": "Toulouse",
-   "comp": "Ligue 1",
-   "channels": [
-    "Ligue 1+"
-   ],
-   "source": "ligue1"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "19:45",
-   "home": "Lille",
-   "away": "Lyon",
-   "comp": "Ligue 1",
-   "channels": [
-    "Ligue 1+"
-   ],
-   "source": "ligue1"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "19:45",
-   "home": "Monaco",
-   "away": "Auxerre",
-   "comp": "Ligue 1",
-   "channels": [
-    "Ligue 1+"
-   ],
-   "source": "ligue1"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "19:45",
-   "home": "Strasbourg",
-   "away": "Brest",
-   "comp": "Ligue 1",
-   "channels": [
-    "Ligue 1+"
-   ],
-   "source": "ligue1"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "19:45",
-   "home": "Napoli",
-   "away": "Torino",
-   "comp": "Serie A",
-   "channels": [
-    "DAZN"
-   ],
-   "source": "legaseriea"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "20:00",
-   "home": "Real Madrid",
-   "away": "Celta Vigo",
-   "comp": "La Liga",
-   "channels": [
-    "Disney+"
-   ],
-   "source": "laligarm"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "20:00",
-   "home": "Tenerife",
-   "away": "Mallorca",
-   "comp": "La Liga 2",
-   "channels": [
-    "Premier Sports"
-   ],
-   "source": "premier"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "20:00",
-   "home": "Motherwell",
-   "away": "Rangers",
-   "comp": "Scottish Premiership",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "k35"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "21:00",
-   "home": "FC Dallas",
-   "away": "Portland Timbers",
-   "comp": "MLS",
-   "channels": [
-    "Apple TV"
-   ],
-   "source": "mlspo"
-  },
-  {
-   "date": "2026-11-21",
-   "uk": "23:00",
-   "home": "Inter Miami",
-   "away": "Columbus Crew",
-   "comp": "MLS",
-   "channels": [
-    "Apple TV"
-   ],
-   "source": "mlspo"
   },
   {
    "date": "2026-11-22",
@@ -1955,6 +1544,17 @@
   },
   {
    "date": "2026-11-27",
+   "uk": "19:30",
+   "home": "Leganés",
+   "away": "Sabadell",
+   "comp": "La Liga 2",
+   "channels": [
+    "Premier Sports"
+   ],
+   "source": "premier"
+  },
+  {
+   "date": "2026-11-27",
    "uk": "19:45",
    "home": "Brest",
    "away": "Paris FC",
@@ -1993,9 +1593,9 @@
    "away": "Racing Santander",
    "comp": "La Liga",
    "channels": [
-    "Premier Sports (TBC)"
+    "Premier Sports"
    ],
-   "source": "k46"
+   "source": "premier"
   },
   {
    "date": "2026-11-27",
@@ -2081,9 +1681,9 @@
    "away": "Rayo Vallecano",
    "comp": "La Liga",
    "channels": [
-    "Premier Sports (TBC)"
+    "Premier Sports"
    ],
-   "source": "k46"
+   "source": "premier"
   },
   {
    "date": "2026-11-28",
@@ -2109,6 +1709,17 @@
     "DAZN"
    ],
    "source": "daznsa"
+  },
+  {
+   "date": "2026-11-28",
+   "uk": "15:15",
+   "home": "Málaga",
+   "away": "Athletic Bilbao",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports"
+   ],
+   "source": "premier"
   },
   {
    "date": "2026-11-28",
@@ -2142,9 +1753,9 @@
    "away": "Atlético Madrid",
    "comp": "La Liga",
    "channels": [
-    "Premier Sports (TBC)"
+    "Premier Sports"
    ],
-   "source": "k46"
+   "source": "premier"
   },
   {
    "date": "2026-11-28",

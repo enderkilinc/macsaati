@@ -1,7 +1,7 @@
 {
  "site_name": "Maç Saati",
  "domain": "https://macsaati.co.uk",
- "week_label": "21–27 November 2026",
+ "week_label": "22–28 November 2026",
  "superlig_round": "Week 12",
  "uk_superlig_rights": false,
  "excluded_competitions": [
@@ -10,6 +10,6 @@
   "FIFA U-17 Women's World Cup",
   "League Two"
  ],
- "banner_note": "Süper Lig Week 12 starts Sat 21 Nov: Gençlerbirliği v Gaziantep FK at 10:30 UK.",
- "banner_note_tr": "Süper Lig'de 12. hafta 21 Kasım Cumartesi, Gençlerbirliği–Gaziantep FK maçıyla başlıyor (İngiltere saati 10:30)."
+ "banner_note": "Süper Lig Week 12 ends Mon 23 Nov: Başakşehir v Çorum FK at 17:00 UK.",
+ "banner_note_tr": "Süper Lig'de 12. hafta 23 Kasım Pazartesi, Başakşehir–Çorum FK maçıyla tamamlanıyor (İngiltere saati 17:00)."
 }
