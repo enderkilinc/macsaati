@@ -335,7 +335,8 @@
     "TOD (TR)"
    ],
    "source": "tff",
-   "round": 12
+   "round": 12,
+   "score": "0-1"
   },
   {
    "date": "2026-11-22",
@@ -382,7 +383,8 @@
     "TOD (TR)"
    ],
    "source": "tff",
-   "round": 12
+   "round": 12,
+   "score": "2-1"
   },
   {
    "date": "2026-11-22",
@@ -396,7 +398,8 @@
     "TOD (TR)"
    ],
    "source": "tff",
-   "round": 12
+   "round": 12,
+   "score": "2-4"
   },
   {
    "date": "2026-11-22",
@@ -476,7 +479,8 @@
     "TOD (TR)"
    ],
    "source": "tff",
-   "round": 12
+   "round": 12,
+   "score": "1-0"
   },
   {
    "date": "2026-11-22",
