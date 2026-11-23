@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22",
+ "generated": "2026-11-23",
  "sources": {
   "sky": {
    "name": "Sky Sports – Football on Sky",
@@ -340,39 +340,6 @@
   },
   {
    "date": "2026-11-22",
-   "uk": "11:30",
-   "home": "Juventus",
-   "away": "Venezia",
-   "comp": "Serie A",
-   "channels": [
-    "DAZN"
-   ],
-   "source": "legaseriea"
-  },
-  {
-   "date": "2026-11-22",
-   "uk": "12:00",
-   "home": "Burnley",
-   "away": "Blackburn Rovers",
-   "comp": "Championship",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skyefl"
-  },
-  {
-   "date": "2026-11-22",
-   "uk": "13:00",
-   "home": "Barcelona",
-   "away": "Villarreal",
-   "comp": "La Liga",
-   "channels": [
-    "Premier Sports"
-   ],
-   "source": "premier"
-  },
-  {
-   "date": "2026-11-22",
    "uk": "13:00",
    "home": "Kasımpaşa",
    "away": "Alanyaspor",
@@ -403,72 +370,6 @@
   },
   {
    "date": "2026-11-22",
-   "uk": "14:00",
-   "home": "Paris FC",
-   "away": "Angers",
-   "comp": "Ligue 1",
-   "channels": [
-    "Ligue 1+"
-   ],
-   "source": "ligue1"
-  },
-  {
-   "date": "2026-11-22",
-   "uk": "14:00",
-   "home": "Hull City",
-   "away": "Brighton & Hove Albion",
-   "comp": "Premier League",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skypl"
-  },
-  {
-   "date": "2026-11-22",
-   "uk": "14:00",
-   "home": "Bologna",
-   "away": "Udinese",
-   "comp": "Serie A",
-   "channels": [
-    "DAZN"
-   ],
-   "source": "legaseriea"
-  },
-  {
-   "date": "2026-11-22",
-   "uk": "14:00",
-   "home": "Sassuolo",
-   "away": "Genoa",
-   "comp": "Serie A",
-   "channels": [
-    "DAZN"
-   ],
-   "source": "legaseriea"
-  },
-  {
-   "date": "2026-11-22",
-   "uk": "14:30",
-   "home": "FC Augsburg",
-   "away": "Mainz 05",
-   "comp": "Bundesliga",
-   "channels": [
-    "Prime Video (pay-per-view)"
-   ],
-   "source": "bundesliga"
-  },
-  {
-   "date": "2026-11-22",
-   "uk": "15:15",
-   "home": "Racing Santander",
-   "away": "Real Sociedad",
-   "comp": "La Liga",
-   "channels": [
-    "Premier Sports"
-   ],
-   "source": "premier"
-  },
-  {
-   "date": "2026-11-22",
    "uk": "16:00",
    "home": "Trabzonspor",
    "away": "Eyüpspor",
@@ -481,105 +382,6 @@
    "source": "tff",
    "round": 12,
    "score": "1-0"
-  },
-  {
-   "date": "2026-11-22",
-   "uk": "16:15",
-   "home": "Lorient",
-   "away": "Rennes",
-   "comp": "Ligue 1",
-   "channels": [
-    "Ligue 1+"
-   ],
-   "source": "ligue1"
-  },
-  {
-   "date": "2026-11-22",
-   "uk": "16:30",
-   "home": "Werder Bremen",
-   "away": "Hamburger SV",
-   "comp": "Bundesliga",
-   "channels": [
-    "Prime Video (pay-per-view)"
-   ],
-   "source": "bl2"
-  },
-  {
-   "date": "2026-11-22",
-   "uk": "16:30",
-   "home": "Liverpool",
-   "away": "Manchester United",
-   "comp": "Premier League",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skypl"
-  },
-  {
-   "date": "2026-11-22",
-   "uk": "17:00",
-   "home": "Milan",
-   "away": "Frosinone",
-   "comp": "Serie A",
-   "channels": [
-    "DAZN"
-   ],
-   "source": "legaseriea"
-  },
-  {
-   "date": "2026-11-22",
-   "uk": "17:30",
-   "home": "Osasuna",
-   "away": "Málaga",
-   "comp": "La Liga",
-   "channels": [
-    "Premier Sports"
-   ],
-   "source": "premier"
-  },
-  {
-   "date": "2026-11-22",
-   "uk": "19:45",
-   "home": "Marseille",
-   "away": "Le Mans",
-   "comp": "Ligue 1",
-   "channels": [
-    "Ligue 1+"
-   ],
-   "source": "ligue1"
-  },
-  {
-   "date": "2026-11-22",
-   "uk": "19:45",
-   "home": "Atalanta",
-   "away": "Inter",
-   "comp": "Serie A",
-   "channels": [
-    "DAZN"
-   ],
-   "source": "legaseriea"
-  },
-  {
-   "date": "2026-11-22",
-   "uk": "20:00",
-   "home": "Getafe",
-   "away": "Atlético Madrid",
-   "comp": "La Liga",
-   "channels": [
-    "Premier Sports"
-   ],
-   "source": "premier"
-  },
-  {
-   "date": "2026-11-22",
-   "uk": "23:30",
-   "home": "Chicago Fire",
-   "away": "Charlotte FC",
-   "comp": "MLS",
-   "channels": [
-    "Apple TV"
-   ],
-   "source": "mlspo"
   },
   {
    "date": "2026-11-23",
@@ -1959,9 +1761,9 @@
    "away": "Osasuna",
    "comp": "La Liga",
    "channels": [
-    "Premier Sports (TBC)"
+    "Premier Sports"
    ],
-   "source": "k46"
+   "source": "premier"
   },
   {
    "date": "2026-11-29",
@@ -2072,9 +1874,9 @@
    "away": "Barcelona",
    "comp": "La Liga",
    "channels": [
-    "Premier Sports (TBC)"
+    "Premier Sports"
    ],
-   "source": "k46"
+   "source": "premier"
   },
   {
    "date": "2026-11-29",
@@ -2141,9 +1943,9 @@
    "away": "Villarreal",
    "comp": "La Liga",
    "channels": [
-    "Premier Sports (TBC)"
+    "Premier Sports"
    ],
-   "source": "k46"
+   "source": "premier"
   },
   {
    "date": "2026-11-29",
