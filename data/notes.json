@@ -1,8 +1,8 @@
 {
  "site_name": "Maç Saati",
  "domain": "https://macsaati.co.uk",
- "week_label": "23–29 November 2026",
- "superlig_round": "Week 12",
+ "week_label": "24–30 November 2026",
+ "superlig_round": "Week 13",
  "uk_superlig_rights": false,
  "excluded_competitions": [
   "WSL",
@@ -10,6 +10,6 @@
   "FIFA U-17 Women's World Cup",
   "League Two"
  ],
- "banner_note": "Süper Lig Week 12 ends Mon 23 Nov: Başakşehir v Çorum FK at 17:00 UK.",
- "banner_note_tr": "Süper Lig'de 12. hafta 23 Kasım Pazartesi, Başakşehir–Çorum FK maçıyla tamamlanıyor (İngiltere saati 17:00)."
+ "banner_note": "Süper Lig Week 13 derby: Beşiktaş v Galatasaray, Mon 30 Nov at 18:00 UK.",
+ "banner_note_tr": "Süper Lig 13. hafta derbisi: Beşiktaş–Galatasaray, 30 Kasım Pazartesi, İngiltere saatiyle 18:00 (TSİ 21:00)."
 }

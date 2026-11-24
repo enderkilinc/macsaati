@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23",
+ "generated": "2026-11-24",
  "sources": {
   "sky": {
    "name": "Sky Sports – Football on Sky",
@@ -397,39 +397,6 @@
    "source": "tff",
    "round": 12,
    "score": "4-2"
-  },
-  {
-   "date": "2026-11-23",
-   "uk": "19:45",
-   "home": "Monza",
-   "away": "Fiorentina",
-   "comp": "Serie A",
-   "channels": [
-    "DAZN"
-   ],
-   "source": "legaseriea"
-  },
-  {
-   "date": "2026-11-23",
-   "uk": "20:00",
-   "home": "Levante",
-   "away": "Elche",
-   "comp": "La Liga",
-   "channels": [
-    "Premier Sports"
-   ],
-   "source": "premier"
-  },
-  {
-   "date": "2026-11-23",
-   "uk": "20:00",
-   "home": "Brentford",
-   "away": "Everton",
-   "comp": "Premier League",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skypl"
   },
   {
    "date": "2026-11-24",
@@ -1988,9 +1955,9 @@
    "away": "Sevilla",
    "comp": "La Liga",
    "channels": [
-    "Premier Sports (TBC)"
+    "Premier Sports"
    ],
-   "source": "k46"
+   "source": "premier"
   },
   {
    "date": "2026-11-30",
@@ -2049,9 +2016,9 @@
    "away": "Getafe",
    "comp": "La Liga",
    "channels": [
-    "Premier Sports (TBC)"
+    "Premier Sports"
    ],
-   "source": "k46"
+   "source": "premier"
   },
   {
    "date": "2026-12-01",
