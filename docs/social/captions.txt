@@ -1,18 +1,18 @@
 === today-post.png / today-story.png ===
-Bugün TV'de · 24 Kasım Salı
+Bugün TV'de · 25 Kasım Çarşamba
 
-⚽ 17:45 (TSİ 20:45) Galatasaray – Aston Villa · TNT Sports, HBO Max
-⚽ 19:45 (TSİ 22:45) Bristol City – Wrexham · Sky Sports+
-⚽ 19:45 (TSİ 22:45) Cardiff City – Preston North End · Sky Sports+
-⚽ 19:45 (TSİ 22:45) Charlton Athletic – Lincoln City · Sky Sports+
-⚽ 19:45 (TSİ 22:45) Middlesbrough – Swansea City · Sky Sports+
-⚽ 19:45 (TSİ 22:45) Norwich City – QPR · Sky Sports+
-⚽ 19:45 (TSİ 22:45) Portsmouth – West Ham United · Sky Sports+
-⚽ 19:45 (TSİ 22:45) Sheffield United – Southampton · Sky Sports+
-⚽ 20:00 (TSİ 23:00) Wolves – Derby County · Sky Sports
-⚽ 19:45 (TSİ 22:45) Blackpool – Leicester City · Sky Sports+
-⚽ 19:45 (TSİ 22:45) Bradford City – Barnsley · Sky Sports+
-⚽ 19:45 (TSİ 22:45) Bromley – Wycombe Wanderers · Sky Sports+
+⚽ 20:00 (TSİ 23:00) Shakhtar Donetsk – Fenerbahçe · TNT Sports, HBO Max
+⚽ 19:45 (TSİ 22:45) Bolton Wanderers – West Brom · Sky Sports+
+⚽ 19:45 (TSİ 22:45) Burnley – Birmingham City · Sky Sports+
+⚽ 19:45 (TSİ 22:45) Watford – Blackburn Rovers · Sky Sports+
+⚽ 20:00 (TSİ 23:00) Stoke City – Millwall · Sky Sports
+⚽ 17:45 (TSİ 20:45) Sabah – Barcelona · TNT Sports, HBO Max
+⚽ 17:45 (TSİ 20:45) Slavia Praha – Villarreal · TNT Sports, HBO Max
+⚽ 20:00 (TSİ 23:00) Atlético Madrid – Viking · TNT Sports, HBO Max
+⚽ 20:00 (TSİ 23:00) Club Brugge – Liverpool · TNT Sports, HBO Max
+⚽ 20:00 (TSİ 23:00) Inter – Stuttgart · TNT Sports, HBO Max
+⚽ 20:00 (TSİ 23:00) Lille – Bayern München · TNT Sports, HBO Max
+⚽ 20:00 (TSİ 23:00) Paris Saint-Germain – Roma · TNT Sports, HBO Max
 
 Tüm maçlar, İngiltere ve Türkiye saatiyle: macsaati.co.uk (link bio'da)
 
@@ -21,7 +21,6 @@ Tüm maçlar, İngiltere ve Türkiye saatiyle: macsaati.co.uk (link bio'da)
 === week-turk.png ===
 Bu hafta Türk takımlarının maçları – İngiltere saatiyle ⏰
 
-• 24 Kasım Salı 17:45 · Galatasaray – Aston Villa
 • 25 Kasım Çarşamba 20:00 · Shakhtar Donetsk – Fenerbahçe
 • 26 Kasım Perşembe 17:45 · Beşiktaş – Hapoel Beer-Sheva
 • 26 Kasım Perşembe 20:00 · CSKA Sofia – Trabzonspor
@@ -31,14 +30,25 @@ Bu hafta Türk takımlarının maçları – İngiltere saatiyle ⏰
 • 28 Kasım Cumartesi 16:00 · Gaziantep FK – Amedspor
 • 29 Kasım Pazar 10:30 · Çorum FK – Kocaelispor
 • 29 Kasım Pazar 13:00 · Eyüpspor – Başakşehir
+• 29 Kasım Pazar 16:00 · Fenerbahçe – Erzurumspor FK
 
 Kanallar ve tüm detaylar: macsaati.co.uk
 
 #maçsaati #süperlig #galatasaray #fenerbahçe #beşiktaş #trabzonspor #londra #ingiltere #türklerlondra
 
-=== match-galatasaray-aston-villa-2026-11-24.png ===
-⚽ Galatasaray – Aston Villa hangi kanalda?
-🗓 24 Kasım Salı
+=== match-shakhtar-donetsk-fenerbahce-2026-11-25.png ===
+⚽ Shakhtar Donetsk – Fenerbahçe hangi kanalda?
+🗓 25 Kasım Çarşamba
+⏰ 20:00 İngiltere saati · 23:00 TSİ
+📺 TNT Sports, HBO Max
+
+İngiltere'de nasıl izlenir? Link bio'da 👉 macsaati.co.uk
+
+#maçsaati #süperlig #galatasaray #fenerbahçe #beşiktaş #trabzonspor #londra #ingiltere #türklerlondra
+
+=== match-besiktas-hapoel-beer-sheva-2026-11-26.png ===
+⚽ Beşiktaş – Hapoel Beer-Sheva hangi kanalda?
+🗓 26 Kasım Perşembe
 ⏰ 17:45 İngiltere saati · 20:45 TSİ
 📺 TNT Sports, HBO Max
 
@@ -46,9 +56,9 @@ Kanallar ve tüm detaylar: macsaati.co.uk
 
 #maçsaati #süperlig #galatasaray #fenerbahçe #beşiktaş #trabzonspor #londra #ingiltere #türklerlondra
 
-=== match-shakhtar-donetsk-fenerbahce-2026-11-25.png ===
-⚽ Shakhtar Donetsk – Fenerbahçe hangi kanalda?
-🗓 25 Kasım Çarşamba
+=== match-cska-sofia-trabzonspor-2026-11-26.png ===
+⚽ CSKA Sofia – Trabzonspor hangi kanalda?
+🗓 26 Kasım Perşembe
 ⏰ 20:00 İngiltere saati · 23:00 TSİ
 📺 TNT Sports, HBO Max
 
