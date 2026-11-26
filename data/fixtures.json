@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25",
+ "generated": "2026-11-26",
  "sources": {
   "sky": {
    "name": "Sky Sports – Football on Sky",
@@ -260,6 +260,10 @@
   "laliga15": {
    "name": "LALIGA – Matchday 15 (UK times)",
    "url": "https://www.laliga.com/en-GB/laliga-easports/results/2026-27/gameweek-15"
+  },
+  "laliga16": {
+   "name": "LALIGA – Matchday 16 (UK times)",
+   "url": "https://www.laliga.com/en-GB/laliga-easports/results/2026-27/gameweek-16"
   }
  },
  "fixtures": [
@@ -397,169 +401,6 @@
    "source": "tff",
    "round": 12,
    "score": "4-2"
-  },
-  {
-   "date": "2026-11-25",
-   "uk": "03:00",
-   "home": "San Jose Earthquakes",
-   "away": "Houston Dynamo",
-   "comp": "MLS",
-   "channels": [
-    "Apple TV"
-   ],
-   "source": "mlspo"
-  },
-  {
-   "date": "2026-11-25",
-   "uk": "17:45",
-   "home": "Sabah",
-   "away": "Barcelona",
-   "comp": "UEFA Champions League",
-   "channels": [
-    "TNT Sports",
-    "HBO Max"
-   ],
-   "source": "ucl"
-  },
-  {
-   "date": "2026-11-25",
-   "uk": "17:45",
-   "home": "Slavia Praha",
-   "away": "Villarreal",
-   "comp": "UEFA Champions League",
-   "channels": [
-    "TNT Sports",
-    "HBO Max"
-   ],
-   "source": "ucl"
-  },
-  {
-   "date": "2026-11-25",
-   "uk": "19:45",
-   "home": "Bolton Wanderers",
-   "away": "West Brom",
-   "comp": "Championship",
-   "channels": [
-    "Sky Sports+"
-   ],
-   "source": "k37"
-  },
-  {
-   "date": "2026-11-25",
-   "uk": "19:45",
-   "home": "Burnley",
-   "away": "Birmingham City",
-   "comp": "Championship",
-   "channels": [
-    "Sky Sports+"
-   ],
-   "source": "k37"
-  },
-  {
-   "date": "2026-11-25",
-   "uk": "19:45",
-   "home": "Watford",
-   "away": "Blackburn Rovers",
-   "comp": "Championship",
-   "channels": [
-    "Sky Sports+"
-   ],
-   "source": "k37"
-  },
-  {
-   "date": "2026-11-25",
-   "uk": "20:00",
-   "home": "Stoke City",
-   "away": "Millwall",
-   "comp": "Championship",
-   "channels": [
-    "Sky Sports"
-   ],
-   "source": "skyefl"
-  },
-  {
-   "date": "2026-11-25",
-   "uk": "20:00",
-   "home": "Atlético Madrid",
-   "away": "Viking",
-   "comp": "UEFA Champions League",
-   "channels": [
-    "TNT Sports",
-    "HBO Max"
-   ],
-   "source": "ucl"
-  },
-  {
-   "date": "2026-11-25",
-   "uk": "20:00",
-   "home": "Club Brugge",
-   "away": "Liverpool",
-   "comp": "UEFA Champions League",
-   "channels": [
-    "TNT Sports",
-    "HBO Max"
-   ],
-   "source": "ucl"
-  },
-  {
-   "date": "2026-11-25",
-   "uk": "20:00",
-   "home": "Inter",
-   "away": "Stuttgart",
-   "comp": "UEFA Champions League",
-   "channels": [
-    "TNT Sports",
-    "HBO Max"
-   ],
-   "source": "ucl"
-  },
-  {
-   "date": "2026-11-25",
-   "uk": "20:00",
-   "home": "Lille",
-   "away": "Bayern München",
-   "comp": "UEFA Champions League",
-   "channels": [
-    "TNT Sports",
-    "HBO Max"
-   ],
-   "source": "ucl"
-  },
-  {
-   "date": "2026-11-25",
-   "uk": "20:00",
-   "home": "Paris Saint-Germain",
-   "away": "Roma",
-   "comp": "UEFA Champions League",
-   "channels": [
-    "TNT Sports",
-    "HBO Max"
-   ],
-   "source": "ucl"
-  },
-  {
-   "date": "2026-11-25",
-   "uk": "20:00",
-   "home": "Shakhtar Donetsk",
-   "away": "Fenerbahçe",
-   "comp": "UEFA Champions League",
-   "channels": [
-    "TNT Sports",
-    "HBO Max"
-   ],
-   "source": "ucl"
-  },
-  {
-   "date": "2026-11-25",
-   "uk": "20:00",
-   "home": "Sporting CP",
-   "away": "Manchester United",
-   "comp": "UEFA Champions League",
-   "channels": [
-    "TNT Sports",
-    "HBO Max"
-   ],
-   "source": "ucl"
   },
   {
    "date": "2026-11-26",
@@ -3577,6 +3418,17 @@
    "source": "skyefl"
   },
   {
+   "date": "2026-12-11",
+   "uk": "20:00",
+   "home": "Elche",
+   "away": "Sevilla",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laliga16"
+  },
+  {
    "date": "2026-12-12",
    "uk": "10:30",
    "home": "Erzurumspor FK",
@@ -3648,6 +3500,17 @@
   {
    "date": "2026-12-12",
    "uk": "13:00",
+   "home": "Levante",
+   "away": "Alavés",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laliga16"
+  },
+  {
+   "date": "2026-12-12",
+   "uk": "13:00",
    "home": "Alanyaspor",
    "away": "Samsunspor",
    "comp": "Süper Lig",
@@ -3669,6 +3532,17 @@
     "DAZN"
    ],
    "source": "daznsa"
+  },
+  {
+   "date": "2026-12-12",
+   "uk": "15:15",
+   "home": "Villarreal",
+   "away": "Rayo Vallecano",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laliga16"
   },
   {
    "date": "2026-12-12",
@@ -3694,6 +3568,17 @@
     "Sky Sports"
    ],
    "source": "k50"
+  },
+  {
+   "date": "2026-12-12",
+   "uk": "17:30",
+   "home": "Málaga",
+   "away": "Barcelona",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laliga16"
   },
   {
    "date": "2026-12-12",
@@ -3762,6 +3647,17 @@
    "source": "daznsa"
   },
   {
+   "date": "2026-12-12",
+   "uk": "20:00",
+   "home": "Real Betis",
+   "away": "Racing Santander",
+   "comp": "La Liga",
+   "channels": [
+    "Disney+"
+   ],
+   "source": "laliga16"
+  },
+  {
    "date": "2026-12-13",
    "uk": "10:30",
    "home": "Kocaelispor",
@@ -3785,6 +3681,17 @@
     "DAZN"
    ],
    "source": "daznsa"
+  },
+  {
+   "date": "2026-12-13",
+   "uk": "13:00",
+   "home": "Atlético Madrid",
+   "away": "Valencia",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laliga16"
   },
   {
    "date": "2026-12-13",
@@ -3893,6 +3800,17 @@
   },
   {
    "date": "2026-12-13",
+   "uk": "15:15",
+   "home": "Deportivo La Coruña",
+   "away": "Athletic Bilbao",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laliga16"
+  },
+  {
+   "date": "2026-12-13",
    "uk": "16:00",
    "home": "Fenerbahçe",
    "away": "Trabzonspor",
@@ -3951,6 +3869,17 @@
   },
   {
    "date": "2026-12-13",
+   "uk": "17:30",
+   "home": "Real Sociedad",
+   "away": "Getafe",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laliga16"
+  },
+  {
+   "date": "2026-12-13",
    "uk": "18:30",
    "home": "Werder Bremen",
    "away": "Bayer Leverkusen",
@@ -3995,6 +3924,17 @@
    "source": "daznsa"
   },
   {
+   "date": "2026-12-13",
+   "uk": "20:00",
+   "home": "Real Madrid",
+   "away": "Osasuna",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laliga16"
+  },
+  {
    "date": "2026-12-14",
    "uk": "17:00",
    "home": "Gaziantep FK",
@@ -4029,6 +3969,17 @@
     "DAZN"
    ],
    "source": "daznsa"
+  },
+  {
+   "date": "2026-12-14",
+   "uk": "20:00",
+   "home": "Espanyol",
+   "away": "Celta Vigo",
+   "comp": "La Liga",
+   "channels": [
+    "Premier Sports (TBC)"
+   ],
+   "source": "laliga16"
   },
   {
    "date": "2026-12-14",
